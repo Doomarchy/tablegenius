@@ -15,8 +15,8 @@ export const signed = (n: number) => (n > 0 ? `+${n}` : String(n))
 
 /** Whole-number percentage for table cells; extremes are shown as "<1" and ">99". */
 export function formatPct(p: number): string {
-  if (p >= 1) return '100'
-  if (p <= 0) return '0'
+  // Simulation estimates are never exactly 0 or 100 until an outcome is settled
+  // mathematically (that comes with the clinching logic), so the extremes are capped.
   if (p < 0.005) return '<1'
   if (p > 0.995) return '>99'
   return String(Math.round(p * 100))
