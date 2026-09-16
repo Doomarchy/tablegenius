@@ -1,0 +1,549 @@
+{
+ "league": "SA",
+ "season": "2026-27",
+ "updated_at": "2026-09-16T21:59:17Z",
+ "teams": [
+  {
+   "id": "Inter",
+   "name": "Inter",
+   "short_name": "Inter",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Monza",
+   "name": "Monza",
+   "short_name": "Monza",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Udinese",
+   "name": "Udinese",
+   "short_name": "Udinese",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Como",
+   "name": "Como",
+   "short_name": "Como",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Genoa",
+   "name": "Genoa",
+   "short_name": "Genoa",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Napoli",
+   "name": "Napoli",
+   "short_name": "Napoli",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Parma",
+   "name": "Parma",
+   "short_name": "Parma",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Cagliari",
+   "name": "Cagliari",
+   "short_name": "Cagliari",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Frosinone",
+   "name": "Frosinone",
+   "short_name": "Frosinone",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Juventus",
+   "name": "Juventus",
+   "short_name": "Juventus",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Venezia",
+   "name": "Venezia",
+   "short_name": "Venezia",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lecce",
+   "name": "Lecce",
+   "short_name": "Lecce",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Atalanta",
+   "name": "Atalanta",
+   "short_name": "Atalanta",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Sassuolo",
+   "name": "Sassuolo",
+   "short_name": "Sassuolo",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Torino",
+   "name": "Torino",
+   "short_name": "Torino",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Milan",
+   "name": "Milan",
+   "short_name": "Milan",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Bologna",
+   "name": "Bologna",
+   "short_name": "Bologna",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lazio",
+   "name": "Lazio",
+   "short_name": "Lazio",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Roma",
+   "name": "Roma",
+   "short_name": "Roma",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Fiorentina",
+   "name": "Fiorentina",
+   "short_name": "Fiorentina",
+   "tla": null,
+   "crest": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "csv-0",
+   "utc_date": "2026-08-22T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Inter",
+   "away_id": "Monza",
+   "home_goals": 4,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-1",
+   "utc_date": "2026-08-22T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Udinese",
+   "away_id": "Como",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-2",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Genoa",
+   "away_id": "Napoli",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-3",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Parma",
+   "away_id": "Cagliari",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-4",
+   "utc_date": "2026-08-23T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Frosinone",
+   "away_id": "Juventus",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-5",
+   "utc_date": "2026-08-23T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Venezia",
+   "away_id": "Lecce",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-6",
+   "utc_date": "2026-08-23T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Atalanta",
+   "away_id": "Sassuolo",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-7",
+   "utc_date": "2026-08-23T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Torino",
+   "away_id": "Milan",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-8",
+   "utc_date": "2026-08-24T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Bologna",
+   "away_id": "Lazio",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-9",
+   "utc_date": "2026-08-24T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Roma",
+   "away_id": "Fiorentina",
+   "home_goals": 4,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-10",
+   "utc_date": "2026-08-28T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Milan",
+   "away_id": "Venezia",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-11",
+   "utc_date": "2026-08-29T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Fiorentina",
+   "away_id": "Frosinone",
+   "home_goals": 0,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-12",
+   "utc_date": "2026-08-29T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Monza",
+   "away_id": "Udinese",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-13",
+   "utc_date": "2026-08-29T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sassuolo",
+   "away_id": "Torino",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-14",
+   "utc_date": "2026-08-29T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Juventus",
+   "away_id": "Parma",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-15",
+   "utc_date": "2026-08-30T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Napoli",
+   "away_id": "Como",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-16",
+   "utc_date": "2026-08-30T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Cagliari",
+   "away_id": "Inter",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-17",
+   "utc_date": "2026-08-30T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lazio",
+   "away_id": "Genoa",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-18",
+   "utc_date": "2026-08-31T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lecce",
+   "away_id": "Roma",
+   "home_goals": 0,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-19",
+   "utc_date": "2026-08-31T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Atalanta",
+   "away_id": "Bologna",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-20",
+   "utc_date": "2026-09-04T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Genoa",
+   "away_id": "Como",
+   "home_goals": 1,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-21",
+   "utc_date": "2026-09-05T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Fiorentina",
+   "away_id": "Torino",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-22",
+   "utc_date": "2026-09-05T17:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Inter",
+   "away_id": "Napoli",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-23",
+   "utc_date": "2026-09-05T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Roma",
+   "away_id": "Atalanta",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-24",
+   "utc_date": "2026-09-06T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Frosinone",
+   "away_id": "Venezia",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-25",
+   "utc_date": "2026-09-06T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Parma",
+   "away_id": "Monza",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-26",
+   "utc_date": "2026-09-06T17:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Bologna",
+   "away_id": "Sassuolo",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-27",
+   "utc_date": "2026-09-06T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Juventus",
+   "away_id": "Milan",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-28",
+   "utc_date": "2026-09-07T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Cagliari",
+   "away_id": "Lecce",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-29",
+   "utc_date": "2026-09-07T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Udinese",
+   "away_id": "Lazio",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-30",
+   "utc_date": "2026-09-11T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Venezia",
+   "away_id": "Fiorentina",
+   "home_goals": 2,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-31",
+   "utc_date": "2026-09-12T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Genoa",
+   "away_id": "Frosinone",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-32",
+   "utc_date": "2026-09-12T17:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lazio",
+   "away_id": "Milan",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-33",
+   "utc_date": "2026-09-12T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Atalanta",
+   "away_id": "Cagliari",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-34",
+   "utc_date": "2026-09-13T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lecce",
+   "away_id": "Monza",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-35",
+   "utc_date": "2026-09-13T17:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Napoli",
+   "away_id": "Bologna",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-36",
+   "utc_date": "2026-09-13T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sassuolo",
+   "away_id": "Juventus",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-37",
+   "utc_date": "2026-09-14T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Como",
+   "away_id": "Parma",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-38",
+   "utc_date": "2026-09-14T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Torino",
+   "away_id": "Roma",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-39",
+   "utc_date": "2026-09-14T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Inter",
+   "away_id": "Udinese",
+   "home_goals": 5,
+   "away_goals": 3
+  }
+ ]
+}

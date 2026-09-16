@@ -1,0 +1,659 @@
+{
+ "league": "PD",
+ "season": "2026-27",
+ "updated_at": "2026-09-16T21:59:16Z",
+ "teams": [
+  {
+   "id": "Alaves",
+   "name": "Alaves",
+   "short_name": "Alaves",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Getafe",
+   "name": "Getafe",
+   "short_name": "Getafe",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Sevilla",
+   "name": "Sevilla",
+   "short_name": "Sevilla",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Vallecano",
+   "name": "Vallecano",
+   "short_name": "Vallecano",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Santander",
+   "name": "Santander",
+   "short_name": "Santander",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Villarreal",
+   "name": "Villarreal",
+   "short_name": "Villarreal",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Espanol",
+   "name": "Espanol",
+   "short_name": "Espanol",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Levante",
+   "name": "Levante",
+   "short_name": "Levante",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "La Coruna",
+   "name": "La Coruna",
+   "short_name": "La Coruna",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Elche",
+   "name": "Elche",
+   "short_name": "Elche",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Ath Madrid",
+   "name": "Ath Madrid",
+   "short_name": "Ath Madrid",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Malaga",
+   "name": "Malaga",
+   "short_name": "Malaga",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Betis",
+   "name": "Betis",
+   "short_name": "Betis",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Sociedad",
+   "name": "Sociedad",
+   "short_name": "Sociedad",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Ath Bilbao",
+   "name": "Ath Bilbao",
+   "short_name": "Ath Bilbao",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Valencia",
+   "name": "Valencia",
+   "short_name": "Valencia",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Celta",
+   "name": "Celta",
+   "short_name": "Celta",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Real Madrid",
+   "name": "Real Madrid",
+   "short_name": "Real Madrid",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Barcelona",
+   "name": "Barcelona",
+   "short_name": "Barcelona",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Osasuna",
+   "name": "Osasuna",
+   "short_name": "Osasuna",
+   "tla": null,
+   "crest": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "csv-0",
+   "utc_date": "2026-08-15T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Alaves",
+   "away_id": "Getafe",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-1",
+   "utc_date": "2026-08-15T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sevilla",
+   "away_id": "Vallecano",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-2",
+   "utc_date": "2026-08-16T16:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Santander",
+   "away_id": "Villarreal",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-3",
+   "utc_date": "2026-08-16T18:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Espanol",
+   "away_id": "Levante",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-4",
+   "utc_date": "2026-08-17T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "La Coruna",
+   "away_id": "Elche",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-5",
+   "utc_date": "2026-08-19T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ath Madrid",
+   "away_id": "Malaga",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-6",
+   "utc_date": "2026-08-20T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Vallecano",
+   "away_id": "Alaves",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-7",
+   "utc_date": "2026-08-21T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Betis",
+   "away_id": "Sociedad",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-8",
+   "utc_date": "2026-08-22T16:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ath Bilbao",
+   "away_id": "Sevilla",
+   "home_goals": 1,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-9",
+   "utc_date": "2026-08-22T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Valencia",
+   "away_id": "Celta",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-10",
+   "utc_date": "2026-08-22T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Espanol",
+   "away_id": "Real Madrid",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-11",
+   "utc_date": "2026-08-23T16:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ath Madrid",
+   "away_id": "Villarreal",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-12",
+   "utc_date": "2026-08-23T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Getafe",
+   "away_id": "Santander",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-13",
+   "utc_date": "2026-08-23T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Elche",
+   "away_id": "Barcelona",
+   "home_goals": 0,
+   "away_goals": 5
+  },
+  {
+   "id": "csv-14",
+   "utc_date": "2026-08-24T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Osasuna",
+   "away_id": "Levante",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-15",
+   "utc_date": "2026-08-24T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Malaga",
+   "away_id": "La Coruna",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-16",
+   "utc_date": "2026-08-25T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Valencia",
+   "away_id": "Betis",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-17",
+   "utc_date": "2026-08-26T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Real Madrid",
+   "away_id": "Sociedad",
+   "home_goals": 4,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-18",
+   "utc_date": "2026-08-27T19:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Celta",
+   "away_id": "Osasuna",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-19",
+   "utc_date": "2026-08-27T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Barcelona",
+   "away_id": "Ath Bilbao",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-20",
+   "utc_date": "2026-08-28T18:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Santander",
+   "away_id": "Elche",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-21",
+   "utc_date": "2026-08-28T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Alaves",
+   "away_id": "Villarreal",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-22",
+   "utc_date": "2026-08-29T16:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Levante",
+   "away_id": "Betis",
+   "home_goals": 5,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-23",
+   "utc_date": "2026-08-29T18:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sociedad",
+   "away_id": "Espanol",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-24",
+   "utc_date": "2026-08-29T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sevilla",
+   "away_id": "Ath Madrid",
+   "home_goals": 1,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-25",
+   "utc_date": "2026-08-30T16:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Real Madrid",
+   "away_id": "Malaga",
+   "home_goals": 4,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-26",
+   "utc_date": "2026-08-30T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "La Coruna",
+   "away_id": "Valencia",
+   "home_goals": 3,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-27",
+   "utc_date": "2026-08-30T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Celta",
+   "away_id": "Ath Bilbao",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-28",
+   "utc_date": "2026-08-31T18:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Osasuna",
+   "away_id": "Getafe",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-29",
+   "utc_date": "2026-08-31T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Barcelona",
+   "away_id": "Vallecano",
+   "home_goals": 5,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-30",
+   "utc_date": "2026-09-03T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sociedad",
+   "away_id": "Celta",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-31",
+   "utc_date": "2026-09-04T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Betis",
+   "away_id": "Real Madrid",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-32",
+   "utc_date": "2026-09-05T15:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ath Bilbao",
+   "away_id": "Ath Madrid",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-33",
+   "utc_date": "2026-09-05T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Vallecano",
+   "away_id": "Santander",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-34",
+   "utc_date": "2026-09-05T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Villarreal",
+   "away_id": "La Coruna",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-35",
+   "utc_date": "2026-09-06T15:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Valencia",
+   "away_id": "Barcelona",
+   "home_goals": 0,
+   "away_goals": 5
+  },
+  {
+   "id": "csv-36",
+   "utc_date": "2026-09-06T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Alaves",
+   "away_id": "Osasuna",
+   "home_goals": 5,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-37",
+   "utc_date": "2026-09-06T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Malaga",
+   "away_id": "Levante",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-38",
+   "utc_date": "2026-09-06T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Espanol",
+   "away_id": "Sevilla",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-39",
+   "utc_date": "2026-09-07T18:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Getafe",
+   "away_id": "Celta",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-40",
+   "utc_date": "2026-09-07T20:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Elche",
+   "away_id": "Sociedad",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-41",
+   "utc_date": "2026-09-11T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sevilla",
+   "away_id": "Valencia",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-42",
+   "utc_date": "2026-09-12T13:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Santander",
+   "away_id": "Alaves",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-43",
+   "utc_date": "2026-09-12T15:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Osasuna",
+   "away_id": "Espanol",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-44",
+   "utc_date": "2026-09-12T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ath Bilbao",
+   "away_id": "Elche",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-45",
+   "utc_date": "2026-09-12T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Real Madrid",
+   "away_id": "Vallecano",
+   "home_goals": 4,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-46",
+   "utc_date": "2026-09-13T13:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Celta",
+   "away_id": "Malaga",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-47",
+   "utc_date": "2026-09-13T15:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Levante",
+   "away_id": "Barcelona",
+   "home_goals": 2,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-48",
+   "utc_date": "2026-09-13T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Getafe",
+   "away_id": "La Coruna",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-49",
+   "utc_date": "2026-09-13T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sociedad",
+   "away_id": "Ath Madrid",
+   "home_goals": 0,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-50",
+   "utc_date": "2026-09-14T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Villarreal",
+   "away_id": "Betis",
+   "home_goals": 1,
+   "away_goals": 2
+  }
+ ]
+}

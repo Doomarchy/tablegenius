@@ -1,0 +1,89 @@
+name: Update data and deploy
+
+on:
+  schedule:
+    # Quiet hours: two runs a day (UTC).
+    - cron: "0 3,9 * * *"
+    # Weekday evenings, hourly (midweek fixtures, Friday/Monday night games).
+    - cron: "0 17-23 * * 1-5"
+    # Weekends, hourly from midday.
+    - cron: "0 12-23 * * 0,6"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: update-and-deploy
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+
+      - name: Install pipeline
+        run: pip install -r pipeline/requirements.txt
+
+      - name: Fetch data and run the pipeline
+        working-directory: pipeline
+        env:
+          FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
+        run: python -m tablegenius.run --season 2026-27
+
+      - name: Commit updated data
+        run: |
+          git config user.name "tablegenius-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/public/data pipeline/history
+          if git diff --cached --quiet; then
+            echo "No data changes."
+          else
+            git commit -m "data: update $(date -u +%Y-%m-%dT%H:%MZ)"
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install site
+        working-directory: site
+        run: npm ci
+
+      - name: Build site
+        working-directory: site
+        run: |
+          REPO="${{ github.event.repository.name }}"
+          if [[ "$REPO" == *.github.io ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
+          echo "Building with BASE_PATH=$BASE_PATH"
+          npm run build
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+  deploy:
+    needs: update
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

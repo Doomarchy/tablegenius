@@ -1,0 +1,843 @@
+{
+ "league": {
+  "code": "BL1",
+  "name": "Bundesliga",
+  "country": "Germany",
+  "season": "2026-27",
+  "team_count": 18,
+  "rounds": 2,
+  "tiebreakers": [
+   "points",
+   "goal_difference",
+   "goals_for",
+   "h2h_goal_difference",
+   "h2h_away_goals",
+   "away_goals",
+   "playoff"
+  ],
+  "zones": {
+   "ucl": {
+    "label": "Champions League",
+    "positions": [
+     1,
+     4
+    ]
+   },
+   "ucl_qualifying": {
+    "label": "Champions League qualifying",
+    "positions": null
+   },
+   "uel": {
+    "label": "Europa League",
+    "positions": [
+     5,
+     6
+    ]
+   },
+   "uecl": {
+    "label": "Conference League play-off",
+    "positions": [
+     7,
+     7
+    ]
+   },
+   "relegation_playoff": {
+    "label": "Relegation play-off",
+    "positions": [
+     16,
+     16
+    ]
+   },
+   "relegation": {
+    "label": "Relegation",
+    "positions": [
+     17,
+     18
+    ]
+   }
+  },
+  "assumptions": [
+   "The DFB-Pokal winner's Europa League place is assumed to pass down the table, so 5th and 6th go to the Europa League and 7th to the Conference League play-off round.",
+   "The head-to-head criterion is the aggregate score of the two meetings (not head-to-head points), then away goals in those meetings, then away goals over the whole season.",
+   "16th place plays a two-legged relegation play-off against the 3rd-placed 2. Bundesliga team; that play-off itself is not simulated."
+  ],
+  "domestic_cups": [
+   {
+    "name": "DFB-Pokal",
+    "grants": "uel"
+   }
+  ],
+  "extra_ucl_place": false,
+  "tied_title_playoff": false,
+  "tied_relegation_playoff": false
+ },
+ "updated_at": "2026-09-16T21:59:18Z",
+ "source": "football-data.co.uk (preview)",
+ "matchday": {
+  "current": null,
+  "total": 34,
+  "matches_played": 27,
+  "matches_total": 306
+ },
+ "teams": [
+  {
+   "id": "Freiburg",
+   "name": "Freiburg",
+   "short_name": "Freiburg",
+   "tla": null,
+   "crest": null,
+   "position": 1,
+   "zone": "ucl",
+   "played": 3,
+   "won": 3,
+   "drawn": 0,
+   "lost": 0,
+   "gf": 10,
+   "ga": 1,
+   "gd": 9,
+   "points": 9,
+   "form": [
+    "W",
+    "W",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 9,
+    "goals_against": 1,
+    "points": 6
+   },
+   "away": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 1,
+    "goals_against": 0,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Dortmund",
+   "name": "Dortmund",
+   "short_name": "Dortmund",
+   "tla": null,
+   "crest": null,
+   "position": 2,
+   "zone": "ucl",
+   "played": 3,
+   "won": 3,
+   "drawn": 0,
+   "lost": 0,
+   "gf": 8,
+   "ga": 2,
+   "gd": 6,
+   "points": 9,
+   "form": [
+    "W",
+    "W",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 0,
+    "points": 6
+   },
+   "away": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 2,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Augsburg",
+   "name": "Augsburg",
+   "short_name": "Augsburg",
+   "tla": null,
+   "crest": null,
+   "position": 3,
+   "zone": "ucl",
+   "played": 3,
+   "won": 2,
+   "drawn": 1,
+   "lost": 0,
+   "gf": 9,
+   "ga": 3,
+   "gd": 6,
+   "points": 7,
+   "form": [
+    "W",
+    "W",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 2,
+    "points": 4
+   },
+   "away": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 1,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Bayern Munich",
+   "name": "Bayern Munich",
+   "short_name": "Bayern Munich",
+   "tla": null,
+   "crest": null,
+   "position": 4,
+   "zone": "ucl",
+   "played": 3,
+   "won": 2,
+   "drawn": 1,
+   "lost": 0,
+   "gf": 7,
+   "ga": 2,
+   "gd": 5,
+   "points": 7,
+   "form": [
+    "W",
+    "D",
+    "W"
+   ],
+   "home": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 1,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 2,
+    "goals_against": 1,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "RB Leipzig",
+   "name": "RB Leipzig",
+   "short_name": "RB Leipzig",
+   "tla": null,
+   "crest": null,
+   "position": 5,
+   "zone": "uel",
+   "played": 3,
+   "won": 2,
+   "drawn": 0,
+   "lost": 1,
+   "gf": 9,
+   "ga": 3,
+   "gd": 6,
+   "points": 6,
+   "form": [
+    "W",
+    "L",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 8,
+    "goals_against": 0,
+    "points": 6
+   },
+   "away": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 1,
+    "goals_against": 3,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Elversberg",
+   "name": "Elversberg",
+   "short_name": "Elversberg",
+   "tla": null,
+   "crest": null,
+   "position": 6,
+   "zone": "uel",
+   "played": 3,
+   "won": 2,
+   "drawn": 0,
+   "lost": 1,
+   "gf": 8,
+   "ga": 7,
+   "gd": 1,
+   "points": 6,
+   "form": [
+    "W",
+    "W",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 4,
+    "goals_against": 4,
+    "points": 3
+   },
+   "away": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 3,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Leverkusen",
+   "name": "Leverkusen",
+   "short_name": "Leverkusen",
+   "tla": null,
+   "crest": null,
+   "position": 7,
+   "zone": "uecl",
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 8,
+   "ga": 5,
+   "gd": 3,
+   "points": 4,
+   "form": [
+    "L",
+    "W",
+    "D"
+   ],
+   "home": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 0,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 4,
+    "goals_against": 5,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Mainz",
+   "name": "Mainz",
+   "short_name": "Mainz",
+   "tla": null,
+   "crest": null,
+   "position": 8,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 6,
+   "ga": 3,
+   "gd": 3,
+   "points": 4,
+   "form": [
+    "D",
+    "W",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 1,
+    "goals_against": 3,
+    "points": 1
+   },
+   "away": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 0,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Ein Frankfurt",
+   "name": "Ein Frankfurt",
+   "short_name": "Ein Frankfurt",
+   "tla": null,
+   "crest": null,
+   "position": 9,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 7,
+   "ga": 8,
+   "gd": -1,
+   "points": 4,
+   "form": [
+    "D",
+    "L",
+    "W"
+   ],
+   "home": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 1,
+    "goals_against": 4,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 6,
+    "goals_against": 4,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Werder Bremen",
+   "name": "Werder Bremen",
+   "short_name": "Werder Bremen",
+   "tla": null,
+   "crest": null,
+   "position": 10,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 5,
+   "ga": 6,
+   "gd": -1,
+   "points": 4,
+   "form": [
+    "L",
+    "W",
+    "D"
+   ],
+   "home": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 1,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 2,
+    "goals_against": 5,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Schalke 04",
+   "name": "Schalke 04",
+   "short_name": "Schalke 04",
+   "tla": null,
+   "crest": null,
+   "position": 11,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 3,
+   "ga": 4,
+   "gd": -1,
+   "points": 4,
+   "form": [
+    "L",
+    "D",
+    "W"
+   ],
+   "home": {
+    "played": 1,
+    "won": 0,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 0,
+    "goals_against": 0,
+    "points": 1
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 3,
+    "goals_against": 4,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "FC Koln",
+   "name": "FC Koln",
+   "short_name": "FC Koln",
+   "tla": null,
+   "crest": null,
+   "position": 12,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 5,
+   "ga": 7,
+   "gd": -2,
+   "points": 4,
+   "form": [
+    "W",
+    "L",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 3,
+    "points": 4
+   },
+   "away": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 1,
+    "goals_against": 4,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Hoffenheim",
+   "name": "Hoffenheim",
+   "short_name": "Hoffenheim",
+   "tla": null,
+   "crest": null,
+   "position": 13,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 0,
+   "lost": 2,
+   "gf": 6,
+   "ga": 7,
+   "gd": -1,
+   "points": 3,
+   "form": [
+    "L",
+    "L",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 4,
+    "goals_against": 4,
+    "points": 3
+   },
+   "away": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 2,
+    "goals_against": 3,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Stuttgart",
+   "name": "Stuttgart",
+   "short_name": "Stuttgart",
+   "tla": null,
+   "crest": null,
+   "position": 14,
+   "zone": null,
+   "played": 3,
+   "won": 1,
+   "drawn": 0,
+   "lost": 2,
+   "gf": 6,
+   "ga": 8,
+   "gd": -2,
+   "points": 3,
+   "form": [
+    "L",
+    "W",
+    "L"
+   ],
+   "home": {
+    "played": 1,
+    "won": 1,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 1,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 2,
+    "goals_against": 7,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Paderborn",
+   "name": "Paderborn",
+   "short_name": "Paderborn",
+   "tla": null,
+   "crest": null,
+   "position": 15,
+   "zone": null,
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "gf": 0,
+   "ga": 4,
+   "gd": -4,
+   "points": 1,
+   "form": [
+    "D",
+    "L",
+    "L"
+   ],
+   "home": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 1,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 3,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Union Berlin",
+   "name": "Union Berlin",
+   "short_name": "Union Berlin",
+   "tla": null,
+   "crest": null,
+   "position": 16,
+   "zone": "relegation_playoff",
+   "played": 3,
+   "won": 0,
+   "drawn": 1,
+   "lost": 2,
+   "gf": 4,
+   "ga": 10,
+   "gd": -6,
+   "points": 1,
+   "form": [
+    "D",
+    "L",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 4,
+    "goals_against": 6,
+    "points": 1
+   },
+   "away": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 4,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "M'gladbach",
+   "name": "M'gladbach",
+   "short_name": "M'gladbach",
+   "tla": null,
+   "crest": null,
+   "position": 17,
+   "zone": "relegation",
+   "played": 3,
+   "won": 0,
+   "drawn": 0,
+   "lost": 3,
+   "gf": 3,
+   "ga": 12,
+   "gd": -9,
+   "points": 0,
+   "form": [
+    "L",
+    "L",
+    "L"
+   ],
+   "home": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 3,
+    "goals_against": 4,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 0,
+    "goals_against": 8,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Hamburg",
+   "name": "Hamburg",
+   "short_name": "Hamburg",
+   "tla": null,
+   "crest": null,
+   "position": 18,
+   "zone": "relegation",
+   "played": 3,
+   "won": 0,
+   "drawn": 0,
+   "lost": 3,
+   "gf": 0,
+   "ga": 12,
+   "gd": -12,
+   "points": 0,
+   "form": [
+    "L",
+    "L",
+    "L"
+   ],
+   "home": {
+    "played": 1,
+    "won": 0,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 5,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 0,
+    "goals_against": 7,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  }
+ ],
+ "source_check": {
+  "available": false
+ }
+}

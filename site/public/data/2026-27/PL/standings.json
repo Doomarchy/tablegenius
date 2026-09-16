@@ -1,0 +1,946 @@
+{
+ "league": {
+  "code": "PL",
+  "name": "Premier League",
+  "country": "England",
+  "season": "2026-27",
+  "team_count": 20,
+  "rounds": 2,
+  "tiebreakers": [
+   "points",
+   "goal_difference",
+   "goals_for",
+   "h2h_points",
+   "h2h_away_goals",
+   "playoff"
+  ],
+  "zones": {
+   "ucl": {
+    "label": "Champions League",
+    "positions": [
+     1,
+     4
+    ]
+   },
+   "ucl_qualifying": {
+    "label": "Champions League qualifying",
+    "positions": null
+   },
+   "uel": {
+    "label": "Europa League",
+    "positions": [
+     5,
+     6
+    ]
+   },
+   "uecl": {
+    "label": "Conference League play-off",
+    "positions": [
+     7,
+     7
+    ]
+   },
+   "relegation_playoff": {
+    "label": "Relegation play-off",
+    "positions": null
+   },
+   "relegation": {
+    "label": "Relegation",
+    "positions": [
+     18,
+     20
+    ]
+   }
+  },
+  "assumptions": [
+   "The FA Cup winner's Europa League place and the EFL Cup winner's Conference League play-off place are assumed to pass down the table, so 5th and 6th go to the Europa League and 7th to the Conference League play-off round.",
+   "A possible fifth Champions League place (European Performance Spot) is not modelled. UEFA decides it in May 2027."
+  ],
+  "domestic_cups": [
+   {
+    "name": "FA Cup",
+    "grants": "uel"
+   },
+   {
+    "name": "EFL Cup",
+    "grants": "uecl"
+   }
+  ],
+  "extra_ucl_place": false,
+  "tied_title_playoff": false,
+  "tied_relegation_playoff": false
+ },
+ "updated_at": "2026-09-16T21:59:15Z",
+ "source": "football-data.co.uk (preview)",
+ "matchday": {
+  "current": null,
+  "total": 38,
+  "matches_played": 40,
+  "matches_total": 380
+ },
+ "teams": [
+  {
+   "id": "Arsenal",
+   "name": "Arsenal",
+   "short_name": "Arsenal",
+   "tla": null,
+   "crest": null,
+   "position": 1,
+   "zone": "ucl",
+   "played": 4,
+   "won": 4,
+   "drawn": 0,
+   "lost": 0,
+   "gf": 8,
+   "ga": 1,
+   "gd": 7,
+   "points": 12,
+   "form": [
+    "W",
+    "W",
+    "W",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 1,
+    "points": 6
+   },
+   "away": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 0,
+    "points": 6
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Man City",
+   "name": "Man City",
+   "short_name": "Man City",
+   "tla": null,
+   "crest": null,
+   "position": 2,
+   "zone": "ucl",
+   "played": 4,
+   "won": 4,
+   "drawn": 0,
+   "lost": 0,
+   "gf": 8,
+   "ga": 2,
+   "gd": 6,
+   "points": 12,
+   "form": [
+    "W",
+    "W",
+    "W",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 1,
+    "points": 6
+   },
+   "away": {
+    "played": 2,
+    "won": 2,
+    "drawn": 0,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 1,
+    "points": 6
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Leeds",
+   "name": "Leeds",
+   "short_name": "Leeds",
+   "tla": null,
+   "crest": null,
+   "position": 3,
+   "zone": "ucl",
+   "played": 4,
+   "won": 2,
+   "drawn": 2,
+   "lost": 0,
+   "gf": 7,
+   "ga": 3,
+   "gd": 4,
+   "points": 8,
+   "form": [
+    "W",
+    "D",
+    "D",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 2,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 2,
+    "goals_against": 1,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Hull",
+   "name": "Hull",
+   "short_name": "Hull",
+   "tla": null,
+   "crest": null,
+   "position": 4,
+   "zone": "ucl",
+   "played": 4,
+   "won": 2,
+   "drawn": 2,
+   "lost": 0,
+   "gf": 5,
+   "ga": 2,
+   "gd": 3,
+   "points": 8,
+   "form": [
+    "W",
+    "W",
+    "D",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 2,
+    "goals_against": 0,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 2,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Brighton",
+   "name": "Brighton",
+   "short_name": "Brighton",
+   "tla": null,
+   "crest": null,
+   "position": 5,
+   "zone": "uel",
+   "played": 4,
+   "won": 2,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 13,
+   "ga": 5,
+   "gd": 8,
+   "points": 7,
+   "form": [
+    "W",
+    "L",
+    "D",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 5,
+    "goals_against": 1,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 8,
+    "goals_against": 4,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Chelsea",
+   "name": "Chelsea",
+   "short_name": "Chelsea",
+   "tla": null,
+   "crest": null,
+   "position": 6,
+   "zone": "uel",
+   "played": 4,
+   "won": 2,
+   "drawn": 1,
+   "lost": 1,
+   "gf": 10,
+   "ga": 9,
+   "gd": 1,
+   "points": 7,
+   "form": [
+    "W",
+    "W",
+    "L",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 6,
+    "goals_against": 5,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 4,
+    "goals_against": 4,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Brentford",
+   "name": "Brentford",
+   "short_name": "Brentford",
+   "tla": null,
+   "crest": null,
+   "position": 7,
+   "zone": "uecl",
+   "played": 4,
+   "won": 1,
+   "drawn": 3,
+   "lost": 0,
+   "gf": 7,
+   "ga": 4,
+   "gd": 3,
+   "points": 6,
+   "form": [
+    "W",
+    "D",
+    "D",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 1,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 2,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 3,
+    "points": 2
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Liverpool",
+   "name": "Liverpool",
+   "short_name": "Liverpool",
+   "tla": null,
+   "crest": null,
+   "position": 8,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 3,
+   "lost": 0,
+   "gf": 6,
+   "ga": 4,
+   "gd": 2,
+   "points": 6,
+   "form": [
+    "D",
+    "D",
+    "W",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 2,
+    "lost": 0,
+    "goals_for": 2,
+    "goals_against": 2,
+    "points": 2
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 2,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Everton",
+   "name": "Everton",
+   "short_name": "Everton",
+   "tla": null,
+   "crest": null,
+   "position": 9,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 3,
+   "lost": 0,
+   "gf": 5,
+   "ga": 3,
+   "gd": 2,
+   "points": 6,
+   "form": [
+    "W",
+    "D",
+    "D",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 2,
+    "points": 4
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 2,
+    "lost": 0,
+    "goals_for": 1,
+    "goals_against": 1,
+    "points": 2
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Ipswich",
+   "name": "Ipswich",
+   "short_name": "Ipswich",
+   "tla": null,
+   "crest": null,
+   "position": 10,
+   "zone": null,
+   "played": 4,
+   "won": 2,
+   "drawn": 0,
+   "lost": 2,
+   "gf": 7,
+   "ga": 10,
+   "gd": -3,
+   "points": 6,
+   "form": [
+    "W",
+    "L",
+    "L",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 2,
+    "goals_against": 3,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 5,
+    "goals_against": 7,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Nott'm Forest",
+   "name": "Nott'm Forest",
+   "short_name": "Nott'm Forest",
+   "tla": null,
+   "crest": null,
+   "position": 11,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 2,
+   "lost": 1,
+   "gf": 4,
+   "ga": 4,
+   "gd": 0,
+   "points": 5,
+   "form": [
+    "L",
+    "D",
+    "D",
+    "W"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 1,
+    "points": 1
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 1,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 3,
+    "points": 4
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Newcastle",
+   "name": "Newcastle",
+   "short_name": "Newcastle",
+   "tla": null,
+   "crest": null,
+   "position": 12,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 2,
+   "lost": 1,
+   "gf": 7,
+   "ga": 8,
+   "gd": -1,
+   "points": 5,
+   "form": [
+    "D",
+    "W",
+    "D",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 2,
+    "lost": 0,
+    "goals_for": 4,
+    "goals_against": 4,
+    "points": 2
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 3,
+    "goals_against": 4,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Man United",
+   "name": "Man United",
+   "short_name": "Man United",
+   "tla": null,
+   "crest": null,
+   "position": 13,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 1,
+   "lost": 2,
+   "gf": 7,
+   "ga": 7,
+   "gd": 0,
+   "points": 4,
+   "form": [
+    "L",
+    "W",
+    "D",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 5,
+    "goals_against": 3,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 2,
+    "goals_against": 4,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Sunderland",
+   "name": "Sunderland",
+   "short_name": "Sunderland",
+   "tla": null,
+   "crest": null,
+   "position": 14,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 1,
+   "lost": 2,
+   "gf": 3,
+   "ga": 5,
+   "gd": -2,
+   "points": 4,
+   "form": [
+    "L",
+    "W",
+    "D",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 1,
+    "goals_against": 2,
+    "points": 3
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 2,
+    "goals_against": 3,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Bournemouth",
+   "name": "Bournemouth",
+   "short_name": "Bournemouth",
+   "tla": null,
+   "crest": null,
+   "position": 15,
+   "zone": null,
+   "played": 4,
+   "won": 0,
+   "drawn": 3,
+   "lost": 1,
+   "gf": 6,
+   "ga": 7,
+   "gd": -1,
+   "points": 3,
+   "form": [
+    "L",
+    "D",
+    "D",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 2,
+    "lost": 0,
+    "goals_for": 3,
+    "goals_against": 3,
+    "points": 2
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 3,
+    "goals_against": 4,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Crystal Palace",
+   "name": "Crystal Palace",
+   "short_name": "Crystal Palace",
+   "tla": null,
+   "crest": null,
+   "position": 16,
+   "zone": null,
+   "played": 4,
+   "won": 1,
+   "drawn": 0,
+   "lost": 3,
+   "gf": 6,
+   "ga": 11,
+   "gd": -5,
+   "points": 3,
+   "form": [
+    "L",
+    "L",
+    "W",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 3,
+    "goals_against": 7,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 1,
+    "drawn": 0,
+    "lost": 1,
+    "goals_for": 3,
+    "goals_against": 4,
+    "points": 3
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Tottenham",
+   "name": "Tottenham",
+   "short_name": "Tottenham",
+   "tla": null,
+   "crest": null,
+   "position": 17,
+   "zone": null,
+   "played": 4,
+   "won": 0,
+   "drawn": 2,
+   "lost": 2,
+   "gf": 0,
+   "ga": 5,
+   "gd": -5,
+   "points": 2,
+   "form": [
+    "L",
+    "L",
+    "D",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 2,
+    "points": 1
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 3,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": null
+  },
+  {
+   "id": "Fulham",
+   "name": "Fulham",
+   "short_name": "Fulham",
+   "tla": null,
+   "crest": null,
+   "position": 18,
+   "zone": "relegation",
+   "played": 4,
+   "won": 0,
+   "drawn": 1,
+   "lost": 3,
+   "gf": 4,
+   "ga": 7,
+   "gd": -3,
+   "points": 1,
+   "form": [
+    "L",
+    "L",
+    "L",
+    "D"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 4,
+    "goals_against": 6,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 1,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Aston Villa",
+   "name": "Aston Villa",
+   "short_name": "Aston Villa",
+   "tla": null,
+   "crest": null,
+   "position": 19,
+   "zone": "relegation",
+   "played": 4,
+   "won": 0,
+   "drawn": 1,
+   "lost": 3,
+   "gf": 1,
+   "ga": 7,
+   "gd": -6,
+   "points": 1,
+   "form": [
+    "L",
+    "L",
+    "D",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 1,
+    "goals_against": 3,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 1,
+    "lost": 1,
+    "goals_for": 0,
+    "goals_against": 4,
+    "points": 1
+   },
+   "tied": false,
+   "separated_by": "goal_difference"
+  },
+  {
+   "id": "Coventry",
+   "name": "Coventry",
+   "short_name": "Coventry",
+   "tla": null,
+   "crest": null,
+   "position": 20,
+   "zone": "relegation",
+   "played": 4,
+   "won": 0,
+   "drawn": 0,
+   "lost": 4,
+   "gf": 0,
+   "ga": 10,
+   "gd": -10,
+   "points": 0,
+   "form": [
+    "L",
+    "L",
+    "L",
+    "L"
+   ],
+   "home": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 0,
+    "goals_against": 6,
+    "points": 0
+   },
+   "away": {
+    "played": 2,
+    "won": 0,
+    "drawn": 0,
+    "lost": 2,
+    "goals_for": 0,
+    "goals_against": 4,
+    "points": 0
+   },
+   "tied": false,
+   "separated_by": null
+  }
+ ],
+ "source_check": {
+  "available": false
+ }
+}

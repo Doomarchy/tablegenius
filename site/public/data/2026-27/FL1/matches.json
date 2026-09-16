@@ -1,0 +1,495 @@
+{
+ "league": "FL1",
+ "season": "2026-27",
+ "updated_at": "2026-09-16T21:59:19Z",
+ "teams": [
+  {
+   "id": "Marseille",
+   "name": "Marseille",
+   "short_name": "Marseille",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Strasbourg",
+   "name": "Strasbourg",
+   "short_name": "Strasbourg",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lens",
+   "name": "Lens",
+   "short_name": "Lens",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Auxerre",
+   "name": "Auxerre",
+   "short_name": "Auxerre",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Le Mans",
+   "name": "Le Mans",
+   "short_name": "Le Mans",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Brest",
+   "name": "Brest",
+   "short_name": "Brest",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Nice",
+   "name": "Nice",
+   "short_name": "Nice",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lorient",
+   "name": "Lorient",
+   "short_name": "Lorient",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Toulouse",
+   "name": "Toulouse",
+   "short_name": "Toulouse",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lyon",
+   "name": "Lyon",
+   "short_name": "Lyon",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Troyes",
+   "name": "Troyes",
+   "short_name": "Troyes",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Paris FC",
+   "name": "Paris FC",
+   "short_name": "Paris FC",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Angers",
+   "name": "Angers",
+   "short_name": "Angers",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Lille",
+   "name": "Lille",
+   "short_name": "Lille",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Le Havre",
+   "name": "Le Havre",
+   "short_name": "Le Havre",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Monaco",
+   "name": "Monaco",
+   "short_name": "Monaco",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Rennes",
+   "name": "Rennes",
+   "short_name": "Rennes",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Paris SG",
+   "name": "Paris SG",
+   "short_name": "Paris SG",
+   "tla": null,
+   "crest": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "csv-0",
+   "utc_date": "2026-08-21T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Marseille",
+   "away_id": "Strasbourg",
+   "home_goals": 4,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-1",
+   "utc_date": "2026-08-22T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lens",
+   "away_id": "Auxerre",
+   "home_goals": 5,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-2",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Le Mans",
+   "away_id": "Brest",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-3",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Nice",
+   "away_id": "Lorient",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-4",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Toulouse",
+   "away_id": "Lyon",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-5",
+   "utc_date": "2026-08-22T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Troyes",
+   "away_id": "Paris FC",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-6",
+   "utc_date": "2026-08-23T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Angers",
+   "away_id": "Lille",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-7",
+   "utc_date": "2026-08-23T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Le Havre",
+   "away_id": "Monaco",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-8",
+   "utc_date": "2026-08-23T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Rennes",
+   "away_id": "Paris SG",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-9",
+   "utc_date": "2026-08-28T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lille",
+   "away_id": "Paris SG",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-10",
+   "utc_date": "2026-08-29T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Strasbourg",
+   "away_id": "Lens",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-11",
+   "utc_date": "2026-08-29T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Auxerre",
+   "away_id": "Angers",
+   "home_goals": 1,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-12",
+   "utc_date": "2026-08-29T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brest",
+   "away_id": "Toulouse",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-13",
+   "utc_date": "2026-08-29T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lorient",
+   "away_id": "Troyes",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-14",
+   "utc_date": "2026-08-29T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lyon",
+   "away_id": "Le Havre",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-15",
+   "utc_date": "2026-08-30T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Paris FC",
+   "away_id": "Nice",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-16",
+   "utc_date": "2026-08-30T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Rennes",
+   "away_id": "Le Mans",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-17",
+   "utc_date": "2026-08-30T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Monaco",
+   "away_id": "Marseille",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-18",
+   "utc_date": "2026-09-03T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Toulouse",
+   "away_id": "Lille",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-19",
+   "utc_date": "2026-09-04T18:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lyon",
+   "away_id": "Auxerre",
+   "home_goals": 3,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-20",
+   "utc_date": "2026-09-04T20:05:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Paris SG",
+   "away_id": "Monaco",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-21",
+   "utc_date": "2026-09-05T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lens",
+   "away_id": "Lorient",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-22",
+   "utc_date": "2026-09-05T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Le Havre",
+   "away_id": "Brest",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-23",
+   "utc_date": "2026-09-05T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Nice",
+   "away_id": "Le Mans",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-24",
+   "utc_date": "2026-09-06T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Troyes",
+   "away_id": "Strasbourg",
+   "home_goals": 2,
+   "away_goals": 6
+  },
+  {
+   "id": "csv-25",
+   "utc_date": "2026-09-06T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Angers",
+   "away_id": "Rennes",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-26",
+   "utc_date": "2026-09-06T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Marseille",
+   "away_id": "Paris FC",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-27",
+   "utc_date": "2026-09-11T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Rennes",
+   "away_id": "Marseille",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-28",
+   "utc_date": "2026-09-12T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Strasbourg",
+   "away_id": "Monaco",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-29",
+   "utc_date": "2026-09-12T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Auxerre",
+   "away_id": "Nice",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-30",
+   "utc_date": "2026-09-12T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Le Havre",
+   "away_id": "Angers",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-31",
+   "utc_date": "2026-09-12T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lorient",
+   "away_id": "Toulouse",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-32",
+   "utc_date": "2026-09-12T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Paris FC",
+   "away_id": "Lyon",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-33",
+   "utc_date": "2026-09-13T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Lille",
+   "away_id": "Troyes",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-34",
+   "utc_date": "2026-09-13T16:15:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Le Mans",
+   "away_id": "Lens",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-35",
+   "utc_date": "2026-09-13T19:45:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brest",
+   "away_id": "Paris SG",
+   "home_goals": 0,
+   "away_goals": 1
+  }
+ ]
+}

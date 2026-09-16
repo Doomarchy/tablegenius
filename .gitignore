@@ -1,0 +1,14 @@
+# secrets
+.env
+# python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pipeline/.cache/
+# node
+site/node_modules/
+site/dist/
+# editors / os
+.DS_Store
+Thumbs.db

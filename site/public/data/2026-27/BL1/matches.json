@@ -1,0 +1,405 @@
+{
+ "league": "BL1",
+ "season": "2026-27",
+ "updated_at": "2026-09-16T21:59:18Z",
+ "teams": [
+  {
+   "id": "Bayern Munich",
+   "name": "Bayern Munich",
+   "short_name": "Bayern Munich",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Stuttgart",
+   "name": "Stuttgart",
+   "short_name": "Stuttgart",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Elversberg",
+   "name": "Elversberg",
+   "short_name": "Elversberg",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Leverkusen",
+   "name": "Leverkusen",
+   "short_name": "Leverkusen",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "FC Koln",
+   "name": "FC Koln",
+   "short_name": "FC Koln",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Hoffenheim",
+   "name": "Hoffenheim",
+   "short_name": "Hoffenheim",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Mainz",
+   "name": "Mainz",
+   "short_name": "Mainz",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Paderborn",
+   "name": "Paderborn",
+   "short_name": "Paderborn",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "RB Leipzig",
+   "name": "RB Leipzig",
+   "short_name": "RB Leipzig",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "M'gladbach",
+   "name": "M'gladbach",
+   "short_name": "M'gladbach",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Union Berlin",
+   "name": "Union Berlin",
+   "short_name": "Union Berlin",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Ein Frankfurt",
+   "name": "Ein Frankfurt",
+   "short_name": "Ein Frankfurt",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Dortmund",
+   "name": "Dortmund",
+   "short_name": "Dortmund",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Hamburg",
+   "name": "Hamburg",
+   "short_name": "Hamburg",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Freiburg",
+   "name": "Freiburg",
+   "short_name": "Freiburg",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Werder Bremen",
+   "name": "Werder Bremen",
+   "short_name": "Werder Bremen",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Augsburg",
+   "name": "Augsburg",
+   "short_name": "Augsburg",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Schalke 04",
+   "name": "Schalke 04",
+   "short_name": "Schalke 04",
+   "tla": null,
+   "crest": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "csv-0",
+   "utc_date": "2026-08-28T19:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Bayern Munich",
+   "away_id": "Stuttgart",
+   "home_goals": 5,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-1",
+   "utc_date": "2026-08-29T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Elversberg",
+   "away_id": "Leverkusen",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-2",
+   "utc_date": "2026-08-29T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "FC Koln",
+   "away_id": "Hoffenheim",
+   "home_goals": 3,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-3",
+   "utc_date": "2026-08-29T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Mainz",
+   "away_id": "Paderborn",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-4",
+   "utc_date": "2026-08-29T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "RB Leipzig",
+   "away_id": "M'gladbach",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-5",
+   "utc_date": "2026-08-29T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Union Berlin",
+   "away_id": "Ein Frankfurt",
+   "home_goals": 3,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-6",
+   "utc_date": "2026-08-29T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Dortmund",
+   "away_id": "Hamburg",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-7",
+   "utc_date": "2026-08-30T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Freiburg",
+   "away_id": "Werder Bremen",
+   "home_goals": 4,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-8",
+   "utc_date": "2026-08-30T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Augsburg",
+   "away_id": "Schalke 04",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-9",
+   "utc_date": "2026-09-04T19:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Stuttgart",
+   "away_id": "FC Koln",
+   "home_goals": 4,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-10",
+   "utc_date": "2026-09-05T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Hoffenheim",
+   "away_id": "Dortmund",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-11",
+   "utc_date": "2026-09-05T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Leverkusen",
+   "away_id": "Union Berlin",
+   "home_goals": 4,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-12",
+   "utc_date": "2026-09-05T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "M'gladbach",
+   "away_id": "Elversberg",
+   "home_goals": 3,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-13",
+   "utc_date": "2026-09-05T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Paderborn",
+   "away_id": "Freiburg",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-14",
+   "utc_date": "2026-09-05T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Werder Bremen",
+   "away_id": "RB Leipzig",
+   "home_goals": 3,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-15",
+   "utc_date": "2026-09-05T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Schalke 04",
+   "away_id": "Bayern Munich",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-16",
+   "utc_date": "2026-09-06T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Hamburg",
+   "away_id": "Mainz",
+   "home_goals": 0,
+   "away_goals": 5
+  },
+  {
+   "id": "csv-17",
+   "utc_date": "2026-09-06T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ein Frankfurt",
+   "away_id": "Augsburg",
+   "home_goals": 1,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-18",
+   "utc_date": "2026-09-11T19:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Union Berlin",
+   "away_id": "Schalke 04",
+   "home_goals": 1,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-19",
+   "utc_date": "2026-09-12T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Augsburg",
+   "away_id": "Leverkusen",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-20",
+   "utc_date": "2026-09-12T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Dortmund",
+   "away_id": "Paderborn",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-21",
+   "utc_date": "2026-09-12T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Freiburg",
+   "away_id": "M'gladbach",
+   "home_goals": 5,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-22",
+   "utc_date": "2026-09-12T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Hoffenheim",
+   "away_id": "Stuttgart",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-23",
+   "utc_date": "2026-09-12T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Mainz",
+   "away_id": "Ein Frankfurt",
+   "home_goals": 1,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-24",
+   "utc_date": "2026-09-12T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "FC Koln",
+   "away_id": "Werder Bremen",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-25",
+   "utc_date": "2026-09-13T14:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "RB Leipzig",
+   "away_id": "Hamburg",
+   "home_goals": 5,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-26",
+   "utc_date": "2026-09-13T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Elversberg",
+   "away_id": "Bayern Munich",
+   "home_goals": 1,
+   "away_goals": 2
+  }
+ ]
+}

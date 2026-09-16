@@ -1,0 +1,549 @@
+{
+ "league": "PL",
+ "season": "2026-27",
+ "updated_at": "2026-09-16T21:59:15Z",
+ "teams": [
+  {
+   "id": "Arsenal",
+   "name": "Arsenal",
+   "short_name": "Arsenal",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Coventry",
+   "name": "Coventry",
+   "short_name": "Coventry",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Hull",
+   "name": "Hull",
+   "short_name": "Hull",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Man United",
+   "name": "Man United",
+   "short_name": "Man United",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Everton",
+   "name": "Everton",
+   "short_name": "Everton",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Crystal Palace",
+   "name": "Crystal Palace",
+   "short_name": "Crystal Palace",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Ipswich",
+   "name": "Ipswich",
+   "short_name": "Ipswich",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Sunderland",
+   "name": "Sunderland",
+   "short_name": "Sunderland",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Nott'm Forest",
+   "name": "Nott'm Forest",
+   "short_name": "Nott'm Forest",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Leeds",
+   "name": "Leeds",
+   "short_name": "Leeds",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Brentford",
+   "name": "Brentford",
+   "short_name": "Brentford",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Tottenham",
+   "name": "Tottenham",
+   "short_name": "Tottenham",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Brighton",
+   "name": "Brighton",
+   "short_name": "Brighton",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Aston Villa",
+   "name": "Aston Villa",
+   "short_name": "Aston Villa",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Man City",
+   "name": "Man City",
+   "short_name": "Man City",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Bournemouth",
+   "name": "Bournemouth",
+   "short_name": "Bournemouth",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Newcastle",
+   "name": "Newcastle",
+   "short_name": "Newcastle",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Liverpool",
+   "name": "Liverpool",
+   "short_name": "Liverpool",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Fulham",
+   "name": "Fulham",
+   "short_name": "Fulham",
+   "tla": null,
+   "crest": null
+  },
+  {
+   "id": "Chelsea",
+   "name": "Chelsea",
+   "short_name": "Chelsea",
+   "tla": null,
+   "crest": null
+  }
+ ],
+ "matches": [
+  {
+   "id": "csv-0",
+   "utc_date": "2026-08-21T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Arsenal",
+   "away_id": "Coventry",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-1",
+   "utc_date": "2026-08-22T12:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Hull",
+   "away_id": "Man United",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-2",
+   "utc_date": "2026-08-22T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Everton",
+   "away_id": "Crystal Palace",
+   "home_goals": 2,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-3",
+   "utc_date": "2026-08-22T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ipswich",
+   "away_id": "Sunderland",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-4",
+   "utc_date": "2026-08-22T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Nott'm Forest",
+   "away_id": "Leeds",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-5",
+   "utc_date": "2026-08-22T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brentford",
+   "away_id": "Tottenham",
+   "home_goals": 3,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-6",
+   "utc_date": "2026-08-23T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brighton",
+   "away_id": "Aston Villa",
+   "home_goals": 4,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-7",
+   "utc_date": "2026-08-23T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Man City",
+   "away_id": "Bournemouth",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-8",
+   "utc_date": "2026-08-23T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Newcastle",
+   "away_id": "Liverpool",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-9",
+   "utc_date": "2026-08-24T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Fulham",
+   "away_id": "Chelsea",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-10",
+   "utc_date": "2026-08-28T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Crystal Palace",
+   "away_id": "Man City",
+   "home_goals": 1,
+   "away_goals": 4
+  },
+  {
+   "id": "csv-11",
+   "utc_date": "2026-08-29T12:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Liverpool",
+   "away_id": "Nott'm Forest",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-12",
+   "utc_date": "2026-08-29T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Bournemouth",
+   "away_id": "Everton",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-13",
+   "utc_date": "2026-08-29T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Coventry",
+   "away_id": "Hull",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-14",
+   "utc_date": "2026-08-29T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Tottenham",
+   "away_id": "Newcastle",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-15",
+   "utc_date": "2026-08-30T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Chelsea",
+   "away_id": "Brighton",
+   "home_goals": 4,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-16",
+   "utc_date": "2026-08-30T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Leeds",
+   "away_id": "Brentford",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-17",
+   "utc_date": "2026-08-30T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sunderland",
+   "away_id": "Fulham",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-18",
+   "utc_date": "2026-08-30T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Man United",
+   "away_id": "Ipswich",
+   "home_goals": 5,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-19",
+   "utc_date": "2026-08-31T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Aston Villa",
+   "away_id": "Arsenal",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-20",
+   "utc_date": "2026-09-04T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Ipswich",
+   "away_id": "Liverpool",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-21",
+   "utc_date": "2026-09-05T12:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Newcastle",
+   "away_id": "Bournemouth",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-22",
+   "utc_date": "2026-09-05T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brentford",
+   "away_id": "Sunderland",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-23",
+   "utc_date": "2026-09-05T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Brighton",
+   "away_id": "Leeds",
+   "home_goals": 1,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-24",
+   "utc_date": "2026-09-05T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Fulham",
+   "away_id": "Crystal Palace",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-25",
+   "utc_date": "2026-09-05T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Man City",
+   "away_id": "Coventry",
+   "home_goals": 1,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-26",
+   "utc_date": "2026-09-05T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Nott'm Forest",
+   "away_id": "Tottenham",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-27",
+   "utc_date": "2026-09-05T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Hull",
+   "away_id": "Aston Villa",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-28",
+   "utc_date": "2026-09-06T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Everton",
+   "away_id": "Man United",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-29",
+   "utc_date": "2026-09-06T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Arsenal",
+   "away_id": "Chelsea",
+   "home_goals": 2,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-30",
+   "utc_date": "2026-09-12T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Aston Villa",
+   "away_id": "Nott'm Forest",
+   "home_goals": 1,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-31",
+   "utc_date": "2026-09-12T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Bournemouth",
+   "away_id": "Brentford",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-32",
+   "utc_date": "2026-09-12T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Chelsea",
+   "away_id": "Hull",
+   "home_goals": 2,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-33",
+   "utc_date": "2026-09-12T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Crystal Palace",
+   "away_id": "Ipswich",
+   "home_goals": 2,
+   "away_goals": 3
+  },
+  {
+   "id": "csv-34",
+   "utc_date": "2026-09-12T15:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Liverpool",
+   "away_id": "Fulham",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-35",
+   "utc_date": "2026-09-12T17:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Tottenham",
+   "away_id": "Everton",
+   "home_goals": 0,
+   "away_goals": 0
+  },
+  {
+   "id": "csv-36",
+   "utc_date": "2026-09-12T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Sunderland",
+   "away_id": "Arsenal",
+   "home_goals": 0,
+   "away_goals": 2
+  },
+  {
+   "id": "csv-37",
+   "utc_date": "2026-09-13T14:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Coventry",
+   "away_id": "Brighton",
+   "home_goals": 0,
+   "away_goals": 5
+  },
+  {
+   "id": "csv-38",
+   "utc_date": "2026-09-13T16:30:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Man United",
+   "away_id": "Man City",
+   "home_goals": 0,
+   "away_goals": 1
+  },
+  {
+   "id": "csv-39",
+   "utc_date": "2026-09-14T20:00:00Z",
+   "matchday": null,
+   "status": "FINISHED",
+   "home_id": "Leeds",
+   "away_id": "Newcastle",
+   "home_goals": 4,
+   "away_goals": 1
+  }
+ ]
+}

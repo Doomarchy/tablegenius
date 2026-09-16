@@ -1,0 +1,37 @@
+{
+  "code": "PD",
+  "name": "LaLiga",
+  "country": "Spain",
+  "season": "2026-27",
+  "sources": {
+    "football_data_org": { "competition": "PD", "season": 2026 },
+    "football_data_co_uk": { "code": "SP1" }
+  },
+  "team_count": 20,
+  "rounds": 2,
+  "tiebreakers": ["points", "h2h_points", "h2h_goal_difference", "goal_difference", "goals_for", "fair_play", "playoff"],
+  "h2h_requires_all_matches_played": true,
+  "tied_title_playoff": false,
+  "tied_relegation_playoff": false,
+  "zones": {
+    "ucl": { "label": "Champions League", "positions": [1, 4] },
+    "ucl_qualifying": { "label": "Champions League qualifying", "positions": null },
+    "uel": { "label": "Europa League", "positions": [5, 6] },
+    "uecl": { "label": "Conference League play-off", "positions": [7, 7] },
+    "relegation_playoff": { "label": "Relegation play-off", "positions": null },
+    "relegation": { "label": "Relegation", "positions": [18, 20] }
+  },
+  "extra_ucl_place": false,
+  "domestic_cups": [
+    { "name": "Copa del Rey", "grants": "uel" }
+  ],
+  "assumptions": [
+    "The Copa del Rey winner's Europa League place is assumed to pass down the table, so 5th and 6th go to the Europa League and 7th to the Conference League play-off round.",
+    "Head-to-head criteria are only applied once the tied teams have played each other twice; until then overall goal difference is used.",
+    "Fair-play points are not available from the data source, so a tie that reaches that criterion is shown as unresolved.",
+    "A possible fifth Champions League place (European Performance Spot) is not modelled. UEFA decides it in May 2027."
+  ],
+  "rule_sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_La_Liga"
+  ]
+}
