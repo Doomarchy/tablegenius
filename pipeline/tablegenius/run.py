@@ -2,31 +2,41 @@
 
     python -m tablegenius.run --season 2026-27                 # live data (needs FOOTBALL_DATA_TOKEN)
     python -m tablegenius.run --season 2026-27 --source csv    # preview from football-data.co.uk, no token
+    python -m tablegenius.run --no-model                       # tables only
+    python -m tablegenius.run --force-model                    # re-run the model even if no result changed
 
-Writes site/public/data/<season>/<CODE>/standings.json and matches.json plus
-site/public/data/index.json.
+Writes site/public/data/<season>/<CODE>/standings.json (table + probabilities) and
+matches.json, plus site/public/data/index.json.
 """
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import logging
 import os
 import sys
+import time
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+import numpy as np
 from dotenv import load_dotenv
 
 from .config import LEAGUE_ORDER, load_league
+from .dataset import assemble_live
 from .fetch import FootballDataClient
 from .history import fetch_season_csv
-from .paths import CACHE_DIR, DATA_DIR, ENV_FILE
+from .model import ModelParams, fit, sample_ratings
+from .paths import CACHE_DIR, CONFIG_DIR, DATA_DIR, ENV_FILE
+from .simulate import simulate, team_probabilities
 from .sources import normalize_csv_matches, normalize_org_matches, normalize_org_standings
-from .standings import build_standings
+from .standings import build_standings, is_finished
 
 log = logging.getLogger("tablegenius")
+
+MODEL_CONFIG = CONFIG_DIR / "model.json"
 
 
 def now_iso() -> str:
@@ -38,10 +48,24 @@ def write_json(path: Path, payload: Any) -> None:
     path.write_text(json.dumps(payload, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
 
 
+def read_json(path: Path) -> Any | None:
+    if path.exists():
+        try:
+            return json.loads(path.read_text(encoding="utf-8"))
+        except json.JSONDecodeError:
+            return None
+    return None
+
+
 def league_meta(cfg: dict[str, Any]) -> dict[str, Any]:
     keys = ["code", "name", "country", "season", "team_count", "rounds", "tiebreakers", "zones",
             "assumptions", "domestic_cups", "extra_ucl_place", "tied_title_playoff", "tied_relegation_playoff"]
     return {k: cfg.get(k) for k in keys}
+
+
+def results_hash(matches: list[dict[str, Any]]) -> str:
+    finished = sorted((str(m["id"]), int(m["home_goals"]), int(m["away_goals"])) for m in matches if is_finished(m))
+    return hashlib.sha1(json.dumps(finished).encode()).hexdigest()
 
 
 def compare_with_api(rows: list[dict[str, Any]], api_table: list[dict[str, Any]]) -> dict[str, Any]:
@@ -66,7 +90,68 @@ def compare_with_api(rows: list[dict[str, Any]], api_table: list[dict[str, Any]]
     return {"available": True, "totals_match": totals_match, "diffs": diffs}
 
 
-def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient | None, out_dir: Path) -> dict[str, Any]:
+def run_model(cfg: dict[str, Any], matches: list[dict[str, Any]], rows: list[dict[str, Any]],
+              previous: dict[str, Any] | None, model_cfg: dict[str, Any], force: bool,
+              n_sims_override: int | None = None) -> tuple[dict[Any, dict[str, Any]], dict[str, Any]]:
+    """Fit ratings and simulate the season; reuse the previous run when no result changed."""
+    code = cfg["code"]
+    h = results_hash(matches)
+    prev_model = (previous or {}).get("model")
+    if (prev_model and prev_model.get("results_hash") == h and not force and n_sims_override is None
+            and previous and all("probs" in r for r in previous.get("teams", []))):
+        log.info("%s: no new results since the last model run; keeping its probabilities", code)
+        return {r["id"]: r["probs"] for r in previous["teams"]}, prev_model
+
+    t0 = time.time()
+    params = ModelParams.from_dict(model_cfg)
+    as_of = datetime.now(timezone.utc).replace(tzinfo=None, microsecond=0)
+    team_ids = [r["id"] for r in rows]
+    data = assemble_live(cfg, matches, team_ids, as_of, params, int(model_cfg.get("history_seasons", 2)))
+    ratings = fit(data, params)
+    if not ratings.converged:
+        log.warning("%s: optimiser did not report convergence", code)
+    played = [(m["home_id"], m["away_id"], m["home_goals"], m["away_goals"]) for m in matches if is_finished(m)]
+    fixtures = [(m["home_id"], m["away_id"]) for m in matches if not is_finished(m) and m["status"] != "CANCELLED"]
+    n_sims = n_sims_override or int(model_cfg.get("n_simulations", 10000))
+    seed = int(h[:8], 16)
+    n_draws = int(model_cfg.get("n_rating_draws", 100)) if model_cfg.get("rating_uncertainty", True) else 1
+    draws = sample_ratings(ratings, n_draws, np.random.default_rng(seed + 1), params.rho_bounds)
+    sim = simulate(cfg, ratings, team_ids, played, fixtures, n_sims=n_sims, seed=seed, max_goals=params.max_goals,
+                   ratings_draws=draws)
+    probs = team_probabilities(cfg, sim, ratings)
+    names = {r["id"]: r["short_name"] for r in rows}
+    promoted = [names[t] for i, t in enumerate(team_ids) if not data.established[i]]
+    model_block = {
+        "as_of": as_of.isoformat() + "Z",
+        "results_hash": h,
+        "n_sims": n_sims,
+        "n_rating_draws": len(draws),
+        "seed": seed,
+        "fitted_matches": ratings.n_matches,
+        "effective_matches": round(ratings.effective_matches, 1),
+        "seasons": data.seasons,
+        "home_advantage": round(ratings.home_advantage, 4),
+        "intercept": round(ratings.intercept, 4),
+        "avg_home_goals": round(float(__import__("math").exp(ratings.intercept + ratings.home_advantage)), 3),
+        "avg_away_goals": round(float(__import__("math").exp(ratings.intercept)), 3),
+        "rho": round(ratings.rho, 4),
+        "xi": params.xi,
+        "half_life_days": round(params.half_life_days, 1),
+        "prior_strength": params.prior_strength,
+        "promoted_prior": {"attack": params.promoted_attack, "defence": params.promoted_defence},
+        "promoted_teams": promoted,
+        "fixtures_remaining": len(fixtures),
+        "converged": ratings.converged,
+        "runtime_seconds": round(time.time() - t0, 1),
+    }
+    log.info("%s: model fitted on %d matches (%.0f effective), %d fixtures simulated x %d in %.1fs; home adv %.3f, rho %.3f",
+             code, ratings.n_matches, ratings.effective_matches, len(fixtures), n_sims, time.time() - t0,
+             ratings.home_advantage, ratings.rho)
+    return probs, model_block
+
+
+def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient | None, out_dir: Path,
+                   model_cfg: dict[str, Any] | None, force_model: bool, n_sims: int | None) -> dict[str, Any]:
     code = cfg["code"]
     src = cfg["sources"]
     if source == "api":
@@ -90,13 +175,25 @@ def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient 
         else:
             log.warning("%s: totals DIFFER from football-data.org: %s", code, check["diffs"])
 
-    updated = now_iso()
     league_dir = out_dir / cfg["season"] / code
+    previous = read_json(league_dir / "standings.json")
+    model_block = None
+    if model_cfg is not None and source == "api":
+        try:
+            probs, model_block = run_model(cfg, matches, table["teams"], previous, model_cfg, force_model, n_sims)
+            for row in table["teams"]:
+                row["probs"] = probs.get(row["id"])
+        except Exception as exc:
+            log.error("%s: model failed, writing table without probabilities: %s", code, exc, exc_info=True)
+            model_block = None
+
+    updated = now_iso()
     standings = {
         "league": league_meta(cfg),
         "updated_at": updated,
         "source": "football-data.org" if source == "api" else "football-data.co.uk (preview)",
         "matchday": table["matchday"],
+        "model": model_block,
         "teams": table["teams"],
         "source_check": check,
     }
@@ -105,6 +202,7 @@ def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient 
         "league": code,
         "season": cfg["season"],
         "updated_at": updated,
+        "results_hash": results_hash(matches),
         "teams": list(teams.values()),
         "matches": matches,
     })
@@ -122,11 +220,14 @@ def write_index(season: str, out_dir: Path) -> None:
         if not path.exists():
             continue
         s = json.loads(path.read_text(encoding="utf-8"))
+        model = s.get("model") or {}
         leagues.append({"code": code, "name": s["league"]["name"], "country": s["league"]["country"],
-                        "updated_at": s["updated_at"], "matchday": s["matchday"], "source": s.get("source")})
+                        "updated_at": s["updated_at"], "matchday": s["matchday"], "source": s.get("source"),
+                        "has_probabilities": bool(model), "model_as_of": model.get("as_of")})
     write_json(out_dir / "index.json", {
         "season": season,
         "updated_at": max((lg["updated_at"] for lg in leagues), default=now_iso()),
+        "has_backtest": (out_dir / "backtest.json").exists(),
         "leagues": leagues,
     })
 
@@ -137,6 +238,9 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--leagues", help="comma-separated codes, e.g. PL,PD (default: all)")
     parser.add_argument("--source", choices=["api", "csv"], default="api")
     parser.add_argument("--no-cache", action="store_true", help="ignore cached API responses")
+    parser.add_argument("--no-model", action="store_true", help="tables only, skip ratings and simulation")
+    parser.add_argument("--force-model", action="store_true", help="re-run the model even if no result changed")
+    parser.add_argument("--sims", type=int, help="override the number of simulations")
     parser.add_argument("--out", type=Path, default=DATA_DIR)
     parser.add_argument("-v", "--verbose", action="store_true")
     args = parser.parse_args(argv)
@@ -154,11 +258,13 @@ def main(argv: list[str] | None = None) -> int:
             return 2
         client = FootballDataClient(token, CACHE_DIR, cache_ttl_seconds=0 if args.no_cache else 600)
 
+    model_cfg = None if args.no_model else json.loads(MODEL_CONFIG.read_text(encoding="utf-8"))
+
     failures = 0
     for code in codes:
         cfg = load_league(args.season, code)
         try:
-            process_league(cfg, args.source, client, args.out)
+            process_league(cfg, args.source, client, args.out, model_cfg, args.force_model, args.sims)
         except Exception as exc:  # keep going so one league does not block the others
             failures += 1
             log.error("%s failed: %s", code, exc, exc_info=args.verbose)

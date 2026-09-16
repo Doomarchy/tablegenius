@@ -68,10 +68,19 @@ def normalize_csv_matches(csv_text: str) -> tuple[list[dict[str, Any]], dict[str
     """
     df = pd.read_csv(io.StringIO(csv_text.lstrip("﻿")))
     df = df.dropna(subset=["HomeTeam", "AwayTeam", "FTHG", "FTAG"])
+    odds_cols = next((c for c in (("B365H", "B365D", "B365A"), ("PSH", "PSD", "PSA"), ("AvgH", "AvgD", "AvgA"))
+                      if all(col in df.columns for col in c)), None)
     teams: dict[str, dict[str, Any]] = {}
     matches: list[dict[str, Any]] = []
     for i, row in enumerate(df.itertuples(index=False)):
         home, away = str(row.HomeTeam).strip(), str(row.AwayTeam).strip()
+        odds = None
+        if odds_cols:
+            vals = [getattr(row, c, None) for c in odds_cols]
+            if all(isinstance(v, (int, float)) and v == v and v > 1 for v in vals):
+                inv = [1.0 / v for v in vals]
+                total = sum(inv)
+                odds = {"home": inv[0] / total, "draw": inv[1] / total, "away": inv[2] / total}
         for name in (home, away):
             teams.setdefault(name, {"id": name, "name": name, "short_name": name, "tla": None, "crest": None})
         date = datetime.strptime(str(row.Date), "%d/%m/%Y")
@@ -88,5 +97,6 @@ def normalize_csv_matches(csv_text: str) -> tuple[list[dict[str, Any]], dict[str
             "away_id": away,
             "home_goals": int(row.FTHG),
             "away_goals": int(row.FTAG),
+            "odds": odds,  # bookmaker-implied outcome probabilities (overround removed), if present
         })
     return matches, teams

@@ -1,0 +1,361 @@
+{
+ "season": "2025-26",
+ "leagues": [
+  "PL",
+  "PD",
+  "SA",
+  "BL1",
+  "FL1"
+ ],
+ "generated_at": "2026-09-16T22:52:03Z",
+ "n_sims": 3000,
+ "n_rating_draws": 100,
+ "checkpoints": [
+  0.0,
+  0.1,
+  0.2,
+  0.3,
+  0.4,
+  0.5,
+  0.6,
+  0.7,
+  0.8,
+  0.9
+ ],
+ "model_params": {
+  "xi": 0.0018,
+  "half_life_days": 385.1,
+  "prior_strength": 6.0,
+  "promoted_prior": {
+   "attack": -0.27,
+   "defence": -0.23
+  }
+ },
+ "outcome_scores": {
+  "title": {
+   "label": "Win the title",
+   "model": {
+    "brier": 0.0085,
+    "log_loss": 0.0367,
+    "n": 960
+   },
+   "no_ratings": {
+    "brier": 0.0221,
+    "log_loss": 0.0852,
+    "n": 960
+   },
+   "uniform": {
+    "brier": 0.0494,
+    "log_loss": 0.2045,
+    "n": 960
+   }
+  },
+  "ucl": {
+   "label": "Champions League place",
+   "model": {
+    "brier": 0.0705,
+    "log_loss": 0.2179,
+    "n": 960
+   },
+   "no_ratings": {
+    "brier": 0.0786,
+    "log_loss": 0.2515,
+    "n": 960
+   },
+   "uniform": {
+    "brier": 0.1648,
+    "log_loss": 0.5114,
+    "n": 960
+   }
+  },
+  "europe": {
+   "label": "Any European place",
+   "model": {
+    "brier": 0.0851,
+    "log_loss": 0.2643,
+    "n": 960
+   },
+   "no_ratings": {
+    "brier": 0.1024,
+    "log_loss": 0.32,
+    "n": 960
+   },
+   "uniform": {
+    "brier": 0.2313,
+    "log_loss": 0.6552,
+    "n": 960
+   }
+  },
+  "relegation": {
+   "label": "Relegated",
+   "model": {
+    "brier": 0.06,
+    "log_loss": 0.1935,
+    "n": 960
+   },
+   "no_ratings": {
+    "brier": 0.0707,
+    "log_loss": 0.2316,
+    "n": 960
+   },
+   "uniform": {
+    "brier": 0.1167,
+    "log_loss": 0.395,
+    "n": 960
+   }
+  }
+ },
+ "by_checkpoint": [
+  {
+   "fraction": 0.0,
+   "model": {
+    "brier": 0.0891,
+    "log_loss": 0.2777,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.1403,
+    "log_loss": 0.4414,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.1,
+   "model": {
+    "brier": 0.0819,
+    "log_loss": 0.2566,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.1137,
+    "log_loss": 0.3641,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.2,
+   "model": {
+    "brier": 0.0712,
+    "log_loss": 0.2276,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0918,
+    "log_loss": 0.2991,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.3,
+   "model": {
+    "brier": 0.0674,
+    "log_loss": 0.2073,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0782,
+    "log_loss": 0.2537,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.4,
+   "model": {
+    "brier": 0.0565,
+    "log_loss": 0.179,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0647,
+    "log_loss": 0.2122,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.5,
+   "model": {
+    "brier": 0.0452,
+    "log_loss": 0.1511,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0501,
+    "log_loss": 0.1686,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.6,
+   "model": {
+    "brier": 0.0454,
+    "log_loss": 0.1426,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0475,
+    "log_loss": 0.1536,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.7,
+   "model": {
+    "brier": 0.0382,
+    "log_loss": 0.1203,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0356,
+    "log_loss": 0.1193,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.8,
+   "model": {
+    "brier": 0.036,
+    "log_loss": 0.1231,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0343,
+    "log_loss": 0.1184,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  },
+  {
+   "fraction": 0.9,
+   "model": {
+    "brier": 0.0295,
+    "log_loss": 0.0955,
+    "n": 384
+   },
+   "no_ratings": {
+    "brier": 0.0282,
+    "log_loss": 0.09,
+    "n": 384
+   },
+   "uniform": {
+    "brier": 0.1406,
+    "log_loss": 0.4415,
+    "n": 384
+   }
+  }
+ ],
+ "calibration": [
+  {
+   "bin": "0–5%",
+   "n": 2329,
+   "predicted": 0.006,
+   "observed": 0.005
+  },
+  {
+   "bin": "5–20%",
+   "n": 514,
+   "predicted": 0.11,
+   "observed": 0.126
+  },
+  {
+   "bin": "20–40%",
+   "n": 267,
+   "predicted": 0.291,
+   "observed": 0.311
+  },
+  {
+   "bin": "40–60%",
+   "n": 161,
+   "predicted": 0.49,
+   "observed": 0.466
+  },
+  {
+   "bin": "60–80%",
+   "n": 164,
+   "predicted": 0.706,
+   "observed": 0.659
+  },
+  {
+   "bin": "80–95%",
+   "n": 126,
+   "predicted": 0.885,
+   "observed": 0.873
+  },
+  {
+   "bin": "95–100%",
+   "n": 267,
+   "predicted": 0.991,
+   "observed": 0.993
+  }
+ ],
+ "match_scores": {
+  "model": {
+   "brier": 0.5954,
+   "log_loss": 0.9984,
+   "n": 1752
+  },
+  "bookmaker": {
+   "brier": 0.5827,
+   "log_loss": 0.979,
+   "n": 1752
+  },
+  "uniform": {
+   "brier": 0.6667,
+   "log_loss": 1.0986,
+   "n": 1752
+  },
+  "n_with_bookmaker": 1752
+ },
+ "skill_vs_uniform": 0.6012,
+ "skill_vs_no_ratings": 0.1812,
+ "summary": [
+  "We re-ran the model at ten points during the 2025-26 season in all five leagues, each time using only the results known at that moment, and compared its title, Champions League, European and relegation probabilities with what actually happened (3840 team-outcome forecasts in total).",
+  "Measured by the Brier score (lower is better, 0 is perfect), the model's forecasts were 60% better than giving every team the same chance, and 18% better than a version that knows the current table but treats every team as equally strong. That second number is the value the team ratings add on top of the points already won.",
+  "Title forecasts scored 0.009 against 0.022 for the table-only version; relegation forecasts scored 0.060 against 0.071.",
+  "Calibration check: when the model gave something a chance in the 20–40% range (on average 29%), it happened 31% of the time across 267 cases.",
+  "On individual matches, the model's win/draw/loss forecasts had a log loss of 0.998 versus 0.979 for the bookmakers' pre-match odds over 1752 matches, i.e. 2.0% worse than the market, which uses far more information (injuries, line-ups, transfers) than results alone."
+ ]
+}

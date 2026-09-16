@@ -1,7 +1,9 @@
-import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useEffect, useMemo, useState } from 'react'
+import { Link, useParams } from 'react-router-dom'
 import { loadStandings } from '../api'
-import LeagueTable from '../components/LeagueTable'
+import { buildColumns } from '../columns'
+import ColumnGuide from '../components/ColumnGuide'
+import LeagueTable, { type TableView } from '../components/LeagueTable'
 import ZoneLegend from '../components/ZoneLegend'
 import { formatUpdated } from '../format'
 import type { DataIndex, Standings } from '../types'
@@ -10,10 +12,27 @@ function describeCriterion(c: string): string {
   return c.replaceAll('h2h', 'head-to-head').replaceAll('_', ' ')
 }
 
+function initialView(): TableView {
+  try {
+    const saved = localStorage.getItem('tg-view') as TableView | null
+    if (saved === 'table' || saved === 'chances' || saved === 'both') return saved
+  } catch {
+    /* ignore */
+  }
+  return window.matchMedia('(max-width: 720px)').matches ? 'chances' : 'both'
+}
+
+const VIEWS: { key: TableView; label: string }[] = [
+  { key: 'table', label: 'Table' },
+  { key: 'chances', label: 'Chances' },
+  { key: 'both', label: 'Both' },
+]
+
 export default function LeaguePage({ index }: { index: DataIndex }) {
   const { code = '' } = useParams()
   const [standings, setStandings] = useState<Standings | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [view, setView] = useState<TableView>(initialView)
 
   useEffect(() => {
     setStandings(null)
@@ -26,25 +45,56 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
     document.title = league ? `${league.name} table · TableGenius` : 'TableGenius'
   }, [index, code])
 
+  const chooseView = (v: TableView) => {
+    setView(v)
+    try {
+      localStorage.setItem('tg-view', v)
+    } catch {
+      /* ignore */
+    }
+  }
+
+  const hasProbs = !!standings?.model && standings.teams.some((t) => t.probs)
+  const columns = useMemo(() => (standings ? buildColumns(standings.league, hasProbs) : []), [standings, hasProbs])
+
   if (error) return <p className="notice error">{error}</p>
   if (!standings) return <p className="notice">Loading table…</p>
 
-  const { league, matchday } = standings
+  const { league, matchday, model } = standings
   return (
     <section>
       <div className="league-head">
-        <h1>{league.name}</h1>
-        <p className="league-sub">
-          {league.country} · {league.season}
-          {matchday.current !== null && ` · Matchday ${matchday.current} of ${matchday.total}`}
-          {` · ${matchday.matches_played}/${matchday.matches_total} matches played`}
-        </p>
+        <div>
+          <h1>{league.name}</h1>
+          <p className="league-sub">
+            {league.country} · {league.season}
+            {matchday.current !== null && ` · Matchday ${matchday.current} of ${matchday.total}`}
+            {` · ${matchday.matches_played}/${matchday.matches_total} matches played`}
+          </p>
+        </div>
+        {hasProbs && (
+          <div className="view-switch" role="group" aria-label="Columns to show">
+            {VIEWS.map((v) => (
+              <button key={v.key} type="button" className={`seg${view === v.key ? ' active' : ''}`} onClick={() => chooseView(v.key)} aria-pressed={view === v.key}>
+                {v.label}
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-      <LeagueTable standings={standings} />
+      <LeagueTable standings={standings} view={hasProbs ? view : 'table'} />
       <ZoneLegend league={league} />
       {standings.source_check.available && standings.source_check.totals_match === false && (
         <p className="notice error">Warning: computed totals differ from the data provider. Check the pipeline logs.</p>
       )}
+      {hasProbs && model && (
+        <p className="muted small model-line">
+          Chances from {model.n_sims.toLocaleString()} simulated seasons using {model.n_rating_draws} plausible rating sets, fitted on{' '}
+          {model.fitted_matches.toLocaleString()} matches. Ratings as of {new Date(model.as_of).toLocaleDateString(undefined, { dateStyle: 'medium' })}.{' '}
+          <Link to="/about">How the model works</Link>.
+        </p>
+      )}
+      <ColumnGuide columns={columns} hasProbs={hasProbs} />
       <details className="assumptions">
         <summary>Rules and assumptions for this league</summary>
         <ul>

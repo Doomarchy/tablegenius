@@ -1,0 +1,396 @@
+{
+ "E0": {
+  "Arsenal": {
+   "id": 57,
+   "name": "Arsenal FC"
+  },
+  "Aston Villa": {
+   "id": 58,
+   "name": "Aston Villa FC"
+  },
+  "Bournemouth": {
+   "id": 1044,
+   "name": "AFC Bournemouth"
+  },
+  "Brentford": {
+   "id": 402,
+   "name": "Brentford FC"
+  },
+  "Brighton": {
+   "id": 397,
+   "name": "Brighton & Hove Albion FC"
+  },
+  "Chelsea": {
+   "id": 61,
+   "name": "Chelsea FC"
+  },
+  "Coventry": {
+   "id": 1076,
+   "name": "Coventry City FC"
+  },
+  "Crystal Palace": {
+   "id": 354,
+   "name": "Crystal Palace FC"
+  },
+  "Everton": {
+   "id": 62,
+   "name": "Everton FC"
+  },
+  "Fulham": {
+   "id": 63,
+   "name": "Fulham FC"
+  },
+  "Hull": {
+   "id": 322,
+   "name": "Hull City AFC"
+  },
+  "Ipswich": {
+   "id": 349,
+   "name": "Ipswich Town FC"
+  },
+  "Leeds": {
+   "id": 341,
+   "name": "Leeds United FC"
+  },
+  "Liverpool": {
+   "id": 64,
+   "name": "Liverpool FC"
+  },
+  "Man City": {
+   "id": 65,
+   "name": "Manchester City FC"
+  },
+  "Man United": {
+   "id": 66,
+   "name": "Manchester United FC"
+  },
+  "Newcastle": {
+   "id": 67,
+   "name": "Newcastle United FC"
+  },
+  "Nott'm Forest": {
+   "id": 351,
+   "name": "Nottingham Forest FC"
+  },
+  "Sunderland": {
+   "id": 71,
+   "name": "Sunderland AFC"
+  },
+  "Tottenham": {
+   "id": 73,
+   "name": "Tottenham Hotspur FC"
+  }
+ },
+ "SP1": {
+  "Alaves": {
+   "id": 263,
+   "name": "Deportivo Alavés"
+  },
+  "Ath Bilbao": {
+   "id": 77,
+   "name": "Athletic Club"
+  },
+  "Ath Madrid": {
+   "id": 78,
+   "name": "Club Atlético de Madrid"
+  },
+  "Barcelona": {
+   "id": 81,
+   "name": "FC Barcelona"
+  },
+  "Betis": {
+   "id": 90,
+   "name": "Real Betis Balompié"
+  },
+  "Celta": {
+   "id": 558,
+   "name": "RC Celta de Vigo"
+  },
+  "Elche": {
+   "id": 285,
+   "name": "Elche CF"
+  },
+  "Espanol": {
+   "id": 80,
+   "name": "RCD Espanyol de Barcelona"
+  },
+  "Getafe": {
+   "id": 82,
+   "name": "Getafe CF"
+  },
+  "La Coruna": {
+   "id": 560,
+   "name": "RC Deportivo La Coruña"
+  },
+  "Levante": {
+   "id": 88,
+   "name": "Levante UD"
+  },
+  "Malaga": {
+   "id": 84,
+   "name": "Málaga CF"
+  },
+  "Osasuna": {
+   "id": 79,
+   "name": "CA Osasuna"
+  },
+  "Real Madrid": {
+   "id": 86,
+   "name": "Real Madrid CF"
+  },
+  "Santander": {
+   "id": 5335,
+   "name": "Real Racing Club de Santander"
+  },
+  "Sevilla": {
+   "id": 559,
+   "name": "Sevilla FC"
+  },
+  "Sociedad": {
+   "id": 92,
+   "name": "Real Sociedad de Fútbol"
+  },
+  "Valencia": {
+   "id": 95,
+   "name": "Valencia CF"
+  },
+  "Vallecano": {
+   "id": 87,
+   "name": "Rayo Vallecano de Madrid"
+  },
+  "Villarreal": {
+   "id": 94,
+   "name": "Villarreal CF"
+  }
+ },
+ "I1": {
+  "Atalanta": {
+   "id": 102,
+   "name": "Atalanta BC"
+  },
+  "Bologna": {
+   "id": 103,
+   "name": "Bologna FC 1909"
+  },
+  "Cagliari": {
+   "id": 104,
+   "name": "Cagliari Calcio"
+  },
+  "Como": {
+   "id": 7397,
+   "name": "Como 1907"
+  },
+  "Fiorentina": {
+   "id": 99,
+   "name": "ACF Fiorentina"
+  },
+  "Frosinone": {
+   "id": 470,
+   "name": "Frosinone Calcio"
+  },
+  "Genoa": {
+   "id": 107,
+   "name": "Genoa CFC"
+  },
+  "Inter": {
+   "id": 108,
+   "name": "FC Internazionale Milano"
+  },
+  "Juventus": {
+   "id": 109,
+   "name": "Juventus FC"
+  },
+  "Lazio": {
+   "id": 110,
+   "name": "SS Lazio"
+  },
+  "Lecce": {
+   "id": 5890,
+   "name": "US Lecce"
+  },
+  "Milan": {
+   "id": 98,
+   "name": "AC Milan"
+  },
+  "Monza": {
+   "id": 5911,
+   "name": "AC Monza"
+  },
+  "Napoli": {
+   "id": 113,
+   "name": "SSC Napoli"
+  },
+  "Parma": {
+   "id": 112,
+   "name": "Parma Calcio 1913"
+  },
+  "Roma": {
+   "id": 100,
+   "name": "AS Roma"
+  },
+  "Sassuolo": {
+   "id": 471,
+   "name": "US Sassuolo Calcio"
+  },
+  "Torino": {
+   "id": 586,
+   "name": "Torino FC"
+  },
+  "Udinese": {
+   "id": 115,
+   "name": "Udinese Calcio"
+  },
+  "Venezia": {
+   "id": 454,
+   "name": "Venezia FC"
+  }
+ },
+ "D1": {
+  "Augsburg": {
+   "id": 16,
+   "name": "FC Augsburg"
+  },
+  "Bayern Munich": {
+   "id": 5,
+   "name": "FC Bayern München"
+  },
+  "Dortmund": {
+   "id": 4,
+   "name": "Borussia Dortmund"
+  },
+  "Ein Frankfurt": {
+   "id": 19,
+   "name": "Eintracht Frankfurt"
+  },
+  "Elversberg": {
+   "id": 719,
+   "name": "SV 07 Elversberg"
+  },
+  "FC Koln": {
+   "id": 1,
+   "name": "1. FC Köln"
+  },
+  "Freiburg": {
+   "id": 17,
+   "name": "SC Freiburg"
+  },
+  "Hamburg": {
+   "id": 7,
+   "name": "Hamburger SV"
+  },
+  "Hoffenheim": {
+   "id": 2,
+   "name": "TSG 1899 Hoffenheim"
+  },
+  "Leverkusen": {
+   "id": 3,
+   "name": "Bayer 04 Leverkusen"
+  },
+  "M'gladbach": {
+   "id": 18,
+   "name": "Borussia Mönchengladbach"
+  },
+  "Mainz": {
+   "id": 15,
+   "name": "1. FSV Mainz 05"
+  },
+  "Paderborn": {
+   "id": 29,
+   "name": "SC Paderborn 07"
+  },
+  "RB Leipzig": {
+   "id": 721,
+   "name": "RB Leipzig"
+  },
+  "Schalke 04": {
+   "id": 6,
+   "name": "FC Schalke 04"
+  },
+  "Stuttgart": {
+   "id": 10,
+   "name": "VfB Stuttgart"
+  },
+  "Union Berlin": {
+   "id": 28,
+   "name": "1. FC Union Berlin"
+  },
+  "Werder Bremen": {
+   "id": 12,
+   "name": "SV Werder Bremen"
+  }
+ },
+ "F1": {
+  "Angers": {
+   "id": 532,
+   "name": "Angers SCO"
+  },
+  "Auxerre": {
+   "id": 519,
+   "name": "AJ Auxerre"
+  },
+  "Brest": {
+   "id": 512,
+   "name": "Stade Brestois 29"
+  },
+  "Le Havre": {
+   "id": 533,
+   "name": "Le Havre AC"
+  },
+  "Le Mans": {
+   "id": 535,
+   "name": "Le Mans FC"
+  },
+  "Lens": {
+   "id": 546,
+   "name": "Racing Club de Lens"
+  },
+  "Lille": {
+   "id": 521,
+   "name": "Lille OSC"
+  },
+  "Lorient": {
+   "id": 525,
+   "name": "FC Lorient"
+  },
+  "Lyon": {
+   "id": 523,
+   "name": "Olympique Lyonnais"
+  },
+  "Marseille": {
+   "id": 516,
+   "name": "Olympique de Marseille"
+  },
+  "Monaco": {
+   "id": 548,
+   "name": "AS Monaco FC"
+  },
+  "Nice": {
+   "id": 522,
+   "name": "OGC Nice"
+  },
+  "Paris FC": {
+   "id": 1045,
+   "name": "Paris FC"
+  },
+  "Paris SG": {
+   "id": 524,
+   "name": "Paris Saint-Germain FC"
+  },
+  "Rennes": {
+   "id": 529,
+   "name": "Stade Rennais FC 1901"
+  },
+  "Strasbourg": {
+   "id": 576,
+   "name": "RC Strasbourg Alsace"
+  },
+  "Toulouse": {
+   "id": 511,
+   "name": "Toulouse FC"
+  },
+  "Troyes": {
+   "id": 531,
+   "name": "ES Troyes AC"
+  }
+ }
+}

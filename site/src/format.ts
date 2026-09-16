@@ -12,3 +12,16 @@ export function formatUpdated(iso: string): string {
 }
 
 export const signed = (n: number) => (n > 0 ? `+${n}` : String(n))
+
+/** Whole-number percentage for table cells; extremes are shown as "<1" and ">99". */
+export function formatPct(p: number): string {
+  if (p >= 1) return '100'
+  if (p <= 0) return '0'
+  if (p < 0.005) return '<1'
+  if (p > 0.995) return '>99'
+  return String(Math.round(p * 100))
+}
+
+export const pct1 = (p: number) => `${(p * 100).toFixed(1)}%`
+export const dec1 = (n: number) => n.toFixed(1)
+export const dec2 = (n: number) => n.toFixed(2)

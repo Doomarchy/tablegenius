@@ -1,71 +1,82 @@
 {
  "season": "2026-27",
- "updated_at": "2026-09-16T22:26:03Z",
+ "updated_at": "2026-09-16T22:55:40Z",
+ "has_backtest": true,
  "leagues": [
   {
    "code": "PL",
    "name": "Premier League",
    "country": "England",
-   "updated_at": "2026-09-16T22:25:11Z",
+   "updated_at": "2026-09-16T22:55:36Z",
    "matchday": {
     "current": 5,
     "total": 38,
     "matches_played": 40,
     "matches_total": 380
    },
-   "source": "football-data.org"
+   "source": "football-data.org",
+   "has_probabilities": true,
+   "model_as_of": "2026-09-16T22:55:35Z"
   },
   {
    "code": "PD",
    "name": "LaLiga",
    "country": "Spain",
-   "updated_at": "2026-09-16T22:25:24Z",
+   "updated_at": "2026-09-16T22:55:37Z",
    "matchday": {
     "current": 6,
     "total": 38,
     "matches_played": 57,
     "matches_total": 380
    },
-   "source": "football-data.org"
+   "source": "football-data.org",
+   "has_probabilities": true,
+   "model_as_of": "2026-09-16T22:55:36Z"
   },
   {
    "code": "SA",
    "name": "Serie A",
    "country": "Italy",
-   "updated_at": "2026-09-16T22:25:37Z",
+   "updated_at": "2026-09-16T22:55:38Z",
    "matchday": {
     "current": 5,
     "total": 38,
     "matches_played": 40,
     "matches_total": 380
    },
-   "source": "football-data.org"
+   "source": "football-data.org",
+   "has_probabilities": true,
+   "model_as_of": "2026-09-16T22:55:37Z"
   },
   {
    "code": "BL1",
    "name": "Bundesliga",
    "country": "Germany",
-   "updated_at": "2026-09-16T22:25:50Z",
+   "updated_at": "2026-09-16T22:55:39Z",
    "matchday": {
     "current": 4,
     "total": 34,
     "matches_played": 27,
     "matches_total": 306
    },
-   "source": "football-data.org"
+   "source": "football-data.org",
+   "has_probabilities": true,
+   "model_as_of": "2026-09-16T22:55:38Z"
   },
   {
    "code": "FL1",
    "name": "Ligue 1",
    "country": "France",
-   "updated_at": "2026-09-16T22:26:03Z",
+   "updated_at": "2026-09-16T22:55:40Z",
    "matchday": {
     "current": 5,
     "total": 34,
     "matches_played": 36,
     "matches_total": 306
    },
-   "source": "football-data.org"
+   "source": "football-data.org",
+   "has_probabilities": true,
+   "model_as_of": "2026-09-16T22:55:39Z"
   }
  ]
 }

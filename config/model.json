@@ -1,0 +1,20 @@
+{
+  "_comment": "Parameters of the Dixon-Coles rating model and the Monte Carlo simulation. promoted_prior comes from `python -m tablegenius.calibrate`.",
+  "time_decay_xi_per_day": 0.0018,
+  "prior_strength": 6.0,
+  "promoted_prior": {
+    "attack": -0.27,
+    "defence": -0.23
+  },
+  "promoted_prior_note": "Mean full-season rating of the 41 teams promoted into the five leagues in 2023-24, 2024-25 and 2025-26 (standard error about 0.03).",
+  "history_seasons": 2,
+  "rating_uncertainty": true,
+  "n_rating_draws": 100,
+  "n_simulations": 10000,
+  "max_goals": 10,
+  "rho_bounds": [
+    -0.25,
+    0.25
+  ],
+  "prior_strength_note": "Chosen from a 2025-26 backtest: 3 and 6 scored almost identically, 6 was slightly better calibrated in the 80-95% range."
+}

@@ -11,7 +11,9 @@ static React site reads those files and is hosted on GitHub Pages.
 
 ```
 config/leagues/<season>/<CODE>.json   league rules: teams, tiebreakers, European and relegation zones
-pipeline/                             Python: fetch data, build tables, (soon) fit the model and simulate
+config/model.json                     model parameters (time decay, priors, simulation count)
+config/team_names.json                football-data.co.uk team names -> football-data.org ids
+pipeline/                             Python: fetch data, build tables, fit the model, simulate, backtest
 pipeline/history/                     past-season results CSVs from football-data.co.uk (committed)
 site/                                 Vite + React + TypeScript frontend
 site/public/data/                     generated JSON the site reads (committed by the pipeline)
@@ -32,8 +34,11 @@ Requirements: Python 3.12+, Node 20+.
    ..\.venv\Scripts\python -m tablegenius.run --season 2026-27
    ```
 
-   Add `--source csv` to build tables from football-data.co.uk instead (no token needed,
-   no fixtures or crests). Add `--leagues PL,PD` to limit the leagues.
+   Useful flags: `--source csv` builds tables from football-data.co.uk without a token
+   (no fixtures, crests or probabilities); `--leagues PL,PD` limits the leagues;
+   `--no-model` skips the ratings and simulation; `--force-model` re-runs the model even
+   when no result has changed (otherwise the previous probabilities are kept so they do
+   not jitter between result updates); `--sims 20000` changes the simulation count.
 
 3. Site:
 
@@ -47,12 +52,32 @@ Requirements: Python 3.12+, Node 20+.
 
 4. Tests: `cd pipeline` then `..\.venv\Scripts\python -m pytest`.
 
+## Model commands
+
+All from the `pipeline` folder with `..\.venv\Scripts\python`:
+
+- `-m tablegenius.names --season 2026-27` proposes name mappings for any new teams and
+  updates `config/team_names.json` (check the low-confidence lines it prints).
+- `-m tablegenius.calibrate` re-estimates the promoted-team prior from past seasons.
+- `-m tablegenius.backtest --season 2025-26` re-runs the model at ten points of a past
+  season, scores it, and writes `site/public/data/backtest.json` for the About page.
+  Options: `--sims`, `--xi`, `--prior-strength`, `--draws`, `--leagues`.
+
+## How the model works
+
+Dixon-Coles attack/defence ratings fitted on this season plus the two previous ones with
+exponential time decay (half-life about a year), a ridge prior towards the league average,
+and a calibrated prior for promoted teams. Rating uncertainty from the fit (Laplace
+approximation) is propagated by sampling 100 rating sets, and 10,000 seasons are simulated
+per league with each league's real tiebreakers. See the About page for the plain-language
+version and the backtest results.
+
 ## Data sources
 
 - [football-data.org](https://www.football-data.org) free tier: standings, fixtures and results
   for all five leagues, 10 requests per minute. The pipeline makes 2 requests per league per run.
 - [football-data.co.uk](https://www.football-data.co.uk): CSV results for past seasons, used for
-  team-strength fitting and the backtest.
+  team-strength fitting and the backtest (including bookmaker odds for the match-level comparison).
 
 ## League rules
 

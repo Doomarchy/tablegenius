@@ -117,8 +117,52 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
 .tab.active { color: var(--text); border-bottom-color: var(--accent); }
 
 /* ---------- League page ---------- */
-.league-head { margin: 4px 0 12px; }
+.league-head { margin: 4px 0 12px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
 .league-sub { margin: 0; color: var(--text-muted); font-size: 0.9rem; }
+
+.view-switch { display: inline-flex; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; background: var(--surface); }
+.seg {
+  border: 0; background: transparent; color: var(--text-muted); font: inherit; font-size: 0.85rem; font-weight: 600;
+  padding: 6px 12px; cursor: pointer;
+}
+.seg + .seg { border-left: 1px solid var(--border); }
+.seg.active { background: var(--accent); color: var(--accent-text); }
+.seg:not(.active):hover { color: var(--text); background: var(--surface-2); }
+
+.th-btn {
+  all: unset; cursor: pointer; display: inline-block; padding: 0; color: inherit; font: inherit;
+  text-transform: inherit; letter-spacing: inherit;
+}
+.th-btn:hover { color: var(--text); }
+.th-btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+th[aria-sort="ascending"] .th-btn, th[aria-sort="descending"] .th-btn { color: var(--text); }
+
+/* Probability cells: one hue per column, shaded by the chance (darker = likelier); the number is always printed. */
+.league-table td.col-prob {
+  --shade: calc(var(--p, 0) * 60%);
+  background: color-mix(in oklab, var(--hue) var(--shade), transparent);
+  color: var(--text);
+  font-weight: 500;
+}
+.league-table thead th.col-prob-head { border-left: 1px solid var(--border); }
+.league-table thead th.col-prob-head ~ th.col-prob-head { border-left: none; }
+.league-table thead th.col-prob-head:first-of-type { border-left: 1px solid var(--border); }
+.league-table td.col-exp, .league-table th.col-exp { color: var(--text-muted); }
+.league-table tbody tr:hover td.col-prob { filter: brightness(0.97); }
+.model-line { margin: 10px 0 0; }
+
+.guide { margin: 8px 0 0; display: grid; grid-template-columns: max-content 1fr; gap: 4px 12px; }
+.guide div { display: contents; }
+.guide dt { font-weight: 700; }
+.guide dd { margin: 0; }
+
+.table-wrap.plain { margin: 8px 0 12px; }
+.mini-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.mini-table th, .mini-table td { padding: 7px 10px; border-bottom: 1px solid var(--border); text-align: right; }
+.mini-table th[scope="row"], .mini-table thead th:first-child { text-align: left; }
+.mini-table thead th { background: var(--surface-2); color: var(--text-muted); font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.mini-table tbody tr:last-child td, .mini-table tbody tr:last-child th { border-bottom: none; }
+.prose h3 { font-size: 1rem; margin: 1.2rem 0 0.4rem; }
 
 .table-wrap {
   background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
@@ -215,14 +259,16 @@ h2 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
 @media (max-width: 560px) {
   .name-long { display: none; }
   .name-short { display: inline; }
-  /* Goals for/against are dropped on phones so points stay in view; GD remains. */
-  .col-gf, .col-ga { display: none; }
   .league-table th, .league-table td { padding: 8px 5px; }
   .league-table { font-size: 0.88rem; }
   .crest { width: 18px; height: 18px; }
   .team-cell { gap: 6px; }
   .form-pip { width: 15px; height: 15px; font-size: 0.6rem; }
   .form { gap: 2px; }
+  .guide { grid-template-columns: 1fr; }
+  .guide dt { margin-top: 6px; }
+  .view-switch { width: 100%; }
+  .seg { flex: 1; text-align: center; }
 }
 @media (min-width: 720px) {
   .updated { display: inline; }
