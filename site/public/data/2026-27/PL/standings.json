@@ -70,21 +70,21 @@
   "tied_title_playoff": false,
   "tied_relegation_playoff": false
  },
- "updated_at": "2026-09-16T21:59:15Z",
- "source": "football-data.co.uk (preview)",
+ "updated_at": "2026-09-16T22:08:54Z",
+ "source": "football-data.org",
  "matchday": {
-  "current": null,
+  "current": 5,
   "total": 38,
   "matches_played": 40,
   "matches_total": 380
  },
  "teams": [
   {
-   "id": "Arsenal",
-   "name": "Arsenal",
+   "id": 57,
+   "name": "Arsenal FC",
    "short_name": "Arsenal",
-   "tla": null,
-   "crest": null,
+   "tla": "ARS",
+   "crest": "https://crests.football-data.org/57.png",
    "position": 1,
    "zone": "ucl",
    "played": 4,
@@ -123,11 +123,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Man City",
-   "name": "Man City",
+   "id": 65,
+   "name": "Manchester City FC",
    "short_name": "Man City",
-   "tla": null,
-   "crest": null,
+   "tla": "MCI",
+   "crest": "https://crests.football-data.org/65.png",
    "position": 2,
    "zone": "ucl",
    "played": 4,
@@ -166,11 +166,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Leeds",
-   "name": "Leeds",
-   "short_name": "Leeds",
-   "tla": null,
-   "crest": null,
+   "id": 341,
+   "name": "Leeds United FC",
+   "short_name": "Leeds United",
+   "tla": "LEE",
+   "crest": "https://crests.football-data.org/341.png",
    "position": 3,
    "zone": "ucl",
    "played": 4,
@@ -209,11 +209,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Hull",
-   "name": "Hull",
-   "short_name": "Hull",
-   "tla": null,
-   "crest": null,
+   "id": 322,
+   "name": "Hull City AFC",
+   "short_name": "Hull City",
+   "tla": "HUL",
+   "crest": "https://crests.football-data.org/322.png",
    "position": 4,
    "zone": "ucl",
    "played": 4,
@@ -252,11 +252,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Brighton",
-   "name": "Brighton",
-   "short_name": "Brighton",
-   "tla": null,
-   "crest": null,
+   "id": 397,
+   "name": "Brighton & Hove Albion FC",
+   "short_name": "Brighton Hove",
+   "tla": "BHA",
+   "crest": "https://crests.football-data.org/397.png",
    "position": 5,
    "zone": "uel",
    "played": 4,
@@ -295,11 +295,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Chelsea",
-   "name": "Chelsea",
+   "id": 61,
+   "name": "Chelsea FC",
    "short_name": "Chelsea",
-   "tla": null,
-   "crest": null,
+   "tla": "CHE",
+   "crest": "https://crests.football-data.org/61.png",
    "position": 6,
    "zone": "uel",
    "played": 4,
@@ -338,11 +338,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Brentford",
-   "name": "Brentford",
+   "id": 402,
+   "name": "Brentford FC",
    "short_name": "Brentford",
-   "tla": null,
-   "crest": null,
+   "tla": "BRE",
+   "crest": "https://crests.football-data.org/402.png",
    "position": 7,
    "zone": "uecl",
    "played": 4,
@@ -381,11 +381,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Liverpool",
-   "name": "Liverpool",
+   "id": 64,
+   "name": "Liverpool FC",
    "short_name": "Liverpool",
-   "tla": null,
-   "crest": null,
+   "tla": "LIV",
+   "crest": "https://crests.football-data.org/64.png",
    "position": 8,
    "zone": null,
    "played": 4,
@@ -424,11 +424,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Everton",
-   "name": "Everton",
+   "id": 62,
+   "name": "Everton FC",
    "short_name": "Everton",
-   "tla": null,
-   "crest": null,
+   "tla": "EVE",
+   "crest": "https://crests.football-data.org/62.png",
    "position": 9,
    "zone": null,
    "played": 4,
@@ -467,11 +467,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Ipswich",
-   "name": "Ipswich",
-   "short_name": "Ipswich",
-   "tla": null,
-   "crest": null,
+   "id": 349,
+   "name": "Ipswich Town FC",
+   "short_name": "Ipswich Town",
+   "tla": "IPS",
+   "crest": "https://crests.football-data.org/349.png",
    "position": 10,
    "zone": null,
    "played": 4,
@@ -510,11 +510,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Nott'm Forest",
-   "name": "Nott'm Forest",
-   "short_name": "Nott'm Forest",
-   "tla": null,
-   "crest": null,
+   "id": 351,
+   "name": "Nottingham Forest FC",
+   "short_name": "Nottingham",
+   "tla": "NOT",
+   "crest": "https://crests.football-data.org/351.png",
    "position": 11,
    "zone": null,
    "played": 4,
@@ -553,11 +553,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Newcastle",
-   "name": "Newcastle",
+   "id": 67,
+   "name": "Newcastle United FC",
    "short_name": "Newcastle",
-   "tla": null,
-   "crest": null,
+   "tla": "NEW",
+   "crest": "https://crests.football-data.org/67.png",
    "position": 12,
    "zone": null,
    "played": 4,
@@ -596,11 +596,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Man United",
-   "name": "Man United",
+   "id": 66,
+   "name": "Manchester United FC",
    "short_name": "Man United",
-   "tla": null,
-   "crest": null,
+   "tla": "MUN",
+   "crest": "https://crests.football-data.org/66.png",
    "position": 13,
    "zone": null,
    "played": 4,
@@ -639,11 +639,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Sunderland",
-   "name": "Sunderland",
+   "id": 71,
+   "name": "Sunderland AFC",
    "short_name": "Sunderland",
-   "tla": null,
-   "crest": null,
+   "tla": "SUN",
+   "crest": "https://crests.football-data.org/71.png",
    "position": 14,
    "zone": null,
    "played": 4,
@@ -682,11 +682,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Bournemouth",
-   "name": "Bournemouth",
+   "id": 1044,
+   "name": "AFC Bournemouth",
    "short_name": "Bournemouth",
-   "tla": null,
-   "crest": null,
+   "tla": "BOU",
+   "crest": "https://crests.football-data.org/bournemouth.png",
    "position": 15,
    "zone": null,
    "played": 4,
@@ -725,11 +725,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Crystal Palace",
-   "name": "Crystal Palace",
+   "id": 354,
+   "name": "Crystal Palace FC",
    "short_name": "Crystal Palace",
-   "tla": null,
-   "crest": null,
+   "tla": "CRY",
+   "crest": "https://crests.football-data.org/354.png",
    "position": 16,
    "zone": null,
    "played": 4,
@@ -768,11 +768,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Tottenham",
-   "name": "Tottenham",
+   "id": 73,
+   "name": "Tottenham Hotspur FC",
    "short_name": "Tottenham",
-   "tla": null,
-   "crest": null,
+   "tla": "TOT",
+   "crest": "https://crests.football-data.org/73.png",
    "position": 17,
    "zone": null,
    "played": 4,
@@ -811,11 +811,11 @@
    "separated_by": null
   },
   {
-   "id": "Fulham",
-   "name": "Fulham",
+   "id": 63,
+   "name": "Fulham FC",
    "short_name": "Fulham",
-   "tla": null,
-   "crest": null,
+   "tla": "FUL",
+   "crest": "https://crests.football-data.org/63.png",
    "position": 18,
    "zone": "relegation",
    "played": 4,
@@ -854,11 +854,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Aston Villa",
-   "name": "Aston Villa",
+   "id": 58,
+   "name": "Aston Villa FC",
    "short_name": "Aston Villa",
-   "tla": null,
-   "crest": null,
+   "tla": "AVL",
+   "crest": "https://crests.football-data.org/58.png",
    "position": 19,
    "zone": "relegation",
    "played": 4,
@@ -897,11 +897,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Coventry",
-   "name": "Coventry",
-   "short_name": "Coventry",
-   "tla": null,
-   "crest": null,
+   "id": 1076,
+   "name": "Coventry City FC",
+   "short_name": "Coventry City",
+   "tla": "COV",
+   "crest": "https://crests.football-data.org/1076.png",
    "position": 20,
    "zone": "relegation",
    "played": 4,
@@ -941,6 +941,8 @@
   }
  ],
  "source_check": {
-  "available": false
+  "available": true,
+  "totals_match": true,
+  "diffs": []
  }
 }

@@ -67,21 +67,21 @@
   "tied_title_playoff": true,
   "tied_relegation_playoff": true
  },
- "updated_at": "2026-09-16T21:59:17Z",
- "source": "football-data.co.uk (preview)",
+ "updated_at": "2026-09-16T22:09:20Z",
+ "source": "football-data.org",
  "matchday": {
-  "current": null,
+  "current": 5,
   "total": 38,
   "matches_played": 40,
   "matches_total": 380
  },
  "teams": [
   {
-   "id": "Roma",
-   "name": "Roma",
+   "id": 100,
+   "name": "AS Roma",
    "short_name": "Roma",
-   "tla": null,
-   "crest": null,
+   "tla": "ROM",
+   "crest": "https://crests.football-data.org/100.png",
    "position": 1,
    "zone": "ucl",
    "played": 4,
@@ -120,11 +120,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Inter",
-   "name": "Inter",
+   "id": 108,
+   "name": "FC Internazionale Milano",
    "short_name": "Inter",
-   "tla": null,
-   "crest": null,
+   "tla": "INT",
+   "crest": "https://crests.football-data.org/108.png",
    "position": 2,
    "zone": "ucl",
    "played": 4,
@@ -163,11 +163,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Como",
-   "name": "Como",
-   "short_name": "Como",
-   "tla": null,
-   "crest": null,
+   "id": 7397,
+   "name": "Como 1907",
+   "short_name": "Como 1907",
+   "tla": "COM",
+   "crest": "https://crests.football-data.org/7397.png",
    "position": 3,
    "zone": "ucl",
    "played": 4,
@@ -206,11 +206,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Lazio",
-   "name": "Lazio",
+   "id": 110,
+   "name": "SS Lazio",
    "short_name": "Lazio",
-   "tla": null,
-   "crest": null,
+   "tla": "LAZ",
+   "crest": "https://crests.football-data.org/110.png",
    "position": 4,
    "zone": "ucl",
    "played": 4,
@@ -249,11 +249,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Cagliari",
-   "name": "Cagliari",
+   "id": 104,
+   "name": "Cagliari Calcio",
    "short_name": "Cagliari",
-   "tla": null,
-   "crest": null,
+   "tla": "CAG",
+   "crest": "https://crests.football-data.org/104.png",
    "position": 5,
    "zone": "uel",
    "played": 4,
@@ -292,11 +292,11 @@
    "separated_by": null
   },
   {
-   "id": "Milan",
-   "name": "Milan",
+   "id": 98,
+   "name": "AC Milan",
    "short_name": "Milan",
-   "tla": null,
-   "crest": null,
+   "tla": "MIL",
+   "crest": "https://crests.football-data.org/98.png",
    "position": 6,
    "zone": "uel",
    "played": 4,
@@ -335,11 +335,11 @@
    "separated_by": null
   },
   {
-   "id": "Frosinone",
-   "name": "Frosinone",
+   "id": 470,
+   "name": "Frosinone Calcio",
    "short_name": "Frosinone",
-   "tla": null,
-   "crest": null,
+   "tla": "FRO",
+   "crest": "https://crests.football-data.org/470.png",
    "position": 7,
    "zone": "uecl",
    "played": 4,
@@ -378,11 +378,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Juventus",
-   "name": "Juventus",
+   "id": 109,
+   "name": "Juventus FC",
    "short_name": "Juventus",
-   "tla": null,
-   "crest": null,
+   "tla": "JUV",
+   "crest": "https://crests.football-data.org/109.png",
    "position": 8,
    "zone": null,
    "played": 4,
@@ -421,11 +421,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Sassuolo",
-   "name": "Sassuolo",
+   "id": 471,
+   "name": "US Sassuolo Calcio",
    "short_name": "Sassuolo",
-   "tla": null,
-   "crest": null,
+   "tla": "SAS",
+   "crest": "https://crests.football-data.org/471.png",
    "position": 9,
    "zone": null,
    "played": 4,
@@ -464,11 +464,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Napoli",
-   "name": "Napoli",
+   "id": 113,
+   "name": "SSC Napoli",
    "short_name": "Napoli",
-   "tla": null,
-   "crest": null,
+   "tla": "NAP",
+   "crest": "https://crests.football-data.org/113.png",
    "position": 10,
    "zone": null,
    "played": 4,
@@ -507,11 +507,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Atalanta",
-   "name": "Atalanta",
+   "id": 102,
+   "name": "Atalanta BC",
    "short_name": "Atalanta",
-   "tla": null,
-   "crest": null,
+   "tla": "ATA",
+   "crest": "https://crests.football-data.org/102.png",
    "position": 11,
    "zone": null,
    "played": 4,
@@ -550,11 +550,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Lecce",
-   "name": "Lecce",
+   "id": 5890,
+   "name": "US Lecce",
    "short_name": "Lecce",
-   "tla": null,
-   "crest": null,
+   "tla": "USL",
+   "crest": "https://crests.football-data.org/5890.png",
    "position": 12,
    "zone": null,
    "played": 4,
@@ -593,11 +593,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Udinese",
-   "name": "Udinese",
+   "id": 115,
+   "name": "Udinese Calcio",
    "short_name": "Udinese",
-   "tla": null,
-   "crest": null,
+   "tla": "UDI",
+   "crest": "https://crests.football-data.org/115.png",
    "position": 13,
    "zone": null,
    "played": 4,
@@ -636,11 +636,11 @@
    "separated_by": null
   },
   {
-   "id": "Torino",
-   "name": "Torino",
+   "id": 586,
+   "name": "Torino FC",
    "short_name": "Torino",
-   "tla": null,
-   "crest": null,
+   "tla": "TOR",
+   "crest": "https://crests.football-data.org/586.png",
    "position": 14,
    "zone": null,
    "played": 4,
@@ -679,11 +679,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Fiorentina",
-   "name": "Fiorentina",
+   "id": 99,
+   "name": "ACF Fiorentina",
    "short_name": "Fiorentina",
-   "tla": null,
-   "crest": null,
+   "tla": "FIO",
+   "crest": "https://crests.football-data.org/99.png",
    "position": 15,
    "zone": null,
    "played": 4,
@@ -722,11 +722,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Bologna",
-   "name": "Bologna",
+   "id": 103,
+   "name": "Bologna FC 1909",
    "short_name": "Bologna",
-   "tla": null,
-   "crest": null,
+   "tla": "BOL",
+   "crest": "https://crests.football-data.org/103.png",
    "position": 16,
    "zone": null,
    "played": 4,
@@ -765,11 +765,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Parma",
-   "name": "Parma",
+   "id": 112,
+   "name": "Parma Calcio 1913",
    "short_name": "Parma",
-   "tla": null,
-   "crest": null,
+   "tla": "PAR",
+   "crest": "https://crests.football-data.org/112.png",
    "position": 17,
    "zone": null,
    "played": 4,
@@ -808,11 +808,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Monza",
-   "name": "Monza",
+   "id": 5911,
+   "name": "AC Monza",
    "short_name": "Monza",
-   "tla": null,
-   "crest": null,
+   "tla": "MON",
+   "crest": "https://crests.football-data.org/5911.png",
    "position": 18,
    "zone": "relegation",
    "played": 4,
@@ -851,11 +851,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Genoa",
-   "name": "Genoa",
+   "id": 107,
+   "name": "Genoa CFC",
    "short_name": "Genoa",
-   "tla": null,
-   "crest": null,
+   "tla": "GEN",
+   "crest": "https://crests.football-data.org/107.png",
    "position": 19,
    "zone": "relegation",
    "played": 4,
@@ -894,11 +894,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Venezia",
-   "name": "Venezia",
-   "short_name": "Venezia",
-   "tla": null,
-   "crest": null,
+   "id": 454,
+   "name": "Venezia FC",
+   "short_name": "Venezia FC",
+   "tla": "VEN",
+   "crest": "https://crests.football-data.org/454.png",
    "position": 20,
    "zone": "relegation",
    "played": 4,
@@ -938,6 +938,8 @@
   }
  ],
  "source_check": {
-  "available": false
+  "available": true,
+  "totals_match": true,
+  "diffs": []
  }
 }

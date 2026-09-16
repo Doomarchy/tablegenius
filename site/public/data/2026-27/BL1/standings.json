@@ -71,21 +71,21 @@
   "tied_title_playoff": false,
   "tied_relegation_playoff": false
  },
- "updated_at": "2026-09-16T21:59:18Z",
- "source": "football-data.co.uk (preview)",
+ "updated_at": "2026-09-16T22:09:33Z",
+ "source": "football-data.org",
  "matchday": {
-  "current": null,
+  "current": 4,
   "total": 34,
   "matches_played": 27,
   "matches_total": 306
  },
  "teams": [
   {
-   "id": "Freiburg",
-   "name": "Freiburg",
+   "id": 17,
+   "name": "SC Freiburg",
    "short_name": "Freiburg",
-   "tla": null,
-   "crest": null,
+   "tla": "SCF",
+   "crest": "https://crests.football-data.org/17.png",
    "position": 1,
    "zone": "ucl",
    "played": 3,
@@ -123,11 +123,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Dortmund",
-   "name": "Dortmund",
+   "id": 4,
+   "name": "Borussia Dortmund",
    "short_name": "Dortmund",
-   "tla": null,
-   "crest": null,
+   "tla": "BVB",
+   "crest": "https://crests.football-data.org/4.png",
    "position": 2,
    "zone": "ucl",
    "played": 3,
@@ -165,11 +165,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Augsburg",
-   "name": "Augsburg",
+   "id": 16,
+   "name": "FC Augsburg",
    "short_name": "Augsburg",
-   "tla": null,
-   "crest": null,
+   "tla": "FCA",
+   "crest": "https://crests.football-data.org/16.png",
    "position": 3,
    "zone": "ucl",
    "played": 3,
@@ -207,11 +207,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Bayern Munich",
-   "name": "Bayern Munich",
-   "short_name": "Bayern Munich",
-   "tla": null,
-   "crest": null,
+   "id": 5,
+   "name": "FC Bayern München",
+   "short_name": "Bayern",
+   "tla": "FCB",
+   "crest": "https://crests.football-data.org/5.png",
    "position": 4,
    "zone": "ucl",
    "played": 3,
@@ -249,11 +249,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "RB Leipzig",
+   "id": 721,
    "name": "RB Leipzig",
    "short_name": "RB Leipzig",
-   "tla": null,
-   "crest": null,
+   "tla": "RBL",
+   "crest": "https://crests.football-data.org/721.png",
    "position": 5,
    "zone": "uel",
    "played": 3,
@@ -291,11 +291,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Elversberg",
-   "name": "Elversberg",
+   "id": 719,
+   "name": "SV 07 Elversberg",
    "short_name": "Elversberg",
-   "tla": null,
-   "crest": null,
+   "tla": "ELV",
+   "crest": "https://crests.football-data.org/719.png",
    "position": 6,
    "zone": "uel",
    "played": 3,
@@ -333,11 +333,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Leverkusen",
-   "name": "Leverkusen",
+   "id": 3,
+   "name": "Bayer 04 Leverkusen",
    "short_name": "Leverkusen",
-   "tla": null,
-   "crest": null,
+   "tla": "B04",
+   "crest": "https://crests.football-data.org/3.png",
    "position": 7,
    "zone": "uecl",
    "played": 3,
@@ -375,11 +375,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Mainz",
-   "name": "Mainz",
+   "id": 15,
+   "name": "1. FSV Mainz 05",
    "short_name": "Mainz",
-   "tla": null,
-   "crest": null,
+   "tla": "M05",
+   "crest": "https://crests.football-data.org/15.png",
    "position": 8,
    "zone": null,
    "played": 3,
@@ -417,11 +417,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Ein Frankfurt",
-   "name": "Ein Frankfurt",
-   "short_name": "Ein Frankfurt",
-   "tla": null,
-   "crest": null,
+   "id": 19,
+   "name": "Eintracht Frankfurt",
+   "short_name": "Frankfurt",
+   "tla": "SGE",
+   "crest": "https://crests.football-data.org/19.png",
    "position": 9,
    "zone": null,
    "played": 3,
@@ -459,11 +459,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Werder Bremen",
-   "name": "Werder Bremen",
-   "short_name": "Werder Bremen",
-   "tla": null,
-   "crest": null,
+   "id": 12,
+   "name": "SV Werder Bremen",
+   "short_name": "Bremen",
+   "tla": "SVW",
+   "crest": "https://crests.football-data.org/12.png",
    "position": 10,
    "zone": null,
    "played": 3,
@@ -501,11 +501,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Schalke 04",
-   "name": "Schalke 04",
-   "short_name": "Schalke 04",
-   "tla": null,
-   "crest": null,
+   "id": 6,
+   "name": "FC Schalke 04",
+   "short_name": "Schalke",
+   "tla": "S04",
+   "crest": "https://crests.football-data.org/6.png",
    "position": 11,
    "zone": null,
    "played": 3,
@@ -543,11 +543,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "FC Koln",
-   "name": "FC Koln",
-   "short_name": "FC Koln",
-   "tla": null,
-   "crest": null,
+   "id": 1,
+   "name": "1. FC Köln",
+   "short_name": "1. FC Köln",
+   "tla": "KOE",
+   "crest": "https://crests.football-data.org/1.png",
    "position": 12,
    "zone": null,
    "played": 3,
@@ -585,11 +585,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Hoffenheim",
-   "name": "Hoffenheim",
+   "id": 2,
+   "name": "TSG 1899 Hoffenheim",
    "short_name": "Hoffenheim",
-   "tla": null,
-   "crest": null,
+   "tla": "TSG",
+   "crest": "https://crests.football-data.org/2.png",
    "position": 13,
    "zone": null,
    "played": 3,
@@ -627,11 +627,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Stuttgart",
-   "name": "Stuttgart",
+   "id": 10,
+   "name": "VfB Stuttgart",
    "short_name": "Stuttgart",
-   "tla": null,
-   "crest": null,
+   "tla": "VFB",
+   "crest": "https://crests.football-data.org/10.png",
    "position": 14,
    "zone": null,
    "played": 3,
@@ -669,11 +669,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Paderborn",
-   "name": "Paderborn",
-   "short_name": "Paderborn",
-   "tla": null,
-   "crest": null,
+   "id": 29,
+   "name": "SC Paderborn 07",
+   "short_name": "SC Paderborn",
+   "tla": "SCP",
+   "crest": "https://crests.football-data.org/29.png",
    "position": 15,
    "zone": null,
    "played": 3,
@@ -711,11 +711,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Union Berlin",
-   "name": "Union Berlin",
+   "id": 28,
+   "name": "1. FC Union Berlin",
    "short_name": "Union Berlin",
-   "tla": null,
-   "crest": null,
+   "tla": "UNB",
+   "crest": "https://crests.football-data.org/28.png",
    "position": 16,
    "zone": "relegation_playoff",
    "played": 3,
@@ -753,11 +753,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "M'gladbach",
-   "name": "M'gladbach",
+   "id": 18,
+   "name": "Borussia Mönchengladbach",
    "short_name": "M'gladbach",
-   "tla": null,
-   "crest": null,
+   "tla": "BMG",
+   "crest": "https://crests.football-data.org/18.png",
    "position": 17,
    "zone": "relegation",
    "played": 3,
@@ -795,11 +795,11 @@
    "separated_by": "goal_difference"
   },
   {
-   "id": "Hamburg",
-   "name": "Hamburg",
-   "short_name": "Hamburg",
-   "tla": null,
-   "crest": null,
+   "id": 7,
+   "name": "Hamburger SV",
+   "short_name": "HSV",
+   "tla": "HSV",
+   "crest": "https://crests.football-data.org/7.png",
    "position": 18,
    "zone": "relegation",
    "played": 3,
@@ -838,6 +838,8 @@
   }
  ],
  "source_check": {
-  "available": false
+  "available": true,
+  "totals_match": true,
+  "diffs": []
  }
 }

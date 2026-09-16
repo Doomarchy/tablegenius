@@ -1,71 +1,71 @@
 {
  "season": "2026-27",
- "updated_at": "2026-09-16T21:59:19Z",
+ "updated_at": "2026-09-16T22:09:50Z",
  "leagues": [
   {
    "code": "PL",
    "name": "Premier League",
    "country": "England",
-   "updated_at": "2026-09-16T21:59:15Z",
+   "updated_at": "2026-09-16T22:08:54Z",
    "matchday": {
-    "current": null,
+    "current": 5,
     "total": 38,
     "matches_played": 40,
     "matches_total": 380
    },
-   "source": "football-data.co.uk (preview)"
+   "source": "football-data.org"
   },
   {
    "code": "PD",
    "name": "LaLiga",
    "country": "Spain",
-   "updated_at": "2026-09-16T21:59:16Z",
+   "updated_at": "2026-09-16T22:09:07Z",
    "matchday": {
-    "current": null,
+    "current": 6,
     "total": 38,
-    "matches_played": 51,
+    "matches_played": 57,
     "matches_total": 380
    },
-   "source": "football-data.co.uk (preview)"
+   "source": "football-data.org"
   },
   {
    "code": "SA",
    "name": "Serie A",
    "country": "Italy",
-   "updated_at": "2026-09-16T21:59:17Z",
+   "updated_at": "2026-09-16T22:09:20Z",
    "matchday": {
-    "current": null,
+    "current": 5,
     "total": 38,
     "matches_played": 40,
     "matches_total": 380
    },
-   "source": "football-data.co.uk (preview)"
+   "source": "football-data.org"
   },
   {
    "code": "BL1",
    "name": "Bundesliga",
    "country": "Germany",
-   "updated_at": "2026-09-16T21:59:18Z",
+   "updated_at": "2026-09-16T22:09:33Z",
    "matchday": {
-    "current": null,
+    "current": 4,
     "total": 34,
     "matches_played": 27,
     "matches_total": 306
    },
-   "source": "football-data.co.uk (preview)"
+   "source": "football-data.org"
   },
   {
    "code": "FL1",
    "name": "Ligue 1",
    "country": "France",
-   "updated_at": "2026-09-16T21:59:19Z",
+   "updated_at": "2026-09-16T22:09:50Z",
    "matchday": {
-    "current": null,
+    "current": 5,
     "total": 34,
     "matches_played": 36,
     "matches_total": 306
    },
-   "source": "football-data.co.uk (preview)"
+   "source": "football-data.org"
   }
  ]
 }
