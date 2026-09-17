@@ -149,9 +149,10 @@ export default function LeagueTable({ standings, view }: { standings: Standings;
                     )
                   }
                   const cls = [`col-${col.group}`, col.key === 'points' ? 'col-pts' : '', col.kind === 'signed' && v !== null && v < 0 ? 'neg-num' : ''].filter(Boolean).join(' ')
+                  const deducted = col.key === 'points' && (t.deduction ?? 0) > 0
                   return (
-                    <td key={col.key} className={cls}>
-                      {cellText(col, v)}
+                    <td key={col.key} className={cls} title={deducted ? `${t.deduction} points deducted` : undefined}>
+                      {cellText(col, v)}{deducted && <sup className="deducted">*</sup>}
                     </td>
                   )
                 })}

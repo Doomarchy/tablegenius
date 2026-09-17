@@ -71,10 +71,32 @@ def _apply(total: dict[str, Any], split: dict[str, Any], gf: int, ga: int, is_ho
     total["results"].append(outcome)
 
 
-def build_standings(matches: list[dict[str, Any]], teams: dict[Any, dict[str, Any]], cfg: dict[str, Any]) -> dict[str, Any]:
+def point_deductions(cfg: dict[str, Any], teams: dict[Any, dict[str, Any]], as_of: str | None = None) -> dict[Any, int]:
+    """Points deducted (positive numbers) per team id from the league config, resolving
+    team references by id, name, short name or three-letter code. Deductions with an
+    `applied` date after `as_of` (ISO date) are ignored."""
+    out: dict[Any, int] = {}
+    for d in cfg.get("points_deductions", []) or []:
+        if as_of and d.get("applied") and str(d["applied"]) > as_of:
+            continue
+        ref = d.get("team")
+        for tid, t in teams.items():
+            if ref == tid or str(ref) == str(tid) or ref in (t.get("name"), t.get("short_name"), t.get("tla")):
+                out[tid] = out.get(tid, 0) + int(d.get("points", 0))
+                break
+        else:
+            raise KeyError(f"{cfg.get('code')}: points deduction refers to unknown team {ref!r}")
+    return out
+
+
+def build_standings(matches: list[dict[str, Any]], teams: dict[Any, dict[str, Any]], cfg: dict[str, Any],
+                    as_of: str | None = None) -> dict[str, Any]:
     """Return {'teams': [rows best-first], 'matchday': {...}} for one league."""
     team_ids = list(teams)
     stats, results = compute_stats(matches, team_ids)
+    deductions = point_deductions(cfg, teams, as_of)
+    for tid, pts in deductions.items():
+        stats[tid]["points"] -= pts
     order, tied, resolved_by = rank(
         team_ids, stats, results, cfg["tiebreakers"],
         rounds=cfg["rounds"],
@@ -101,6 +123,7 @@ def build_standings(matches: list[dict[str, Any]], teams: dict[Any, dict[str, An
             "ga": s["goals_against"],
             "gd": s["goal_difference"],
             "points": s["points"],
+            "deduction": deductions.get(tid, 0),
             "form": s["results"][-FORM_LENGTH:],
             "home": s["home"],
             "away": s["away"],

@@ -38,6 +38,7 @@ class SimulationResult:
     current_points: np.ndarray
     max_points: np.ndarray
     matches_remaining: np.ndarray
+    positions: np.ndarray | None = None   # (N, n) final position per simulation, for place allocation
 
     def zone_probs(self, cfg: dict[str, Any]) -> dict[str, np.ndarray]:
         out = {}
@@ -60,6 +61,7 @@ def simulate(
     seed: int = 0,
     max_goals: int = 10,
     ratings_draws: Sequence[Ratings] | None = None,
+    point_adjustments: dict[TeamId, int] | None = None,
 ) -> SimulationResult:
     criteria = list(cfg["tiebreakers"])
     validate_criteria(criteria)
@@ -70,6 +72,9 @@ def simulate(
 
     # ---- Current state from played matches ----
     base = {k: np.zeros(n) for k in ("points", "goals_for", "goals_against", "wins", "away_wins", "away_goals")}
+    for t, adj in (point_adjustments or {}).items():
+        if t in idx:
+            base["points"][idx[t]] += adj      # points deductions (negative) or awards
     h2h_base = {k: np.zeros((n, n), dtype=np.int16) for k in ("points", "goal_difference", "goals_for", "away_goals")}
     for h, a, hg, ag in played_results:
         i, j = idx[h], idx[a]
@@ -239,19 +244,33 @@ def simulate(
         expected_points=pts.mean(axis=0), expected_position=positions.mean(axis=0),
         points_p5=q5, points_p50=q50, points_p95=q95,
         current_points=base["points"], max_points=base["points"] + 3 * remaining,
-        matches_remaining=remaining.astype(float),
+        matches_remaining=remaining.astype(float), positions=positions.astype(np.int16),
     )
 
 
-def team_probabilities(cfg: dict[str, Any], sim: SimulationResult, ratings: Ratings | None = None) -> dict[TeamId, dict[str, Any]]:
-    """Per-team probability dict ready for JSON."""
+def team_probabilities(cfg: dict[str, Any], sim: SimulationResult, ratings: Ratings | None = None,
+                       cups: Sequence[dict[str, Any]] | None = None) -> dict[TeamId, dict[str, Any]]:
+    """Per-team probability dict ready for JSON.
+
+    European places are allocated inside each simulated season (cup winners, pass-down,
+    optional extra Champions League place) when the per-simulation positions are
+    available; otherwise they fall back to the configured zones.
+    """
     zones = sim.zone_probs(cfg)
+    euro = None
+    if sim.positions is not None:
+        from .europe import european_probabilities  # local import keeps module dependencies one-way
+        euro = european_probabilities(cfg, sim.positions, sim.team_ids, cups if cups is not None else cfg.get("domestic_cups", []),
+                                      float(cfg.get("extra_ucl_probability", 0.0) or 0.0))
+    survival = float(cfg.get("relegation_playoff_survival", 0.5))
     out: dict[TeamId, dict[str, Any]] = {}
     for i, t in enumerate(sim.team_ids):
-        ucl_direct = float(zones["ucl"][i])
-        ucl_q = float(zones["ucl_qualifying"][i])
-        uel = float(zones["uel"][i])
-        uecl = float(zones["uecl"][i])
+        if euro is not None:
+            ucl_direct, ucl_q, uel, uecl = (float(euro[k][i]) for k in ("ucl", "ucl_qualifying", "uel", "uecl"))
+        else:
+            ucl_direct, ucl_q, uel, uecl = (float(zones[k][i]) for k in ("ucl", "ucl_qualifying", "uel", "uecl"))
+        playoff = float(zones["relegation_playoff"][i])
+        relegation = float(zones["relegation"][i])
         d: dict[str, Any] = {
             "title": float(sim.position_probs[i, 0]),
             "ucl": ucl_direct + ucl_q,
@@ -260,8 +279,9 @@ def team_probabilities(cfg: dict[str, Any], sim: SimulationResult, ratings: Rati
             "uel": uel,
             "uecl": uecl,
             "europe": ucl_direct + ucl_q + uel + uecl,
-            "relegation_playoff": float(zones["relegation_playoff"][i]),
-            "relegation": float(zones["relegation"][i]),
+            "relegation_playoff": playoff,
+            "relegation": relegation,
+            "relegation_total": relegation + playoff * (1.0 - survival),
             "expected_points": float(sim.expected_points[i]),
             "expected_position": float(sim.expected_position[i]),
             "points_p5": float(sim.points_p5[i]),

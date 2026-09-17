@@ -43,6 +43,7 @@ export interface TeamProbs {
   europe: number
   relegation_playoff: number
   relegation: number
+  relegation_total?: number
   expected_points: number
   expected_position: number
   points_p5: number
@@ -53,6 +54,20 @@ export interface TeamProbs {
   positions: number[]
   attack?: number
   defence?: number
+}
+
+export interface RulesState {
+  cups: { name: string; grants: string; winner: string | null }[]
+  deductions: { team: string; points: number; reason: string | null }[]
+  extra_ucl_probability: number
+  relegation_playoff_survival: number | null
+}
+
+export interface MarketOdds {
+  home: number
+  draw: number
+  away: number
+  source: string
 }
 
 export type OutcomeKey = 'title' | 'ucl' | 'europe' | 'relegation' | 'drop_zone'
@@ -85,6 +100,7 @@ export interface TeamRow {
   away: SplitRecord
   tied: boolean
   separated_by: string | null
+  deduction?: number
   probs?: TeamProbs | null
   status?: Partial<Record<OutcomeKey, Status>>
   magic?: Partial<Record<'title' | 'ucl' | 'europe' | 'safety', number | null>>
@@ -134,6 +150,7 @@ export interface Standings {
   source: string
   matchday: MatchdayInfo
   model: ModelInfo | null
+  rules?: RulesState | null
   next_round?: NextRound | null
   history?: { snapshots: number; updated_at: string } | null
   teams: TeamRow[]
@@ -158,6 +175,7 @@ export interface MatchRecord {
   home_goals: number | null
   away_goals: number | null
   forecast?: Forecast
+  market?: MarketOdds
 }
 
 export interface TeamInfo {

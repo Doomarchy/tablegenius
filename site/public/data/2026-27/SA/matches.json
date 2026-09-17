@@ -1,7 +1,7 @@
 {
  "league": "SA",
  "season": "2026-27",
- "updated_at": "2026-09-17T03:28:30Z",
+ "updated_at": "2026-09-17T03:57:27Z",
  "results_hash": "bb3c1be91e7655ecf08128fddfc2eab8949cf1fc",
  "teams": [
   {
@@ -660,7 +660,7 @@
    "forecast": {
     "home": 0.229,
     "draw": 0.2342,
-    "away": 0.5368,
+    "away": 0.5369,
     "xg_home": 1.02,
     "xg_away": 1.74
    }
@@ -981,7 +981,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.256,
+    "home": 0.2561,
     "draw": 0.2386,
     "away": 0.5054,
     "xg_home": 1.09,
@@ -2292,7 +2292,7 @@
    "forecast": {
     "home": 0.4274,
     "draw": 0.2519,
-    "away": 0.3207,
+    "away": 0.3206,
     "xg_home": 1.46,
     "xg_away": 1.22
    }
@@ -3328,7 +3328,7 @@
    "away_goals": null,
    "forecast": {
     "home": 0.3773,
-    "draw": 0.2504,
+    "draw": 0.2505,
     "away": 0.3722,
     "xg_home": 1.38,
     "xg_away": 1.37
@@ -4330,7 +4330,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5808,
+    "home": 0.5807,
     "draw": 0.2485,
     "away": 0.1708,
     "xg_home": 1.59,

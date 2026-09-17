@@ -1,7 +1,7 @@
 {
  "league": "BL1",
  "season": "2026-27",
- "updated_at": "2026-09-17T03:28:42Z",
+ "updated_at": "2026-09-17T03:57:29Z",
  "results_hash": "c8c2975ffb9b7a4bf1c41ca7238425b2cca7bb8c",
  "teams": [
   {
@@ -1655,7 +1655,7 @@
    "forecast": {
     "home": 0.2046,
     "draw": 0.2232,
-    "away": 0.5722,
+    "away": 0.5723,
     "xg_home": 1.07,
     "xg_away": 1.99
    }
@@ -2165,7 +2165,7 @@
    "forecast": {
     "home": 0.5293,
     "draw": 0.1969,
-    "away": 0.2738,
+    "away": 0.2737,
     "xg_home": 2.37,
     "xg_away": 1.66
    }

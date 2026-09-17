@@ -1,0 +1,47 @@
+name: Yearly backtest
+
+on:
+  schedule:
+    # 1 August, after the previous season's result files are final.
+    - cron: "0 6 1 8 *"
+  workflow_dispatch:
+    inputs:
+      season:
+        description: "Season to backtest, e.g. 2026-27 (default: the season before the current config season)"
+        required: false
+      config_season:
+        description: "Season whose rule files to use"
+        required: false
+        default: "2026-27"
+
+permissions:
+  contents: write
+
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: pipeline/requirements.txt
+      - run: pip install -r pipeline/requirements.txt
+      - name: Run the backtest
+        working-directory: pipeline
+        run: |
+          CONFIG="${{ github.event.inputs.config_season || '2026-27' }}"
+          SEASON="${{ github.event.inputs.season }}"
+          if [ -z "$SEASON" ]; then
+            START=$(( ${CONFIG%%-*} - 1 ))
+            SEASON="$START-$(printf '%02d' $(( (START + 1) % 100 )))"
+          fi
+          echo "Backtesting $SEASON with the $CONFIG rule files"
+          python -m tablegenius.backtest --season "$SEASON" --config-season "$CONFIG" --sims 3000
+      - name: Commit the report
+        run: |
+          git config user.name "tablegenius-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add site/public/data/backtest.json pipeline/history
+          git diff --cached --quiet || (git commit -m "backtest: refresh report" && git pull --rebase origin main && git push origin HEAD:main)

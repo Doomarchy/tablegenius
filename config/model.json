@@ -8,6 +8,8 @@
   },
   "promoted_prior_note": "Mean full-season rating of the 41 teams promoted into the five leagues in 2023-24, 2024-25 and 2025-26 (standard error about 0.03).",
   "history_seasons": 2,
+  "xg_weight": 0.0,
+  "xg_weight_note": "Share of expected goals blended into each current-season match's goals when football-data.co.uk publishes xG (2026-27 files onward). 0 = off. Leave off until a completed season with xG has been backtested.",
   "rating_uncertainty": true,
   "n_rating_draws": 100,
   "n_simulations": 10000,
@@ -17,5 +19,7 @@
     -0.25,
     0.25
   ],
-  "prior_strength_note": "Chosen from a 2025-26 backtest: 3 and 6 scored almost identically, 6 was slightly better calibrated in the 80-95% range."
+  "prior_strength_note": "Chosen from a 2025-26 backtest: 3 and 6 scored almost identically, 6 was slightly better calibrated in the 80-95% range.",
+  "time_decay_note": "xi 0.0012 and 0.0025 were backtested on 2025-26 and scored no better than 0.0018.",
+  "promoted_prior_by_league_note": "Per-league priors (shrunk league estimates from `calibrate`) were backtested on 2025-26 and scored slightly worse than the pooled prior (skill vs table-only 17.6% vs 18.1%), so they are not used. Add a `promoted_prior_by_league` block {CODE: {attack, defence}} to try again."
 }

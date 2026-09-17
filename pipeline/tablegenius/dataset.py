@@ -126,20 +126,56 @@ def build_fit_data(
                    n_current=len(current_team_ids), seasons=list(seasons))
 
 
+def blend_xg(rows: list[dict[str, Any]], cfg: dict[str, Any], mapping: dict[str, dict[str, Any]], weight: float) -> int:
+    """Replace goals with a blend of goals and expected goals for current-season matches that
+    football-data.co.uk has published xG for. Returns the number of matches blended.
+
+    Off by default: it cannot be validated until a season with xG data has been completed
+    (the 2025-26 files have no xG), at which point the rolling backtest can judge it.
+    """
+    if weight <= 0:
+        return 0
+    csv_code = cfg["sources"]["football_data_co_uk"]["code"]
+    try:
+        text = fetch_season_csv(cfg["season"], csv_code, force=True)
+    except Exception as exc:  # the live CSV is optional
+        log.warning("%s: xG unavailable (%s)", cfg["code"], exc)
+        return 0
+    csv_matches, _ = normalize_csv_matches(text)
+    by_pair = {}
+    for m in csv_matches:
+        if m.get("xg"):
+            by_pair[(csv_team_id(csv_code, m["home_id"], mapping), csv_team_id(csv_code, m["away_id"], mapping))] = m["xg"]
+    blended = 0
+    for r in rows:
+        if r["season"] != cfg["season"]:
+            continue
+        xg = by_pair.get((r["home"], r["away"]))
+        if xg:
+            r["x"] = (1 - weight) * r["x"] + weight * xg["home"]
+            r["y"] = (1 - weight) * r["y"] + weight * xg["away"]
+            blended += 1
+    return blended
+
+
 def assemble_live(cfg: dict[str, Any], matches: list[dict[str, Any]], team_ids: list, as_of: datetime,
-                  params: ModelParams, history_seasons: int) -> FitData:
+                  params: ModelParams, history_seasons: int, xg_weight: float = 0.0) -> FitData:
     """Fit data for the live site: API results this season plus CSV history."""
     mapping = load_mapping()
     csv_code = cfg["sources"]["football_data_co_uk"]["code"]
     seasons = seasons_before(cfg["season"], history_seasons)
     hist, season_teams = history_rows(csv_code, seasons, mapping)
-    rows = current_rows(matches, cfg["season"]) + hist
+    current = current_rows(matches, cfg["season"])
+    xg_matches = blend_xg(current, cfg, mapping, xg_weight)
+    rows = current + hist
     prev = season_teams.get(previous_season(cfg["season"]), set())
     unmapped = [t for t in team_ids if t not in {v["id"] for v in mapping.get(csv_code, {}).values()}]
     if unmapped:
         log.warning("%s: %d current teams have no CSV name mapping (treated as promoted): %s",
                     cfg["code"], len(unmapped), unmapped)
-    return build_fit_data(rows, team_ids, prev, as_of, params, [cfg["season"]] + seasons)
+    data = build_fit_data(rows, team_ids, prev, as_of, params, [cfg["season"]] + seasons)
+    data.xg_matches = xg_matches
+    return data
 
 
 def to_frame(rows: list[dict[str, Any]]) -> pd.DataFrame:

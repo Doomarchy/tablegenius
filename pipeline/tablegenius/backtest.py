@@ -82,7 +82,11 @@ def scores(p: np.ndarray, y: np.ndarray) -> dict[str, float]:
 
 
 def run_league(cfg: dict[str, Any], season: str, params: ModelParams, n_sims: int, history_seasons: int,
-               n_draws: int = 100) -> dict[str, Any]:
+               n_draws: int = 100, model_cfg: dict[str, Any] | None = None, overrides: dict[str, float] | None = None) -> dict[str, Any]:
+    if model_cfg is not None:
+        params = ModelParams.for_league(model_cfg, cfg["code"])
+        for k, v in (overrides or {}).items():
+            setattr(params, k, v)
     code = cfg["code"]
     csv_code = cfg["sources"]["football_data_co_uk"]["code"]
     hist_seasons = seasons_before(season, history_seasons)
@@ -288,6 +292,7 @@ def main(argv: list[str] | None = None) -> int:
         params.xi = args.xi
     if args.prior_strength is not None:
         params.prior_strength = args.prior_strength
+    overrides = {k: v for k, v in (("xi", args.xi), ("prior_strength", args.prior_strength)) if v is not None}
     history_seasons = args.history_seasons or int(model_cfg.get("history_seasons", 2))
     n_draws = args.draws if args.draws is not None else (
         int(model_cfg.get("n_rating_draws", 100)) if model_cfg.get("rating_uncertainty", True) else 1)
@@ -297,7 +302,7 @@ def main(argv: list[str] | None = None) -> int:
     matches: list[dict[str, Any]] = []
     for code in codes:
         cfg = load_league(args.config_season, code)
-        res = run_league(cfg, args.season, params, args.sims, history_seasons, n_draws)
+        res = run_league(cfg, args.season, params, args.sims, history_seasons, n_draws, model_cfg, overrides)
         outcomes.extend(res["outcomes"])
         matches.extend(res["matches"])
     report = summarise(args.season, codes, outcomes, matches, params, args.sims, n_draws)

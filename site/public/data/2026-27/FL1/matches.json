@@ -1,7 +1,7 @@
 {
  "league": "FL1",
  "season": "2026-27",
- "updated_at": "2026-09-17T03:28:55Z",
+ "updated_at": "2026-09-17T03:57:32Z",
  "results_hash": "61a8138d5d2915e91e78e4aff6f83ee5d6285ac4",
  "teams": [
   {
@@ -723,7 +723,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.7597,
+    "home": 0.7596,
     "draw": 0.1422,
     "away": 0.0982,
     "xg_home": 2.94,
@@ -740,7 +740,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5221,
+    "home": 0.522,
     "draw": 0.2351,
     "away": 0.2429,
     "xg_home": 1.84,
@@ -3359,7 +3359,7 @@
    "away_goals": null,
    "forecast": {
     "home": 0.4365,
-    "draw": 0.2435,
+    "draw": 0.2434,
     "away": 0.3201,
     "xg_home": 1.67,
     "xg_away": 1.4
@@ -4140,7 +4140,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5264,
+    "home": 0.5263,
     "draw": 0.2441,
     "away": 0.2295,
     "xg_home": 1.73,

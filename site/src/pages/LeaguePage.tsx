@@ -56,7 +56,7 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
 
   const hasProbs = !!standings?.model && standings.teams.some((t) => t.probs)
   const columns = useMemo(() => (standings ? buildColumns(standings.league, hasProbs) : []), [standings, hasProbs])
-  const footnotes = useMemo(() => (standings && hasProbs ? buildFootnotes(standings.league) : []), [standings, hasProbs])
+  const footnotes = useMemo(() => (standings && hasProbs ? buildFootnotes(standings.league, standings.rules) : []), [standings, hasProbs])
 
   if (error) return <p className="notice error">{error}</p>
   if (!standings) return <p className="notice">Loading table…</p>
@@ -90,6 +90,9 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
             <span key={f.n}><sup>{f.n}</sup> {f.text}</span>
           ))}
           {hasProbs && <span>✓ settled · ✗ out of reach, on points alone. Click a club for its season page.</span>}
+          {standings.rules?.deductions?.length ? (
+            <span>* Points deducted: {standings.rules.deductions.map((d) => `${d.team} ${d.points}${d.reason ? ` (${d.reason})` : ''}`).join(', ')}.</span>
+          ) : null}
         </p>
       )}
       <ZoneLegend league={league} />

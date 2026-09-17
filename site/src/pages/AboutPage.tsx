@@ -202,17 +202,25 @@ export default function AboutPage({ index }: { index: DataIndex }) {
       <h2>Assumptions to be aware of</h2>
       <ul>
         <li>
-          Domestic cup winners earn European places. Because a cup winner usually also qualifies through the league,
-          those places are assumed to pass down the table. Each league page lists the resulting positions.
+          Domestic cup winners earn European places. Until a cup is decided, its winner is assumed to qualify through
+          the league too, so the place passes down the table. Once a winner is entered in the league's rule file, every
+          simulated season hands out the places exactly as the rules do: the winner takes the place unless it has
+          already qualified, in which case the place passes to the next club in the table.
         </li>
         <li>
-          The extra Champions League places UEFA awards to the two best-performing associations each season are not
-          modelled; they are decided at the end of the European season.
+          The extra Champions League place UEFA awards to the two best-performing associations is included only when
+          the league's rule file gives it a probability, set by hand from the UEFA association-ranking race. It is off
+          until that race is worth tracking. Each league page's footnote says when it is on.
         </li>
         <li>
-          Relegation play-offs in the Bundesliga and Ligue 1 are shown as their own outcome. The play-off itself is not
-          simulated. Serie A's play-offs for a tie on points for first place or the last relegation spot are treated
-          as a coin flip.
+          Relegation play-offs in the Bundesliga and Ligue 1 are shown as their own outcome, and the team page's
+          relegation-risk figure adds the play-off using the historical survival rate of the top-flight side (about four
+          in five in Germany, one in two in France). The play-off match itself is not simulated. Serie A's play-offs for
+          a tie on points for first place or the last relegation spot are treated as a coin flip.
+        </li>
+        <li>
+          Points deductions are applied from the league's rule file as soon as they are entered and show as an
+          asterisk next to the points.
         </li>
         <li>
           The model only sees results. Injuries, transfers, fixture congestion, cup runs and managerial changes are
@@ -223,6 +231,14 @@ export default function AboutPage({ index }: { index: DataIndex }) {
           lots) are split at random in the simulations and marked with an equals sign in the live table.
         </li>
       </ul>
+
+      <h2>Use the data yourself</h2>
+      <p>
+        Every number on this site is a static JSON file you can fetch directly, documented in the{' '}
+        <a href="https://github.com/Doomarchy/tablegenius/blob/main/docs/data-feed.md">data feed guide</a>. The
+        code, the rule files and the backtest are all in the{' '}
+        <a href="https://github.com/Doomarchy/tablegenius">open repository</a>.
+      </p>
     </article>
   )
 }

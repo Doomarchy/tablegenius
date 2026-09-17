@@ -227,6 +227,8 @@ td.hue-ink-soft .pbar::after { background: var(--ink-soft); }
 .league-table thead th.col-prob-head:first-of-type, .league-table td.col-prob:first-of-type { border-left: 1px solid var(--rule); }
 
 .footnotes { margin: 8px 0 0; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft); display: grid; gap: 2px; }
+.deducted { color: var(--scarlet); font-size: 0.7em; margin-left: 1px; }
+.ml-pct small { display: block; font-size: 0.62rem; color: var(--ink-faint); }
 .footnotes sup { color: var(--scarlet); }
 
 /* Legend: miniature stamps. */

@@ -29,14 +29,17 @@ from dotenv import load_dotenv
 from .clinch import current_statuses, scenarios
 from .config import LEAGUE_ORDER, load_league
 from .dataset import assemble_live
+from .europe import resolve_cups
 from .fetch import FootballDataClient
 from .history import fetch_season_csv
 from .model import ModelParams, Ratings, fit, sample_ratings, score_matrix, outcome_probs
+from .odds import market_odds
 from .paths import CACHE_DIR, CONFIG_DIR, DATA_DIR, ENV_FILE
 from .simulate import simulate, team_probabilities
 from .snapshots import update_history
 from .sources import normalize_csv_matches, normalize_org_matches, normalize_org_standings
-from .standings import build_standings, is_finished
+from .standings import build_standings, is_finished, point_deductions
+from .validate import validate_league_output
 
 log = logging.getLogger("tablegenius")
 
@@ -115,25 +118,36 @@ def fixture_forecasts(draws: list[Ratings], matches: list[dict[str, Any]], max_g
             for i, m in enumerate(pending)}
 
 
-def run_model(cfg: dict[str, Any], matches: list[dict[str, Any]], rows: list[dict[str, Any]],
-              previous: dict[str, Any] | None, previous_matches: dict[str, Any] | None,
+def rules_hash(cfg: dict[str, Any]) -> str:
+    """Hash of the rule settings that change probabilities without a new result."""
+    keys = ("zones", "european_places", "extra_ucl_probability", "domestic_cups", "points_deductions",
+            "relegation_playoff_survival", "tiebreakers", "tied_title_playoff", "tied_relegation_playoff")
+    return hashlib.sha1(json.dumps({k: cfg.get(k) for k in keys}, sort_keys=True, default=str).encode()).hexdigest()[:12]
+
+
+def run_model(cfg: dict[str, Any], matches: list[dict[str, Any]], teams: dict[Any, dict[str, Any]],
+              rows: list[dict[str, Any]], previous: dict[str, Any] | None, previous_matches: dict[str, Any] | None,
               model_cfg: dict[str, Any], force: bool, n_sims_override: int | None = None
               ) -> tuple[dict[Any, dict[str, Any]], dict[str, Any], dict[Any, dict[str, float]]]:
-    """Fit ratings and simulate the season; reuse the previous run when no result changed."""
+    """Fit ratings and simulate the season; reuse the previous run when nothing changed."""
     code = cfg["code"]
     h = results_hash(matches)
+    rh = rules_hash(cfg)
     prev_model = (previous or {}).get("model")
-    if (prev_model and prev_model.get("results_hash") == h and not force and n_sims_override is None
+    if (prev_model and prev_model.get("results_hash") == h and prev_model.get("rules_hash") == rh
+            and prev_model.get("model_version") == model_version_of(model_cfg)
+            and not force and n_sims_override is None
             and previous and all("probs" in r for r in previous.get("teams", []))):
-        log.info("%s: no new results since the last model run; keeping its probabilities", code)
+        log.info("%s: no new results or rule changes since the last model run; keeping its probabilities", code)
         prev_forecasts = {m["id"]: m["forecast"] for m in (previous_matches or {}).get("matches", []) if m.get("forecast")}
         return {r["id"]: r["probs"] for r in previous["teams"]}, prev_model, prev_forecasts
 
     t0 = time.time()
-    params = ModelParams.from_dict(model_cfg)
+    params = ModelParams.for_league(model_cfg, code)
     as_of = datetime.now(timezone.utc).replace(tzinfo=None, microsecond=0)
     team_ids = [r["id"] for r in rows]
-    data = assemble_live(cfg, matches, team_ids, as_of, params, int(model_cfg.get("history_seasons", 2)))
+    data = assemble_live(cfg, matches, team_ids, as_of, params, int(model_cfg.get("history_seasons", 2)),
+                         xg_weight=float(model_cfg.get("xg_weight", 0.0) or 0.0))
     ratings = fit(data, params)
     if not ratings.converged:
         log.warning("%s: optimiser did not report convergence", code)
@@ -143,15 +157,21 @@ def run_model(cfg: dict[str, Any], matches: list[dict[str, Any]], rows: list[dic
     seed = int(h[:8], 16)
     n_draws = int(model_cfg.get("n_rating_draws", 100)) if model_cfg.get("rating_uncertainty", True) else 1
     draws = sample_ratings(ratings, n_draws, np.random.default_rng(seed + 1), params.rho_bounds)
+    deductions = point_deductions(cfg, teams)
+    cups = resolve_cups(cfg, teams)
     sim = simulate(cfg, ratings, team_ids, played, fixtures, n_sims=n_sims, seed=seed, max_goals=params.max_goals,
-                   ratings_draws=draws)
-    probs = team_probabilities(cfg, sim, ratings)
+                   ratings_draws=draws, point_adjustments={t: -p for t, p in deductions.items()})
+    probs = team_probabilities(cfg, sim, ratings, cups=cups)
     forecasts = fixture_forecasts(draws, matches, params.max_goals)
     names = {r["id"]: r["short_name"] for r in rows}
     promoted = [names[t] for i, t in enumerate(team_ids) if not data.established[i]]
     model_block = {
         "as_of": as_of.isoformat() + "Z",
         "results_hash": h,
+        "rules_hash": rh,
+        "model_version": model_version_of(model_cfg),
+        "xg_weight": float(model_cfg.get("xg_weight", 0.0) or 0.0),
+        "xg_matches": int(getattr(data, "xg_matches", 0)),
         "n_sims": n_sims,
         "n_rating_draws": len(draws),
         "seed": seed,
@@ -176,6 +196,31 @@ def run_model(cfg: dict[str, Any], matches: list[dict[str, Any]], rows: list[dic
              code, ratings.n_matches, ratings.effective_matches, len(fixtures), n_sims, time.time() - t0,
              ratings.home_advantage, ratings.rho)
     return probs, model_block, forecasts
+
+
+def model_version_of(model_cfg: dict[str, Any]) -> str:
+    from .snapshots import model_version
+    return model_version(model_cfg)
+
+
+def rules_state(cfg: dict[str, Any], teams: dict[Any, dict[str, Any]]) -> dict[str, Any]:
+    """The rule settings in force, in a form the site can display."""
+    names = {tid: t.get("short_name") or t.get("name") for tid, t in teams.items()}
+    cups = []
+    for c in resolve_cups(cfg, teams):
+        w = c["winner"]
+        cups.append({"name": c["name"], "grants": c["grants"],
+                     "winner": None if w is None else ("a club outside the league" if w == "external" else names.get(w, str(w)))})
+    deductions = []
+    for tid, pts in point_deductions(cfg, teams).items():
+        reasons = [d.get("reason") for d in cfg.get("points_deductions", []) if str(d.get("team")) in (str(tid), teams[tid].get("name"), teams[tid].get("short_name"), teams[tid].get("tla"))]
+        deductions.append({"team": names.get(tid), "points": pts, "reason": next((r for r in reasons if r), None)})
+    return {
+        "cups": cups,
+        "deductions": deductions,
+        "extra_ucl_probability": float(cfg.get("extra_ucl_probability", 0.0) or 0.0),
+        "relegation_playoff_survival": cfg.get("relegation_playoff_survival"),
+    }
 
 
 def settle(cfg: dict[str, Any], rows: list[dict[str, Any]], matches: list[dict[str, Any]]) -> dict[str, Any]:
@@ -233,7 +278,7 @@ def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient 
     forecasts: dict[Any, dict[str, float]] = {}
     if model_cfg is not None and source == "api":
         try:
-            probs, model_block, forecasts = run_model(cfg, matches, table["teams"], previous, previous_matches,
+            probs, model_block, forecasts = run_model(cfg, matches, teams, table["teams"], previous, previous_matches,
                                                       model_cfg, force_model, n_sims)
             for row in table["teams"]:
                 row["probs"] = probs.get(row["id"])
@@ -243,6 +288,12 @@ def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient 
             probs = None
 
     next_round = settle(cfg, table["teams"], matches) if source == "api" else None
+    market: dict[Any, dict[str, Any]] = {}
+    if source == "api":
+        try:
+            market = market_odds(cfg, matches, teams, CACHE_DIR)
+        except Exception as exc:
+            log.warning("%s: market odds unavailable: %s", code, exc)
 
     history_summary = None
     if model_cfg is not None and source == "api" and not skip_history:
@@ -259,16 +310,23 @@ def process_league(cfg: dict[str, Any], source: str, client: FootballDataClient 
         "source": "football-data.org" if source == "api" else "football-data.co.uk (preview)",
         "matchday": table["matchday"],
         "model": model_block,
+        "rules": rules_state(cfg, teams) if source == "api" else None,
         "next_round": next_round,
         "history": history_summary,
         "teams": table["teams"],
         "source_check": check,
     }
+    problems = validate_league_output(cfg, standings, matches)
+    if problems:
+        raise RuntimeError(f"{code}: output failed validation, previous files kept: " + "; ".join(problems))
     write_json(league_dir / "standings.json", standings)
     for m in matches:
         fc = forecasts.get(m["id"])
         if fc:
             m["forecast"] = fc
+        mk = market.get(m["id"])
+        if mk:
+            m["market"] = mk
     write_json(league_dir / "matches.json", {
         "league": code,
         "season": cfg["season"],

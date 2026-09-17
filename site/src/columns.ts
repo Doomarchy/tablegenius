@@ -32,10 +32,19 @@ function range(p: [number, number]) {
   return p[0] === p[1] ? `${p[0]}` : `${p[0]}–${p[1]}`
 }
 
-export function buildFootnotes(league: LeagueMeta): Footnote[] {
+export function buildFootnotes(league: LeagueMeta, rules?: { cups: { name: string; winner: string | null }[]; extra_ucl_probability: number } | null): Footnote[] {
   const notes: Footnote[] = []
   if (league.zones.uel?.positions) {
-    notes.push({ n: 1, text: 'Cup winners’ European places are assumed to pass down the table.' })
+    const decided = (rules?.cups ?? []).filter((c) => c.winner)
+    const undecided = (rules?.cups ?? []).filter((c) => !c.winner)
+    let text = 'Cup winners’ European places are assumed to pass down the table.'
+    if (decided.length) {
+      text = decided.map((c) => `${c.name}: ${c.winner}`).join('; ') + (undecided.length ? `; ${undecided.map((c) => c.name).join(' and ')} undecided (assumed to pass down)` : '') + '. Chances account for where the cup winner finishes.'
+    }
+    if (rules && rules.extra_ucl_probability > 0) {
+      text += ` An extra Champions League place is included with a ${Math.round(rules.extra_ucl_probability * 100)}% chance.`
+    }
+    notes.push({ n: 1, text })
   }
   if (league.zones.ucl_qualifying?.positions) {
     notes.push({ n: 2, text: `Includes position ${range(league.zones.ucl_qualifying.positions)}, which enters the Champions League qualifying rounds rather than the league phase.` })
@@ -70,7 +79,7 @@ export function buildColumns(league: LeagueMeta, hasProbs: boolean): Column[] {
     { key: 'europe', label: 'Europe', description: 'Chance of any UEFA competition: Champions League, Europa League or Conference League', group: 'prob', ink: 'scarlet', value: prob((p) => p.europe), kind: 'prob' },
   )
   if (z.relegation_playoff?.positions) {
-    cols.push({ key: 'relegation_playoff', label: 'Play-off', description: `Chance of finishing ${range(z.relegation_playoff.positions)} and entering the relegation play-off (the play-off itself is not simulated)`, group: 'prob', ink: 'ink-soft', value: prob((p) => p.relegation_playoff), kind: 'prob' })
+    cols.push({ key: 'relegation_playoff', label: 'Play-off', description: `Chance of finishing ${range(z.relegation_playoff.positions)} and entering the relegation play-off. Combined with automatic relegation and the historical survival rate, the overall relegation risk is shown on the team page.`, group: 'prob', ink: 'ink-soft', value: prob((p) => p.relegation_playoff), kind: 'prob' })
   }
   cols.push(
     { key: 'relegation', label: 'Rel.', description: `Chance of automatic relegation (positions ${range(z.relegation.positions!)})`, group: 'prob', ink: 'ink', value: prob((p) => p.relegation), kind: 'prob' },

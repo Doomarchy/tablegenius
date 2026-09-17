@@ -22,9 +22,10 @@ from typing import Any
 import numpy as np
 
 from .dataset import assemble_live, parse_date
+from .europe import resolve_cups
 from .model import ModelParams, fit, sample_ratings
 from .simulate import simulate, team_probabilities
-from .standings import build_standings, is_finished
+from .standings import build_standings, is_finished, point_deductions
 
 log = logging.getLogger(__name__)
 
@@ -34,8 +35,8 @@ GRACE = timedelta(hours=3)
 
 
 def model_version(model_cfg: dict[str, Any]) -> str:
-    keys = ("time_decay_xi_per_day", "prior_strength", "promoted_prior", "history_seasons", "rating_uncertainty",
-            "n_rating_draws", "max_goals", "rho_bounds")
+    keys = ("time_decay_xi_per_day", "prior_strength", "promoted_prior", "promoted_prior_by_league", "history_seasons",
+            "rating_uncertainty", "n_rating_draws", "max_goals", "rho_bounds", "xg_weight", "time_decay_by_league")
     return hashlib.sha1(json.dumps({k: model_cfg.get(k) for k in keys}, sort_keys=True).encode()).hexdigest()[:10]
 
 
@@ -78,19 +79,23 @@ def snapshot_from_probs(probs: dict[Any, dict[str, Any]], rows: list[dict[str, A
 def compute_snapshot(cfg: dict[str, Any], matches: list[dict[str, Any]], teams: dict[Any, dict[str, Any]],
                      as_of: datetime, params: ModelParams, model_cfg: dict[str, Any], n_sims: int, seed: int) -> dict[str, Any]:
     """Re-run the model as if `as_of` were now."""
+    as_of_date = as_of.date().isoformat()
     played_matches = [m for m in matches if is_finished(m) and parse_date(m["utc_date"]) < as_of]
-    table = build_standings(played_matches, teams, cfg)
+    table = build_standings(played_matches, teams, cfg, as_of=as_of_date)
     team_ids = [r["id"] for r in table["teams"]]
-    data = assemble_live(cfg, played_matches, team_ids, as_of, params, int(model_cfg.get("history_seasons", 2)))
+    params = ModelParams.for_league(model_cfg, cfg["code"]) if params is None else params
+    data = assemble_live(cfg, played_matches, team_ids, as_of, params, int(model_cfg.get("history_seasons", 2)),
+                         xg_weight=float(model_cfg.get("xg_weight", 0.0) or 0.0))
     ratings = fit(data, params)
     n_draws = int(model_cfg.get("n_rating_draws", 100)) if model_cfg.get("rating_uncertainty", True) else 1
     draws = sample_ratings(ratings, n_draws, np.random.default_rng(seed + 1), params.rho_bounds)
     played = [(m["home_id"], m["away_id"], m["home_goals"], m["away_goals"]) for m in played_matches]
     fixtures = [(m["home_id"], m["away_id"]) for m in matches
                 if m["status"] != "CANCELLED" and not (is_finished(m) and parse_date(m["utc_date"]) < as_of)]
+    deductions = point_deductions(cfg, teams, as_of_date)
     sim = simulate(cfg, ratings, team_ids, played, fixtures, n_sims=n_sims, seed=seed, max_goals=params.max_goals,
-                   ratings_draws=draws)
-    probs = team_probabilities(cfg, sim, ratings)
+                   ratings_draws=draws, point_adjustments={t: -p for t, p in deductions.items()})
+    probs = team_probabilities(cfg, sim, ratings, cups=resolve_cups(cfg, teams))
     return snapshot_from_probs(probs, table["teams"])
 
 
@@ -100,7 +105,7 @@ def update_history(cfg: dict[str, Any], matches: list[dict[str, Any]], teams: di
     """Bring history.json up to date: backfill missing completed matchdays, refresh the live point."""
     now = now or datetime.now(timezone.utc).replace(tzinfo=None)
     version = model_version(model_cfg)
-    params = ModelParams.from_dict(model_cfg)
+    params = ModelParams.for_league(model_cfg, cfg["code"])
     n_sims = int(model_cfg.get("history_simulations", 5000))
     existing: dict[str, Any] = {}
     if path.exists():

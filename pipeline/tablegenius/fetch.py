@@ -46,16 +46,28 @@ class FootballDataClient:
             time.sleep(wait)
         url = BASE_URL + path
         resp = None
-        for attempt in range(2):
+        last_error: Exception | None = None
+        for attempt in range(4):
             self._last_request = time.time()
             self.calls_made += 1
-            resp = requests.get(url, headers={"X-Auth-Token": self.token}, params=params, timeout=30)
-            if resp.status_code == 429 and attempt == 0:
+            try:
+                resp = requests.get(url, headers={"X-Auth-Token": self.token}, params=params, timeout=30)
+            except requests.RequestException as exc:      # network blip: back off and retry
+                last_error = exc
+                log.warning("football-data.org request failed (%s); retrying", exc)
+                time.sleep(5 * (attempt + 1))
+                continue
+            if resp.status_code == 429:
                 log.warning("rate limited by football-data.org; sleeping 61 s")
                 time.sleep(61)
                 continue
+            if resp.status_code >= 500:
+                log.warning("football-data.org returned %s; retrying", resp.status_code)
+                time.sleep(10 * (attempt + 1))
+                continue
             break
-        assert resp is not None
+        if resp is None:
+            raise RuntimeError(f"football-data.org unreachable for {path}: {last_error}")
         if resp.status_code != 200:
             raise RuntimeError(f"football-data.org {resp.status_code} for {path} {params}: {resp.text[:300]}")
         remaining = resp.headers.get("X-Requests-Available-Minute")

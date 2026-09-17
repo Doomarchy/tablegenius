@@ -52,10 +52,22 @@ def main(argv: list[str] | None = None) -> int:
     print(f"\npromoted teams: n={len(rows_out)}")
     print(f"attack : mean {att.mean():.3f}  sd {att.std(ddof=1):.3f}  (se {att.std(ddof=1)/np.sqrt(len(att)):.3f})")
     print(f"defence: mean {dfn.mean():.3f}  sd {dfn.std(ddof=1):.3f}  (se {dfn.std(ddof=1)/np.sqrt(len(dfn)):.3f})")
+    # Per-league priors, shrunk towards the pooled mean (each league has only ~9 promoted
+    # teams, so the raw league means are noisy): league = pooled + (raw - pooled) * n / (n + k).
+    k = 10.0
+    by_league: dict[str, dict[str, float]] = {}
     for code in LEAGUE_ORDER:
         sel = [r for r in rows_out if r[0] == code]
         if sel:
-            print(f"  {code}: attack {np.mean([r[3] for r in sel]):.3f}  defence {np.mean([r[4] for r in sel]):.3f}  (n={len(sel)})")
+            n = len(sel)
+            a_raw, d_raw = float(np.mean([r[3] for r in sel])), float(np.mean([r[4] for r in sel]))
+            a_shr = att.mean() + (a_raw - att.mean()) * n / (n + k)
+            d_shr = dfn.mean() + (d_raw - dfn.mean()) * n / (n + k)
+            by_league[code] = {"attack": round(a_shr, 3), "defence": round(d_shr, 3)}
+            print(f"  {code}: raw attack {a_raw:.3f} defence {d_raw:.3f} (n={n}) -> shrunk {a_shr:.3f} / {d_shr:.3f}")
+    print("\npromoted_prior_by_league for config/model.json:")
+    import json
+    print(json.dumps(by_league, indent=2))
     return 0
 
 

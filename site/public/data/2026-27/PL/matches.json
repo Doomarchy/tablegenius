@@ -1,7 +1,7 @@
 {
  "league": "PL",
  "season": "2026-27",
- "updated_at": "2026-09-17T03:28:04Z",
+ "updated_at": "2026-09-17T03:57:17Z",
  "results_hash": "131dad5675dd77080bc9edf4795cca4c8aea6cee",
  "teams": [
   {
@@ -897,7 +897,7 @@
    "away_goals": null,
    "forecast": {
     "home": 0.3581,
-    "draw": 0.286,
+    "draw": 0.2859,
     "away": 0.3559,
     "xg_home": 1.32,
     "xg_away": 1.32
@@ -1168,7 +1168,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3358,
+    "home": 0.3359,
     "draw": 0.2684,
     "away": 0.3958,
     "xg_home": 1.41,
@@ -1746,7 +1746,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6582,
+    "home": 0.6581,
     "draw": 0.2136,
     "away": 0.1283,
     "xg_home": 2.14,
@@ -3788,7 +3788,7 @@
    "forecast": {
     "home": 0.525,
     "draw": 0.261,
-    "away": 0.214,
+    "away": 0.2141,
     "xg_home": 1.75,
     "xg_away": 1.04
    }
@@ -5351,7 +5351,7 @@
    "away_goals": null,
    "forecast": {
     "home": 0.395,
-    "draw": 0.2906,
+    "draw": 0.2905,
     "away": 0.3145,
     "xg_home": 1.36,
     "xg_away": 1.18
@@ -5639,7 +5639,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.22,
+    "home": 0.2201,
     "draw": 0.2427,
     "away": 0.5372,
     "xg_home": 1.15,
@@ -5928,7 +5928,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3444,
+    "home": 0.3445,
     "draw": 0.2986,
     "away": 0.357,
     "xg_home": 1.23,

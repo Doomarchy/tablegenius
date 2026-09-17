@@ -16,6 +16,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  issues: write
 
 concurrency:
   group: update-and-deploy
@@ -37,10 +38,11 @@ jobs:
         run: pip install -r pipeline/requirements.txt
 
       - name: Fetch data and run the pipeline
+        id: pipeline
         working-directory: pipeline
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
-        run: python -m tablegenius.run --season 2026-27
+        run: python -m tablegenius.run --season 2026-27 2>&1 | tee pipeline.log
 
       - name: Commit updated data
         run: |
@@ -69,7 +71,7 @@ jobs:
         working-directory: site
         run: |
           REPO="${{ github.event.repository.name }}"
-          if [[ "$REPO" == *.github.io ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
+          if [[ -f public/CNAME ]] || [[ "$REPO" == *.github.io ]]; then export BASE_PATH="/"; else export BASE_PATH="/$REPO/"; fi
           echo "Building with BASE_PATH=$BASE_PATH"
           npm run build
 
@@ -77,6 +79,30 @@ jobs:
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site/dist
+
+      - name: Close any open failure alert
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for n in $(gh issue list --label pipeline-failure --state open --json number --jq '.[].number'); do
+            gh issue close "$n" --comment "The scheduled run succeeded again: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          done
+
+      - name: Open a failure alert
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create pipeline-failure --description "A scheduled data run failed" --color B60205 2>/dev/null || true
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          TAIL=$(tail -n 40 pipeline/pipeline.log 2>/dev/null || echo "(no pipeline log)")
+          if [ -z "$(gh issue list --label pipeline-failure --state open --json number --jq '.[].number')" ]; then
+            gh issue create --title "Scheduled data run failed ($(date -u +%Y-%m-%d))" --label pipeline-failure \
+              --body "$(printf 'The update-and-deploy workflow failed. Run: %s\n\nLast lines of the pipeline log:\n\n```\n%s\n```\n\nThe site keeps serving the previous data until a run succeeds; this issue closes itself then.' "$RUN_URL" "$TAIL")"
+          else
+            gh issue comment "$(gh issue list --label pipeline-failure --state open --json number --jq '.[0].number')" --body "Failed again: $RUN_URL"
+          fi
 
   deploy:
     needs: update

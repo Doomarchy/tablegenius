@@ -1,7 +1,7 @@
 {
  "league": "PD",
  "season": "2026-27",
- "updated_at": "2026-09-17T03:28:16Z",
+ "updated_at": "2026-09-17T03:57:22Z",
  "results_hash": "22ea124dd34e2dabb902cd2cace053d2db7aebb1",
  "teams": [
   {
@@ -1220,7 +1220,7 @@
    "away_goals": null,
    "forecast": {
     "home": 0.4993,
-    "draw": 0.2489,
+    "draw": 0.2488,
     "away": 0.2519,
     "xg_home": 1.56,
     "xg_away": 1.02
@@ -3361,7 +3361,7 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6292,
+    "home": 0.6291,
     "draw": 0.2077,
     "away": 0.1631,
     "xg_home": 1.99,

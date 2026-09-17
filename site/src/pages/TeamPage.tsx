@@ -10,7 +10,7 @@ const OUTCOMES: { key: OutcomeKey; label: string }[] = [
   { key: 'title', label: 'Title' },
   { key: 'ucl', label: 'Champions League' },
   { key: 'europe', label: 'Europe' },
-  { key: 'drop_zone', label: 'Relegation zone' },
+  { key: 'drop_zone', label: 'Relegation risk' },
   { key: 'relegation', label: 'Relegation' },
 ]
 
@@ -27,7 +27,7 @@ function probFor(row: TeamRow, key: OutcomeKey): number | null {
     case 'relegation':
       return p.relegation
     case 'drop_zone':
-      return p.relegation + p.relegation_playoff
+      return p.relegation_total ?? p.relegation + p.relegation_playoff
   }
 }
 
@@ -59,7 +59,8 @@ function StatusChips({ row, hasPlayoff }: { row: TeamRow; hasPlayoff: boolean })
               <small>{magic} more pt{magic === 1 ? '' : 's'} to {negative ? 'be safe' : 'guarantee'}</small>
             )}
             {st === 'alive' && p !== null && !negative && <small>chance now</small>}
-            {st === 'alive' && p !== null && negative && <small>risk now</small>}
+            {st === 'alive' && p !== null && o.key === 'relegation' && <small>automatic, risk now</small>}
+            {st === 'alive' && p !== null && o.key === 'drop_zone' && <small>incl. play-off, risk now</small>}
           </li>
         )
       })}
@@ -236,12 +237,18 @@ export default function TeamPage({ index }: { index: DataIndex }) {
                 const home = String(m.home_id) === teamId
                 const opp = names.get(String(home ? m.away_id : m.home_id)) ?? '?'
                 const f = m.forecast
+                const mk = m.market
                 return (
-                  <li key={m.id}>
+                  <li key={m.id} title={mk ? `Bookmakers (${mk.source}): win ${Math.round((home ? mk.home : mk.away) * 100)}%, draw ${Math.round(mk.draw * 100)}%` : undefined}>
                     <span className="ml-date">{dateLabel(m.utc_date)}</span>
                     <span className="ml-opp"><b>{home ? 'H' : 'A'}</b> {opp}</span>
                     {f ? <WdlBar w={home ? f.home : f.away} d={f.draw} l={home ? f.away : f.home} /> : <span />}
-                    {f && <span className="ml-pct">{Math.round((home ? f.home : f.away) * 100)}% win</span>}
+                    {f && (
+                      <span className="ml-pct">
+                        {Math.round((home ? f.home : f.away) * 100)}% win
+                        {mk && <small> · mkt {Math.round((home ? mk.home : mk.away) * 100)}%</small>}
+                      </span>
+                    )}
                   </li>
                 )
               })}

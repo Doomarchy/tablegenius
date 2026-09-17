@@ -50,6 +50,20 @@ class ModelParams:
         p.max_goals = int(d.get("max_goals", p.max_goals))
         return p
 
+    @classmethod
+    def for_league(cls, d: dict[str, Any], code: str) -> "ModelParams":
+        """Parameters for one league: the shared values, overridden by any per-league entries
+        in `promoted_prior_by_league` and `time_decay_by_league`."""
+        p = cls.from_dict(d)
+        by_league = (d.get("promoted_prior_by_league") or {}).get(code)
+        if by_league:
+            p.promoted_attack = float(by_league.get("attack", p.promoted_attack))
+            p.promoted_defence = float(by_league.get("defence", p.promoted_defence))
+        xi = (d.get("time_decay_by_league") or {}).get(code)
+        if xi is not None:
+            p.xi = float(xi)
+        return p
+
     @property
     def half_life_days(self) -> float:
         return float(np.log(2) / self.xi) if self.xi > 0 else float("inf")
@@ -69,6 +83,7 @@ class FitData:
     established: np.ndarray             # bool mask: teams that anchor the zero point
     n_current: int = 0
     seasons: list[str] = field(default_factory=list)
+    xg_matches: int = 0                 # matches whose goals were blended with expected goals
 
 
 @dataclass

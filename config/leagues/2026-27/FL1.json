@@ -4,27 +4,96 @@
   "country": "France",
   "season": "2026-27",
   "sources": {
-    "football_data_org": { "competition": "FL1", "season": 2026 },
-    "football_data_co_uk": { "code": "F1" }
+    "football_data_org": {
+      "competition": "FL1",
+      "season": 2026
+    },
+    "football_data_co_uk": {
+      "code": "F1"
+    }
   },
   "team_count": 18,
   "rounds": 2,
-  "tiebreakers": ["points", "goal_difference", "h2h_points", "h2h_goal_difference", "goals_for", "wins", "away_wins", "fair_play", "drawing_of_lots"],
+  "tiebreakers": [
+    "points",
+    "goal_difference",
+    "h2h_points",
+    "h2h_goal_difference",
+    "goals_for",
+    "wins",
+    "away_wins",
+    "fair_play",
+    "drawing_of_lots"
+  ],
   "h2h_requires_all_matches_played": true,
   "tied_title_playoff": false,
   "tied_relegation_playoff": false,
   "zones": {
-    "ucl": { "label": "Champions League", "positions": [1, 3] },
-    "ucl_qualifying": { "label": "Champions League qualifying", "positions": [4, 4] },
-    "uel": { "label": "Europa League", "positions": [5, 6] },
-    "uecl": { "label": "Conference League play-off", "positions": [7, 7] },
-    "relegation_playoff": { "label": "Relegation play-off", "positions": [16, 16] },
-    "relegation": { "label": "Relegation", "positions": [17, 18] }
+    "ucl": {
+      "label": "Champions League",
+      "positions": [
+        1,
+        3
+      ]
+    },
+    "ucl_qualifying": {
+      "label": "Champions League qualifying",
+      "positions": [
+        4,
+        4
+      ]
+    },
+    "uel": {
+      "label": "Europa League",
+      "positions": [
+        5,
+        6
+      ]
+    },
+    "uecl": {
+      "label": "Conference League play-off",
+      "positions": [
+        7,
+        7
+      ]
+    },
+    "relegation_playoff": {
+      "label": "Relegation play-off",
+      "positions": [
+        16,
+        16
+      ]
+    },
+    "relegation": {
+      "label": "Relegation",
+      "positions": [
+        17,
+        18
+      ]
+    }
   },
+  "european_places": {
+    "ucl": 3,
+    "ucl_qualifying": 1,
+    "uel": 1,
+    "uecl": 1
+  },
+  "european_places_note": "League places per competition before cup winners are added; the zones above are the display layout under the pass-down assumption.",
+  "extra_ucl_probability": 0.0,
+  "extra_ucl_probability_note": "Chance that this league earns the extra Champions League place (European Performance Spot) for next season; 0 = not modelled. Set by hand from the UEFA association ranking race.",
   "extra_ucl_place": false,
   "domestic_cups": [
-    { "name": "Coupe de France", "grants": "uel" }
+    {
+      "name": "Coupe de France",
+      "grants": "uel",
+      "winner": null
+    }
   ],
+  "domestic_cups_note": "Set winner to a club name (as shown on the site), its football-data.org id, or \"external\" for a club outside this league, once the cup is decided; null = undecided (assumed to pass down).",
+  "points_deductions": [],
+  "points_deductions_note": "Example: {\"team\": \"Everton FC\", \"points\": 10, \"reason\": \"PSR breach\", \"applied\": \"2026-11-17\"}",
+  "relegation_playoff_survival": 0.5,
+  "relegation_playoff_survival_note": "Ligue 1 side won 4 of the 8 barrages from 2017 to 2026. Used only for the combined relegation-risk figure; the play-off itself is not simulated.",
   "assumptions": [
     "The Coupe de France winner's Europa League place is assumed to pass down the table, so 5th and 6th go to the Europa League and 7th to the Conference League play-off round.",
     "4th place enters the Champions League third qualifying round rather than the league phase; it is counted in the Champions League column and flagged in the tooltip.",
