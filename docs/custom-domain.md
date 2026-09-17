@@ -1,6 +1,6 @@
 # Custom domain
 
-The site works at `https://doomarchy.github.io/tablegenius/`. To serve it from your own
+The site works at `https://ryan-castellano.github.io/tablegenius/`. To serve it from your own
 domain, buy the domain from any registrar (Cloudflare Registrar, Namecheap and Porkbun are
 cheap and support the records below), then:
 
@@ -12,10 +12,10 @@ cheap and support the records below), then:
    | A | @ | 185.199.109.153 |
    | A | @ | 185.199.110.153 |
    | A | @ | 185.199.111.153 |
-   | CNAME | www | doomarchy.github.io |
+   | CNAME | www | ryan-castellano.github.io |
 
    For a subdomain such as `tables.example.com`, one CNAME record pointing at
-   `doomarchy.github.io` is enough.
+   `ryan-castellano.github.io` is enough.
 
 2. **Tell GitHub Pages.** Repository → Settings → Pages → Custom domain: enter the domain and
    save, then tick "Enforce HTTPS" once the certificate is issued (a few minutes to an hour).

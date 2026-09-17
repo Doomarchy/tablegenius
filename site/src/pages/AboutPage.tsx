@@ -236,9 +236,9 @@ export default function AboutPage({ index }: { index: DataIndex }) {
       <h2>Use the data yourself</h2>
       <p>
         Every number on this site is a static JSON file you can fetch directly, documented in the{' '}
-        <a href="https://github.com/Doomarchy/tablegenius/blob/main/docs/data-feed.md">data feed guide</a>. The
+        <a href="https://github.com/ryan-castellano/tablegenius/blob/main/docs/data-feed.md">data feed guide</a>. The
         code, the rule files and the backtest are all in the{' '}
-        <a href="https://github.com/Doomarchy/tablegenius">open repository</a>.
+        <a href="https://github.com/ryan-castellano/tablegenius">open repository</a>.
       </p>
     </article>
   )

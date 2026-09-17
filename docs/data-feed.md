@@ -4,7 +4,7 @@ Everything the site shows is a static JSON file you can fetch directly. Files ar
 few times a day (hourly around match days) by the GitHub Actions job and served from GitHub
 Pages with permissive CORS, so they work from a browser, a spreadsheet, or a script.
 
-Base URL: `https://doomarchy.github.io/tablegenius/data/`
+Base URL: `https://ryan-castellano.github.io/tablegenius/data/`
 
 | File | What it holds |
 |---|---|
@@ -20,11 +20,11 @@ League codes: `PL` Premier League, `PD` LaLiga, `SA` Serie A, `BL1` Bundesliga, 
 ## Example
 
 ```
-https://doomarchy.github.io/tablegenius/data/2026-27/PL/standings.json
+https://ryan-castellano.github.io/tablegenius/data/2026-27/PL/standings.json
 ```
 
 ```js
-const r = await fetch('https://doomarchy.github.io/tablegenius/data/2026-27/PL/standings.json')
+const r = await fetch('https://ryan-castellano.github.io/tablegenius/data/2026-27/PL/standings.json')
 const s = await r.json()
 for (const t of s.teams) console.log(t.position, t.short_name, Math.round(t.probs.title * 100) + '%')
 ```
