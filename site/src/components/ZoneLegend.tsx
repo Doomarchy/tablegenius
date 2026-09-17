@@ -1,6 +1,6 @@
 import type { LeagueMeta, ZoneKey } from '../types'
 
-const order: ZoneKey[] = ['ucl', 'ucl_qualifying', 'uel', 'uecl', 'relegation_playoff', 'relegation']
+const order: ZoneKey[] = ['ucl', 'ucl_qualifying', 'uel', 'uecl', 'european_playoff', 'relegation_playoff', 'relegation']
 
 function range(p: [number, number]) {
   return p[0] === p[1] ? `${p[0]}` : `${p[0]}–${p[1]}`

@@ -392,5 +392,153 @@
    "id": 531,
    "name": "ES Troyes AC"
   }
+ },
+ "N1": {
+  "AZ Alkmaar": {
+   "id": 682,
+   "name": "AZ"
+  },
+  "Ajax": {
+   "id": 678,
+   "name": "AFC Ajax"
+  },
+  "Cambuur": {
+   "id": 1909,
+   "name": "SC Cambuur-Leeuwarden"
+  },
+  "Den Haag": {
+   "id": 680,
+   "name": "ADO Den Haag"
+  },
+  "Excelsior": {
+   "id": 670,
+   "name": "SBV Excelsior"
+  },
+  "Feyenoord": {
+   "id": 675,
+   "name": "Feyenoord Rotterdam"
+  },
+  "For Sittard": {
+   "id": 1920,
+   "name": "Fortuna Sittard"
+  },
+  "Go Ahead Eagles": {
+   "id": 718,
+   "name": "Go Ahead Eagles"
+  },
+  "Groningen": {
+   "id": 677,
+   "name": "FC Groningen"
+  },
+  "Heerenveen": {
+   "id": 673,
+   "name": "SC Heerenveen"
+  },
+  "Nijmegen": {
+   "id": 1915,
+   "name": "NEC"
+  },
+  "PSV Eindhoven": {
+   "id": 674,
+   "name": "PSV"
+  },
+  "Sparta Rotterdam": {
+   "id": 6806,
+   "name": "Sparta Rotterdam"
+  },
+  "Telstar": {
+   "id": 1912,
+   "name": "Telstar 1963"
+  },
+  "Twente": {
+   "id": 666,
+   "name": "FC Twente '65"
+  },
+  "Utrecht": {
+   "id": 676,
+   "name": "FC Utrecht"
+  },
+  "Willem II": {
+   "id": 672,
+   "name": "Willem II Tilburg"
+  },
+  "Zwolle": {
+   "id": 684,
+   "name": "PEC Zwolle"
+  }
+ },
+ "P1": {
+  "Academico Viseu": {
+   "id": 5527,
+   "name": "Académico de Viseu FC"
+  },
+  "Alverca": {
+   "id": 7822,
+   "name": "FC Alverca"
+  },
+  "Arouca": {
+   "id": 712,
+   "name": "FC Arouca"
+  },
+  "Benfica": {
+   "id": 1903,
+   "name": "Sport Lisboa e Benfica"
+  },
+  "Casa Pia": {
+   "id": 6618,
+   "name": "Casa Pia AC"
+  },
+  "Estoril": {
+   "id": 582,
+   "name": "GD Estoril Praia"
+  },
+  "Estrela": {
+   "id": 9136,
+   "name": "CF Estrela da Amadora"
+  },
+  "Famalicao": {
+   "id": 5531,
+   "name": "FC Famalicão"
+  },
+  "Gil Vicente": {
+   "id": 5533,
+   "name": "Gil Vicente FC"
+  },
+  "Guimaraes": {
+   "id": 5543,
+   "name": "Vitória SC"
+  },
+  "Maritimo": {
+   "id": 5575,
+   "name": "CS Marítimo"
+  },
+  "Moreirense": {
+   "id": 583,
+   "name": "Moreirense FC"
+  },
+  "Nacional": {
+   "id": 5529,
+   "name": "CD Nacional"
+  },
+  "Porto": {
+   "id": 503,
+   "name": "FC Porto"
+  },
+  "Rio Ave": {
+   "id": 496,
+   "name": "Rio Ave FC"
+  },
+  "Santa Clara": {
+   "id": 5530,
+   "name": "CD Santa Clara"
+  },
+  "Sp Braga": {
+   "id": 5613,
+   "name": "Sporting Clube de Braga"
+  },
+  "Sp Lisbon": {
+   "id": 498,
+   "name": "Sporting Clube de Portugal"
+  }
  }
 }

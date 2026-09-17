@@ -3,7 +3,7 @@ import type { LeagueMeta, TeamRow } from './types'
 export type ColumnGroup = 'core' | 'std' | 'prob' | 'exp'
 
 /** Ink used for a probability bar: scarlet for the European end, black for the drop. */
-export type BarInk = 'scarlet' | 'ink' | 'ink-soft'
+export type BarInk = 'scarlet' | 'scarlet-soft' | 'ink' | 'ink-soft'
 
 export interface Column {
   key: string
@@ -67,16 +67,26 @@ export function buildColumns(league: LeagueMeta, hasProbs: boolean): Column[] {
   if (!hasProbs) return cols
 
   const ucl = z.ucl.positions!
-  const uel = z.uel.positions!
-  const uecl = z.uecl.positions!
+  const uel = z.uel?.positions
+  const uecl = z.uecl?.positions
+  const euroPo = z.european_playoff?.positions
   const hasQ = !!z.ucl_qualifying?.positions
 
   cols.push(
     { key: 'title', label: 'Title', description: 'Chance of finishing 1st and winning the league', group: 'prob', ink: 'scarlet', value: prob((p) => p.title), kind: 'prob' },
     { key: 'ucl', label: 'UCL', description: `Chance of a Champions League place (positions ${range(ucl)}${hasQ ? ` plus ${range(z.ucl_qualifying.positions!)}, which enters the qualifying rounds` : ''})`, group: 'prob', ink: 'scarlet', note: hasQ ? 2 : undefined, value: prob((p) => p.ucl), kind: 'prob' },
-    { key: 'uel', label: 'UEL', description: `Chance of a Europa League place (positions ${range(uel)}, assuming the cup winner's place passes down the table)`, group: 'prob', ink: 'scarlet', note: 1, value: prob((p) => p.uel), kind: 'prob' },
-    { key: 'uecl', label: 'UECL', description: `Chance of the Conference League play-off place (position ${range(uecl)})`, group: 'prob', ink: 'scarlet', note: 1, value: prob((p) => p.uecl), kind: 'prob' },
-    { key: 'europe', label: 'Europe', description: 'Chance of any UEFA competition: Champions League, Europa League or Conference League', group: 'prob', ink: 'scarlet', value: prob((p) => p.europe), kind: 'prob' },
+  )
+  if (uel) {
+    cols.push({ key: 'uel', label: 'UEL', description: `Chance of ${z.uel.label.toLowerCase().startsWith('europa') ? 'the ' + z.uel.label : 'a Europa League place'} (positions ${range(uel)}, assuming the cup winner's place passes down the table)`, group: 'prob', ink: 'scarlet', note: 1, value: prob((p) => p.uel), kind: 'prob' })
+  }
+  if (uecl) {
+    cols.push({ key: 'uecl', label: 'UECL', description: `Chance of ${z.uecl.label.toLowerCase().startsWith('conference') ? 'the ' + z.uecl.label : 'a Conference League place'} (position ${range(uecl)})`, group: 'prob', ink: 'scarlet', note: 1, value: prob((p) => p.uecl), kind: 'prob' })
+  }
+  if (euroPo) {
+    cols.push({ key: 'european_playoff', label: 'Euro PO', description: `Chance of finishing ${range(euroPo)} and entering the domestic play-offs for a European place (the play-off itself is not simulated, so it is not counted in "Europe")`, group: 'prob', ink: 'scarlet-soft', value: prob((p) => p.european_playoff ?? 0), kind: 'prob' })
+  }
+  cols.push(
+    { key: 'europe', label: 'Europe', description: 'Chance of a guaranteed UEFA place: Champions League, Europa League or Conference League, including qualifying rounds' + (euroPo ? ', not counting the play-offs' : ''), group: 'prob', ink: 'scarlet', value: prob((p) => p.europe), kind: 'prob' },
   )
   if (z.relegation_playoff?.positions) {
     cols.push({ key: 'relegation_playoff', label: 'Play-off', description: `Chance of finishing ${range(z.relegation_playoff.positions)} and entering the relegation play-off. Combined with automatic relegation and the historical survival rate, the overall relegation risk is shown on the team page.`, group: 'prob', ink: 'ink-soft', value: prob((p) => p.relegation_playoff), kind: 'prob' })

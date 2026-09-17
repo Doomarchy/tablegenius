@@ -265,10 +265,8 @@ def team_probabilities(cfg: dict[str, Any], sim: SimulationResult, ratings: Rati
     survival = float(cfg.get("relegation_playoff_survival", 0.5))
     out: dict[TeamId, dict[str, Any]] = {}
     for i, t in enumerate(sim.team_ids):
-        if euro is not None:
-            ucl_direct, ucl_q, uel, uecl = (float(euro[k][i]) for k in ("ucl", "ucl_qualifying", "uel", "uecl"))
-        else:
-            ucl_direct, ucl_q, uel, uecl = (float(zones[k][i]) for k in ("ucl", "ucl_qualifying", "uel", "uecl"))
+        src = euro if euro is not None else zones
+        ucl_direct, ucl_q, uel, uecl, euro_po = (float(src[k][i]) for k in ("ucl", "ucl_qualifying", "uel", "uecl", "european_playoff"))
         playoff = float(zones["relegation_playoff"][i])
         relegation = float(zones["relegation"][i])
         d: dict[str, Any] = {
@@ -278,6 +276,7 @@ def team_probabilities(cfg: dict[str, Any], sim: SimulationResult, ratings: Rati
             "ucl_qualifying": ucl_q,
             "uel": uel,
             "uecl": uecl,
+            "european_playoff": euro_po,
             "europe": ucl_direct + ucl_q + uel + uecl,
             "relegation_playoff": playoff,
             "relegation": relegation,

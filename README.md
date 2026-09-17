@@ -1,8 +1,12 @@
 # TableGenius
 
-Live league tables for the Premier League, LaLiga, Serie A, Bundesliga and Ligue 1, with
-model-driven probabilities for the title, European places and relegation, team pages with
-season charts, and clinch/elimination scenarios.
+Live league tables for the Premier League, LaLiga, Serie A, Bundesliga, Ligue 1, Eredivisie
+and Primeira Liga, with model-driven probabilities for the title, European places and
+relegation, team pages with season charts, and clinch/elimination scenarios.
+
+Adding a league that football-data.org's free tier covers takes a rule file in
+`config/leagues/<season>/`, a `LEAGUE_ORDER` entry in `pipeline/tablegenius/config.py`, a run of
+`tablegenius.names` for the name mapping, and the CSV code from football-data.co.uk for history.
 
 No server runs continuously. A GitHub Actions job fetches results a few times a day (hourly
 around match days), rebuilds the tables, runs the model and commits static JSON files. A

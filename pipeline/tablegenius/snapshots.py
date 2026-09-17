@@ -29,7 +29,7 @@ from .standings import build_standings, is_finished, point_deductions
 
 log = logging.getLogger(__name__)
 
-SNAPSHOT_KEYS = ("title", "ucl", "uel", "uecl", "europe", "relegation_playoff", "relegation",
+SNAPSHOT_KEYS = ("title", "ucl", "uel", "uecl", "european_playoff", "europe", "relegation_playoff", "relegation",
                  "expected_points", "expected_position")
 GRACE = timedelta(hours=3)
 

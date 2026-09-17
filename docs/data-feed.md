@@ -14,8 +14,8 @@ Base URL: `https://doomarchy.github.io/tablegenius/data/`
 | `<season>/<CODE>/history.json` | Probabilities by matchday (pre-season plus one point per completed matchday, and the matchday in progress) |
 | `backtest.json` | The latest backtest report shown on the About page |
 
-League codes: `PL` Premier League, `PD` LaLiga, `SA` Serie A, `BL1` Bundesliga, `FL1` Ligue 1.
-Team ids are football-data.org ids and are stable across seasons.
+League codes: `PL` Premier League, `PD` LaLiga, `SA` Serie A, `BL1` Bundesliga, `FL1` Ligue 1,
+`DED` Eredivisie, `PPL` Primeira Liga. Team ids are football-data.org ids and are stable across seasons.
 
 ## Example
 
@@ -31,9 +31,10 @@ for (const t of s.teams) console.log(t.position, t.short_name, Math.round(t.prob
 
 ## Fields worth knowing
 
-- `probs.title`, `probs.ucl`, `probs.uel`, `probs.uecl`, `probs.europe`, `probs.relegation`,
-  `probs.relegation_playoff` are shares of simulated seasons (0 to 1). `probs.relegation_total`
-  adds the play-off risk using the historical survival rate in the league config.
+- `probs.title`, `probs.ucl`, `probs.uel`, `probs.uecl`, `probs.european_playoff`, `probs.europe`,
+  `probs.relegation`, `probs.relegation_playoff` are shares of simulated seasons (0 to 1).
+  `probs.relegation_total` adds the play-off risk using the historical survival rate in the league
+  config. `europe` counts guaranteed places only, not domestic European play-offs.
 - `probs.positions` is the full finishing-position distribution, index 0 = 1st.
 - `status.<outcome>` is `alive`, `clinched` or `eliminated`, decided on points alone.
 - `magic.title`, `magic.ucl`, `magic.europe`, `magic.safety` are points still needed to

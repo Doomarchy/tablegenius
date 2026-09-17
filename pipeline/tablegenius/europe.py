@@ -25,8 +25,8 @@ import numpy as np
 
 TeamId = Hashable
 
-NONE, UCL, UCLQ, UEL, UECL = 0, 1, 2, 3, 4
-CODES = {UCL: "ucl", UCLQ: "ucl_qualifying", UEL: "uel", UECL: "uecl"}
+NONE, UCL, UCLQ, UEL, UECL, EURO_PO = 0, 1, 2, 3, 4, 5
+CODES = {UCL: "ucl", UCLQ: "ucl_qualifying", UEL: "uel", UECL: "uecl", EURO_PO: "european_playoff"}
 
 
 def base_places(cfg: dict[str, Any]) -> dict[str, int]:
@@ -35,7 +35,8 @@ def base_places(cfg: dict[str, Any]) -> dict[str, int]:
     ep = cfg.get("european_places")
     if ep:
         return {"ucl": int(ep.get("ucl", 0)), "ucl_qualifying": int(ep.get("ucl_qualifying", 0)),
-                "uel": int(ep.get("uel", 0)), "uecl": int(ep.get("uecl", 0))}
+                "uel": int(ep.get("uel", 0)), "uecl": int(ep.get("uecl", 0)),
+                "european_playoff": int(ep.get("european_playoff", 0))}
     z = cfg["zones"]
 
     def size(key: str) -> int:
@@ -46,7 +47,8 @@ def base_places(cfg: dict[str, Any]) -> dict[str, int]:
     uel_cups = sum(1 for c in cups if c.get("grants") == "uel")
     uecl_cups = sum(1 for c in cups if c.get("grants") == "uecl")
     return {"ucl": size("ucl"), "ucl_qualifying": size("ucl_qualifying"),
-            "uel": max(size("uel") - uel_cups, 0), "uecl": max(size("uecl") - uecl_cups, 0)}
+            "uel": max(size("uel") - uel_cups, 0), "uecl": max(size("uecl") - uecl_cups, 0),
+            "european_playoff": size("european_playoff")}
 
 
 def resolve_cups(cfg: dict[str, Any], teams: dict[TeamId, dict[str, Any]]) -> list[dict[str, Any]]:
@@ -101,7 +103,7 @@ def allocate(cfg: dict[str, Any], positions: np.ndarray, team_ids: Sequence[Team
             comp[rows[free], team[free]] = grant
             remaining[free] -= 1
 
-    for grant_code, grant_name in ((UEL, "uel"), (UECL, "uecl")):
+    for grant_code, grant_name in ((UEL, "uel"), (UECL, "uecl"), (EURO_PO, "european_playoff")):
         slots = np.full(N, base[grant_name], dtype=int)
         for cup in cups:
             if cup.get("grants") != grant_name:
@@ -122,8 +124,8 @@ def allocate(cfg: dict[str, Any], positions: np.ndarray, team_ids: Sequence[Team
 
 def european_probabilities(cfg: dict[str, Any], positions: np.ndarray, team_ids: Sequence[TeamId],
                            cups: Sequence[dict[str, Any]], extra_ucl_probability: float = 0.0) -> dict[str, np.ndarray]:
-    """P(UCL direct), P(UCL qualifying), P(UEL), P(UECL) per team, mixing in the extra
-    Champions League place with the given probability."""
+    """P(UCL direct), P(UCL qualifying), P(UEL), P(UECL), P(European play-off) per team,
+    mixing in the extra Champions League place with the given probability."""
     def probs(extra: bool) -> dict[str, np.ndarray]:
         comp = allocate(cfg, positions, team_ids, cups, extra_ucl=extra)
         return {name: (comp == code).mean(axis=0) for code, name in CODES.items()}

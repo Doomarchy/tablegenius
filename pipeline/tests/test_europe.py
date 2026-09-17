@@ -28,7 +28,7 @@ def codes(comp):
 def test_base_places_derived_from_zones_when_not_given():
     cfg = dict(CFG)
     del cfg["european_places"]
-    assert base_places(cfg) == {"ucl": 2, "ucl_qualifying": 0, "uel": 1, "uecl": 0}
+    assert base_places(cfg) == {"ucl": 2, "ucl_qualifying": 0, "uel": 1, "uecl": 0, "european_playoff": 0}
 
 
 def test_undecided_cups_pass_down_like_the_site_assumption():

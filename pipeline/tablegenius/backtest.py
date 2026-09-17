@@ -52,10 +52,11 @@ def outcome_ranges(cfg: dict[str, Any]) -> dict[str, list[tuple[int, int]]]:
         p = z.get(key, {}).get("positions")
         return [(p[0], p[1])] if p else []
 
+    europe = rng("ucl") + rng("ucl_qualifying") + rng("uel") + rng("uecl")
     return {
         "title": [(1, 1)],
         "ucl": rng("ucl") + rng("ucl_qualifying"),
-        "europe": rng("ucl") + rng("ucl_qualifying") + rng("uel") + rng("uecl"),
+        "europe": [(1, max(b for _, b in europe))] if europe else [],
         "relegation": rng("relegation"),
     }
 

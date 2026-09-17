@@ -117,9 +117,9 @@ export default function AboutPage({ index }: { index: DataIndex }) {
     <article className="prose">
       <h1>About TableGenius</h1>
       <p>
-        TableGenius shows live league tables for the Premier League, LaLiga, Serie A, Bundesliga and Ligue 1,
-        together with model-estimated chances of winning the title, qualifying for European competitions and
-        being relegated. Season {index.season}.
+        TableGenius shows live league tables for {index.leagues.map((l) => l.name).slice(0, -1).join(', ')} and{' '}
+        {index.leagues[index.leagues.length - 1]?.name}, together with model-estimated chances of winning the title,
+        qualifying for European competitions and being relegated. Season {index.season}.
       </p>
 
       <h2>Where the data comes from</h2>
@@ -213,10 +213,11 @@ export default function AboutPage({ index }: { index: DataIndex }) {
           until that race is worth tracking. Each league page's footnote says when it is on.
         </li>
         <li>
-          Relegation play-offs in the Bundesliga and Ligue 1 are shown as their own outcome, and the team page's
-          relegation-risk figure adds the play-off using the historical survival rate of the top-flight side (about four
-          in five in Germany, one in two in France). The play-off match itself is not simulated. Serie A's play-offs for
-          a tie on points for first place or the last relegation spot are treated as a coin flip.
+          Relegation play-offs are shown as their own outcome, and the team page's relegation-risk figure adds the
+          play-off using the historical survival rate of the top-flight side recorded in each league's rule file (about
+          four in five in Germany, one in two in France and the Netherlands, about one in three in Portugal). The
+          play-off itself is not simulated, and neither are the Eredivisie's European play-offs, which have their own
+          column. Play-offs that settle a tie on points (Serie A, Eredivisie) are treated as a coin flip.
         </li>
         <li>
           Points deductions are applied from the league's rule file as soon as they are entered and show as an

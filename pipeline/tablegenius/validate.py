@@ -44,7 +44,7 @@ def validate_league_output(cfg: dict[str, Any], standings: dict[str, Any], match
         else:
             for r in rows:
                 p = r["probs"]
-                for key in ("title", "ucl", "uel", "uecl", "europe", "relegation", "relegation_playoff", "expected_position"):
+                for key in ("title", "ucl", "uel", "uecl", "european_playoff", "europe", "relegation", "relegation_playoff", "expected_position"):
                     v = p.get(key)
                     if key == "expected_position":
                         if not (isinstance(v, (int, float)) and math.isfinite(v) and 1 - 1e-6 <= v <= n + 1e-6):

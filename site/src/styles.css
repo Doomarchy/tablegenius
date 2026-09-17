@@ -192,6 +192,7 @@ tr.zone-ucl .pos { background: var(--scarlet); border-color: var(--scarlet); col
 tr.zone-ucl_qualifying .pos { background: var(--scarlet-tint); border-color: var(--scarlet); color: var(--ink); }
 tr.zone-uel .pos { border-color: var(--scarlet); color: var(--scarlet); }
 tr.zone-uecl .pos { background: var(--scarlet-tint); border-color: var(--scarlet-tint); color: var(--ink); }
+tr.zone-european_playoff .pos { border-color: var(--scarlet); border-style: dashed; color: var(--scarlet); }
 tr.zone-relegation_playoff .pos { border-color: var(--ink); color: var(--ink); }
 tr.zone-relegation .pos { background: var(--ink); border-color: var(--ink); color: var(--paper); }
 .tied { color: var(--ink-faint); font-size: 0.75rem; margin-left: 3px; vertical-align: top; }
@@ -224,6 +225,7 @@ tr.zone-relegation .pos { background: var(--ink); border-color: var(--ink); colo
 .pbar::after { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: var(--w, 0%); background: var(--scarlet); }
 td.hue-ink .pbar::after { background: var(--ink); }
 td.hue-ink-soft .pbar::after { background: var(--ink-soft); }
+td.hue-scarlet-soft .pbar::after { background: var(--scarlet); opacity: 0.45; }
 .league-table thead th.col-prob-head:first-of-type, .league-table td.col-prob:first-of-type { border-left: 1px solid var(--rule); }
 
 .footnotes { margin: 8px 0 0; font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-soft); display: grid; gap: 2px; }
@@ -239,6 +241,7 @@ td.hue-ink-soft .pbar::after { background: var(--ink-soft); }
 .legend-stamp.zone-ucl_qualifying { background: var(--scarlet-tint); border-color: var(--scarlet); }
 .legend-stamp.zone-uel { border-color: var(--scarlet); }
 .legend-stamp.zone-uecl { background: var(--scarlet-tint); border-color: var(--scarlet-tint); }
+.legend-stamp.zone-european_playoff { border-color: var(--scarlet); border-style: dashed; }
 .legend-stamp.zone-relegation_playoff { border-color: var(--ink); }
 .legend-stamp.zone-relegation { background: var(--ink); border-color: var(--ink); }
 

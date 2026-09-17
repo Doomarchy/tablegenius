@@ -1,0 +1,45 @@
+{
+  "code": "PPL",
+  "name": "Primeira Liga",
+  "country": "Portugal",
+  "season": "2026-27",
+  "sources": {
+    "football_data_org": { "competition": "PPL", "season": 2026 },
+    "football_data_co_uk": { "code": "P1" }
+  },
+  "team_count": 18,
+  "rounds": 2,
+  "tiebreakers": ["points", "h2h_points", "h2h_goal_difference", "goal_difference", "wins", "goals_for", "playoff"],
+  "h2h_requires_all_matches_played": true,
+  "tied_title_playoff": false,
+  "tied_relegation_playoff": false,
+  "zones": {
+    "ucl": { "label": "Champions League", "positions": [1, 2] },
+    "ucl_qualifying": { "label": "Champions League qualifying", "positions": [3, 3] },
+    "uel": { "label": "Europa League qualifying", "positions": [4, 5] },
+    "uecl": { "label": "Conference League qualifying", "positions": [6, 6] },
+    "european_playoff": { "label": "European play-offs", "positions": null },
+    "relegation_playoff": { "label": "Relegation play-off", "positions": [16, 16] },
+    "relegation": { "label": "Relegation", "positions": [17, 18] }
+  },
+  "european_places": { "ucl": 2, "ucl_qualifying": 1, "uel": 1, "uecl": 1, "european_playoff": 0 },
+  "european_places_note": "1st and 2nd league phase, 3rd third qualifying round, 4th Europa League second qualifying round, 5th Conference League second qualifying round. The Taça de Portugal winner receives a Europa League place; under the pass-down assumption it goes to 5th and the Conference League place to 6th.",
+  "extra_ucl_probability": 0.0,
+  "extra_ucl_probability_note": "Chance that this league earns the extra Champions League place (European Performance Spot) for next season; 0 = not modelled.",
+  "extra_ucl_place": false,
+  "domestic_cups": [
+    { "name": "Taça de Portugal", "grants": "uel", "winner": null }
+  ],
+  "domestic_cups_note": "Set winner to a club name (as shown on the site), its football-data.org id, or \"external\" for a club outside this league, once the cup is decided; null = undecided (assumed to pass down).",
+  "points_deductions": [],
+  "relegation_playoff_survival": 0.35,
+  "relegation_playoff_survival_note": "Approximate: the 16th-placed Primeira Liga side has lost most recent play-offs against the third-placed Liga Portugal 2 club. Used only for the combined relegation-risk figure.",
+  "assumptions": [
+    "The Taça de Portugal winner's Europa League place is assumed to pass down the table until the cup is decided, so 4th and 5th go to the Europa League qualifying rounds and 6th to the Conference League qualifying rounds.",
+    "3rd place enters the Champions League third qualifying round rather than the league phase; it is counted in the Champions League column and flagged in the tooltip.",
+    "16th place plays a two-legged relegation play-off against the third-placed Liga Portugal 2 club; that play-off itself is not simulated."
+  ],
+  "rule_sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_Primeira_Liga"
+  ]
+}

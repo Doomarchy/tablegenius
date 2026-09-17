@@ -96,7 +96,7 @@ export function ChancesChart({ history, teamId, totalMatchdays }: { history: His
 }
 
 function zoneOf(league: LeagueMeta, pos: number): ZoneKey | null {
-  for (const key of ['ucl', 'ucl_qualifying', 'uel', 'uecl', 'relegation_playoff', 'relegation'] as ZoneKey[]) {
+  for (const key of ['ucl', 'ucl_qualifying', 'uel', 'uecl', 'european_playoff', 'relegation_playoff', 'relegation'] as ZoneKey[]) {
     const p = league.zones[key]?.positions
     if (p && pos >= p[0] && pos <= p[1]) return key
   }
@@ -109,6 +109,7 @@ export function PositionChart({ positions, league, current }: { positions: numbe
   const fill = (zone: ZoneKey | null) => {
     if (zone === 'ucl' || zone === 'ucl_qualifying') return inks.scarlet
     if (zone === 'uel' || zone === 'uecl') return inks.scarlet
+    if (zone === 'european_playoff') return inks.scarlet
     if (zone === 'relegation') return inks.ink
     if (zone === 'relegation_playoff') return inks.inkSoft
     return inks.inkFaint
@@ -126,13 +127,14 @@ export function PositionChart({ positions, league, current }: { positions: numbe
           <ReferenceLine x={current} stroke={inks.ink} strokeDasharray="3 3" label={{ value: 'now', position: 'top', fill: inks.inkSoft, fontFamily: inks.mono, fontSize: 10 }} />
           <Bar dataKey="p" name="Chance" isAnimationActive={false}>
             {data.map((d) => (
-              <Cell key={d.pos} fill={fill(d.zone)} opacity={d.zone ? 1 : 0.7} />
+              <Cell key={d.pos} fill={fill(d.zone)} opacity={d.zone === 'european_playoff' ? 0.45 : d.zone ? 1 : 0.7} />
             ))}
           </Bar>
         </BarChart>
       </ResponsiveContainer>
       <ul className="chart-legend">
         <li><span className="legend-stamp zone-ucl" /> European places</li>
+        {league.zones.european_playoff?.positions && <li><span className="legend-stamp zone-european_playoff" /> European play-offs</li>}
         {league.zones.relegation_playoff?.positions && <li><span className="legend-stamp zone-relegation_playoff" /> Relegation play-off</li>}
         <li><span className="legend-stamp zone-relegation" /> Relegation</li>
         <li><span className="legend-stamp" /> Mid-table</li>

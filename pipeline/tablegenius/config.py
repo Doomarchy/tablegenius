@@ -7,10 +7,12 @@ from typing import Any
 from .paths import LEAGUES_DIR
 
 # Display order on the site.
-LEAGUE_ORDER = ["PL", "PD", "SA", "BL1", "FL1"]
+LEAGUE_ORDER = ["PL", "PD", "SA", "BL1", "FL1", "DED", "PPL"]
 
-# Zone keys in the order they appear top-to-bottom of a table.
-ZONE_KEYS = ["ucl", "ucl_qualifying", "uel", "uecl", "relegation_playoff", "relegation"]
+# Zone keys in the order they appear top-to-bottom of a table. `european_playoff` is a
+# domestic play-off for a European place (the Eredivisie's); like the relegation play-off,
+# the play-off itself is not simulated.
+ZONE_KEYS = ["ucl", "ucl_qualifying", "uel", "uecl", "european_playoff", "relegation_playoff", "relegation"]
 
 
 def load_league(season: str, code: str) -> dict[str, Any]:

@@ -1,4 +1,4 @@
-export type ZoneKey = 'ucl' | 'ucl_qualifying' | 'uel' | 'uecl' | 'relegation_playoff' | 'relegation'
+export type ZoneKey = 'ucl' | 'ucl_qualifying' | 'uel' | 'uecl' | 'european_playoff' | 'relegation_playoff' | 'relegation'
 
 export interface Zone {
   label: string
@@ -40,6 +40,7 @@ export interface TeamProbs {
   ucl_qualifying: number
   uel: number
   uecl: number
+  european_playoff?: number
   europe: number
   relegation_playoff: number
   relegation: number
@@ -199,6 +200,7 @@ export interface SnapshotTeam {
   ucl: number
   uel: number
   uecl: number
+  european_playoff?: number
   europe: number
   relegation_playoff: number
   relegation: number

@@ -1,0 +1,48 @@
+{
+  "code": "DED",
+  "name": "Eredivisie",
+  "country": "Netherlands",
+  "season": "2026-27",
+  "sources": {
+    "football_data_org": { "competition": "DED", "season": 2026 },
+    "football_data_co_uk": { "code": "N1" }
+  },
+  "team_count": 18,
+  "rounds": 2,
+  "tiebreakers": ["points", "goal_difference", "goals_for", "h2h_points", "h2h_goal_difference", "h2h_away_goals", "playoff"],
+  "tiebreakers_note": "The official list also has 'fewer loss points' second, which is identical to points once every team has played the same number of matches. A play-off decides ties that matter for the title, relegation or Europe; the simulation treats it as a coin flip.",
+  "h2h_requires_all_matches_played": true,
+  "tied_title_playoff": true,
+  "tied_relegation_playoff": true,
+  "zones": {
+    "ucl": { "label": "Champions League", "positions": [1, 1] },
+    "ucl_qualifying": { "label": "Champions League qualifying", "positions": [2, 2] },
+    "uel": { "label": "Europa League (qualifying)", "positions": [3, 4] },
+    "uecl": { "label": "Conference League qualifying", "positions": null },
+    "european_playoff": { "label": "European play-offs", "positions": [5, 8] },
+    "relegation_playoff": { "label": "Relegation play-off", "positions": [16, 16] },
+    "relegation": { "label": "Relegation", "positions": [17, 18] }
+  },
+  "european_places": { "ucl": 1, "ucl_qualifying": 1, "uel": 1, "uecl": 0, "european_playoff": 4 },
+  "european_places_note": "1st league phase, 2nd third qualifying round, 3rd Europa League second qualifying round, then four play-off places for a Conference League qualifying spot. The KNVB Cup winner receives a Europa League place; under the pass-down assumption it goes to 4th and the play-offs are 5th to 8th.",
+  "extra_ucl_probability": 0.0,
+  "extra_ucl_probability_note": "Chance that this league earns the extra Champions League place (European Performance Spot) for next season; 0 = not modelled.",
+  "extra_ucl_place": false,
+  "domestic_cups": [
+    { "name": "KNVB Cup", "grants": "uel", "winner": null }
+  ],
+  "domestic_cups_note": "Set winner to a club name (as shown on the site), its football-data.org id, or \"external\" for a club outside this league, once the cup is decided; null = undecided (assumed to pass down).",
+  "points_deductions": [],
+  "relegation_playoff_survival": 0.5,
+  "relegation_playoff_survival_note": "Approximate: the 16th-placed Eredivisie side has won and lost the promotion/relegation play-offs in roughly equal measure in recent seasons. Used only for the combined relegation-risk figure.",
+  "assumptions": [
+    "The KNVB Cup winner's Europa League place is assumed to pass down the table until the cup is decided, so 3rd and 4th go to the Europa League qualifying rounds and 5th to 8th enter the European play-offs.",
+    "2nd place enters the Champions League third qualifying round rather than the league phase; it is counted in the Champions League column and flagged in the tooltip.",
+    "The European play-offs (four clubs for one Conference League qualifying place) are shown as their own outcome and are not simulated, so they do not count towards \"Europe\".",
+    "16th place enters the promotion/relegation play-offs against Eerste Divisie clubs; that play-off itself is not simulated.",
+    "A tie on points that decides the title, relegation or a European place is settled by a play-off, treated as a coin flip in the simulation."
+  ],
+  "rule_sources": [
+    "https://en.wikipedia.org/wiki/2026%E2%80%9327_Eredivisie"
+  ]
+}

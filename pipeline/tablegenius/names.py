@@ -38,6 +38,10 @@ ALIASES = {
     "sociedad": "sociedad", "espanol": "espanyol", "vallecano": "rayo", "m'gladbach": "monchengladbach",
     "gladbach": "monchengladbach", "ein": "eintracht", "leverkusen": "leverkusen", "koln": "koln",
     "inter": "internazionale", "st": "sankt", "sg": "germain",
+    # Dutch and Portuguese quirks of football-data.co.uk's short names.
+    "nijmegen": "nec", "waalwijk": "rkc", "for": "fortuna", "zwolle": "pec", "den": "ado", "haag": "ado",
+    "sp": "sporting", "guimaraes": "vitoria", "famalicao": "famalicao", "estrela": "estrela", "avs": "avs",
+    "academico": "academico", "maritimo": "maritimo",
 }
 
 
