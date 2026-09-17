@@ -70,7 +70,7 @@
   "tied_title_playoff": false,
   "tied_relegation_playoff": false
  },
- "updated_at": "2026-09-17T04:08:40Z",
+ "updated_at": "2026-09-17T08:33:20Z",
  "source": "football-data.org",
  "matchday": {
   "current": 6,
@@ -132,14 +132,13 @@
   "matchday": 6,
   "label": "in midweek",
   "fixtures": [
-   564685,
    564686,
    564683
   ]
  },
  "history": {
   "snapshots": 7,
-  "updated_at": "2026-09-17T04:08:40Z"
+  "updated_at": "2026-09-17T08:33:20Z"
  },
  "teams": [
   {
