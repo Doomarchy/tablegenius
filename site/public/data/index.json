@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "updated_at": "2026-09-17T14:15:18Z",
+ "updated_at": "2026-09-17T20:00:12Z",
  "has_backtest": true,
  "leagues": [
   {
    "code": "PL",
    "name": "Premier League",
    "country": "England",
-   "updated_at": "2026-09-17T14:14:28Z",
+   "updated_at": "2026-09-17T19:59:25Z",
    "matchday": {
     "current": 5,
     "total": 38,
@@ -23,23 +23,23 @@
    "code": "PD",
    "name": "LaLiga",
    "country": "Spain",
-   "updated_at": "2026-09-17T14:14:39Z",
+   "updated_at": "2026-09-17T19:59:34Z",
    "matchday": {
     "current": 6,
     "total": 38,
-    "matches_played": 57,
+    "matches_played": 58,
     "matches_total": 380
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-17T03:57:17Z",
+   "model_as_of": "2026-09-17T19:59:33Z",
    "has_history": true
   },
   {
    "code": "SA",
    "name": "Serie A",
    "country": "Italy",
-   "updated_at": "2026-09-17T14:14:53Z",
+   "updated_at": "2026-09-17T19:59:47Z",
    "matchday": {
     "current": 5,
     "total": 38,
@@ -55,7 +55,7 @@
    "code": "BL1",
    "name": "Bundesliga",
    "country": "Germany",
-   "updated_at": "2026-09-17T14:15:05Z",
+   "updated_at": "2026-09-17T19:59:59Z",
    "matchday": {
     "current": 4,
     "total": 34,
@@ -71,7 +71,7 @@
    "code": "FL1",
    "name": "Ligue 1",
    "country": "France",
-   "updated_at": "2026-09-17T14:15:18Z",
+   "updated_at": "2026-09-17T20:00:12Z",
    "matchday": {
     "current": 5,
     "total": 34,
