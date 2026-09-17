@@ -4,6 +4,7 @@ import { loadIndex } from './api'
 import Layout from './components/Layout'
 import AboutPage from './pages/AboutPage'
 import LeaguePage from './pages/LeaguePage'
+import TeamPage from './pages/TeamPage'
 import type { DataIndex } from './types'
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to={`/league/${first}`} replace />} />
         <Route path="/league/:code" element={<LeaguePage index={index} />} />
+        <Route path="/league/:code/team/:teamId" element={<TeamPage index={index} />} />
         <Route path="/about" element={<AboutPage index={index} />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

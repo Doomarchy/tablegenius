@@ -1,8 +1,12 @@
 import { useMemo, useState, type CSSProperties } from 'react'
+import { Link } from 'react-router-dom'
 import { buildColumns, type Column } from '../columns'
 import { dec1, formatPct, pct1, signed } from '../format'
-import type { Standings, TeamRow } from '../types'
+import type { OutcomeKey, Standings, TeamRow } from '../types'
 import Form from './Form'
+
+/** Which settled-status an outcome column reflects. */
+const STATUS_OF: Record<string, OutcomeKey> = { title: 'title', ucl: 'ucl', europe: 'europe', relegation: 'relegation' }
 
 export type TableView = 'table' | 'chances' | 'both'
 
@@ -116,22 +120,30 @@ export default function LeagueTable({ standings, view }: { standings: Standings;
                   {t.tied && <span className="tied" title="Level with another team and not separable by the league's criteria yet">=</span>}
                 </td>
                 <td className="col-team">
-                  <span className="team-cell">
+                  <Link className="team-cell" to={`/league/${league.code}/team/${t.id}`} title={`${t.name}: season page`}>
                     <Crest team={t} />
-                    <span className="team-name" title={t.name}>
+                    <span className="team-name">
                       <span className="name-long">{t.short_name}</span>
                       <span className="name-short">{t.tla ?? t.short_name}</span>
                     </span>
-                  </span>
+                  </Link>
                 </td>
                 {shown.map((col) => {
                   const v = col.value(t)
                   if (col.kind === 'prob') {
                     const p = v ?? 0
-                    const style = { '--w': `${Math.max(p * 100, p > 0 ? 1.5 : 0)}%` } as CSSProperties
+                    const statusKey = STATUS_OF[col.key]
+                    const st = statusKey ? t.status?.[statusKey] : undefined
+                    const settled = st === 'clinched' ? 'yes' : st === 'eliminated' ? 'no' : null
+                    const width = settled === 'yes' ? 100 : settled === 'no' ? 0 : Math.max(p * 100, p > 0 ? 1.5 : 0)
+                    const style = { '--w': `${width}%` } as CSSProperties
+                    const text = settled === 'yes' ? '✓' : settled === 'no' ? '✗' : cellText(col, v)
+                    const tip = settled === 'yes' ? `${t.short_name}: settled, cannot be undone (${col.description})`
+                      : settled === 'no' ? `${t.short_name}: mathematically out of reach (${col.description})`
+                      : v === null ? undefined : `${t.short_name}: ${pct1(v)} · ${col.description}`
                     return (
-                      <td key={col.key} className={`col-prob hue-${col.ink ?? 'scarlet'}`} title={v === null ? undefined : `${t.short_name}: ${pct1(v)} · ${col.description}`}>
-                        <span className="pv">{cellText(col, v)}</span>
+                      <td key={col.key} className={`col-prob hue-${col.ink ?? 'scarlet'}${settled ? ` settled-${settled}` : ''}`} title={tip}>
+                        <span className="pv">{text}</span>
                         <i className="pbar" style={style} aria-hidden="true" />
                       </td>
                     )

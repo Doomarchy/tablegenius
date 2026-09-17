@@ -89,9 +89,28 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
           {footnotes.map((f) => (
             <span key={f.n}><sup>{f.n}</sup> {f.text}</span>
           ))}
+          {hasProbs && <span>✓ settled · ✗ out of reach, on points alone. Click a club for its season page.</span>}
         </p>
       )}
       <ZoneLegend league={league} />
+      {hasProbs && standings.next_round && standings.next_round.matchday !== null && (
+        <div className="round-box">
+          <h2>{standings.next_round.label === 'this weekend' ? 'This weekend' : 'This midweek'}: what could be settled</h2>
+          {standings.teams.some((t) => (t.scenarios ?? []).length > 0) ? (
+            <ul className="scenario-list">
+              {standings.teams.flatMap((t) =>
+                (t.scenarios ?? []).map((s, i) => (
+                  <li key={`${t.id}-${i}`} className={s.kind === 'clinch' ? 'good' : 'bad'}>
+                    <Link to={`/league/${league.code}/team/${t.id}`}>{t.short_name}</Link>: {s.text.charAt(0).toLowerCase() + s.text.slice(1)}
+                  </li>
+                )),
+              )}
+            </ul>
+          ) : (
+            <p className="muted">Matchday {standings.next_round.matchday}: nothing can be mathematically settled yet. Settled outcomes are decided on points alone, treating ties conservatively.</p>
+          )}
+        </div>
+      )}
       {standings.source_check.available && standings.source_check.totals_match === false && (
         <p className="notice error">Warning: computed totals differ from the data provider. Check the pipeline logs.</p>
       )}

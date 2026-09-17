@@ -1,13 +1,13 @@
 {
  "season": "2026-27",
- "updated_at": "2026-09-17T01:18:39Z",
+ "updated_at": "2026-09-17T03:21:34Z",
  "has_backtest": true,
  "leagues": [
   {
    "code": "PL",
    "name": "Premier League",
    "country": "England",
-   "updated_at": "2026-09-17T01:17:48Z",
+   "updated_at": "2026-09-17T03:20:10Z",
    "matchday": {
     "current": 5,
     "total": 38,
@@ -16,13 +16,14 @@
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-16T22:55:35Z"
+   "model_as_of": "2026-09-17T03:20:04Z",
+   "has_history": true
   },
   {
    "code": "PD",
    "name": "LaLiga",
    "country": "Spain",
-   "updated_at": "2026-09-17T01:18:00Z",
+   "updated_at": "2026-09-17T03:20:53Z",
    "matchday": {
     "current": 6,
     "total": 38,
@@ -31,13 +32,14 @@
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-16T22:55:36Z"
+   "model_as_of": "2026-09-17T03:20:42Z",
+   "has_history": true
   },
   {
    "code": "SA",
    "name": "Serie A",
    "country": "Italy",
-   "updated_at": "2026-09-17T01:18:13Z",
+   "updated_at": "2026-09-17T03:21:08Z",
    "matchday": {
     "current": 5,
     "total": 38,
@@ -46,13 +48,14 @@
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-16T22:55:37Z"
+   "model_as_of": "2026-09-17T03:21:00Z",
+   "has_history": true
   },
   {
    "code": "BL1",
    "name": "Bundesliga",
    "country": "Germany",
-   "updated_at": "2026-09-17T01:18:26Z",
+   "updated_at": "2026-09-17T03:21:21Z",
    "matchday": {
     "current": 4,
     "total": 34,
@@ -61,13 +64,14 @@
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-16T22:55:38Z"
+   "model_as_of": "2026-09-17T03:21:17Z",
+   "has_history": true
   },
   {
    "code": "FL1",
    "name": "Ligue 1",
    "country": "France",
-   "updated_at": "2026-09-17T01:18:39Z",
+   "updated_at": "2026-09-17T03:21:34Z",
    "matchday": {
     "current": 5,
     "total": 34,
@@ -76,7 +80,8 @@
    },
    "source": "football-data.org",
    "has_probabilities": true,
-   "model_as_of": "2026-09-16T22:55:39Z"
+   "model_as_of": "2026-09-17T03:21:29Z",
+   "has_history": true
   }
  ]
 }

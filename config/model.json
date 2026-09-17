@@ -11,6 +11,7 @@
   "rating_uncertainty": true,
   "n_rating_draws": 100,
   "n_simulations": 10000,
+  "history_simulations": 5000,
   "max_goals": 10,
   "rho_bounds": [
     -0.25,

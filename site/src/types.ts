@@ -55,6 +55,15 @@ export interface TeamProbs {
   defence?: number
 }
 
+export type OutcomeKey = 'title' | 'ucl' | 'europe' | 'relegation' | 'drop_zone'
+export type Status = 'alive' | 'clinched' | 'eliminated'
+
+export interface Scenario {
+  outcome: OutcomeKey
+  kind: 'clinch' | 'eliminate'
+  text: string
+}
+
 export interface TeamRow {
   id: number | string
   name: string
@@ -77,6 +86,10 @@ export interface TeamRow {
   tied: boolean
   separated_by: string | null
   probs?: TeamProbs | null
+  status?: Partial<Record<OutcomeKey, Status>>
+  magic?: Partial<Record<'title' | 'ucl' | 'europe' | 'safety', number | null>>
+  remaining?: number
+  scenarios?: Scenario[]
 }
 
 export interface MatchdayInfo {
@@ -109,14 +122,92 @@ export interface ModelInfo {
   runtime_seconds: number
 }
 
+export interface NextRound {
+  matchday: number | null
+  label: string
+  fixtures: (number | string)[]
+}
+
 export interface Standings {
   league: LeagueMeta
   updated_at: string
   source: string
   matchday: MatchdayInfo
   model: ModelInfo | null
+  next_round?: NextRound | null
+  history?: { snapshots: number; updated_at: string } | null
   teams: TeamRow[]
   source_check: { available: boolean; totals_match?: boolean; diffs?: unknown[] }
+}
+
+export interface Forecast {
+  home: number
+  draw: number
+  away: number
+  xg_home: number
+  xg_away: number
+}
+
+export interface MatchRecord {
+  id: number | string
+  utc_date: string
+  matchday: number | null
+  status: string
+  home_id: number | string
+  away_id: number | string
+  home_goals: number | null
+  away_goals: number | null
+  forecast?: Forecast
+}
+
+export interface TeamInfo {
+  id: number | string
+  name: string
+  short_name: string
+  tla: string | null
+  crest: string | null
+}
+
+export interface MatchesFile {
+  league: string
+  season: string
+  updated_at: string
+  teams: TeamInfo[]
+  matches: MatchRecord[]
+}
+
+export interface SnapshotTeam {
+  title: number
+  ucl: number
+  uel: number
+  uecl: number
+  europe: number
+  relegation_playoff: number
+  relegation: number
+  expected_points: number
+  expected_position: number
+  position: number
+  points: number
+  played: number
+  attack: number
+  defence: number
+}
+
+export interface Snapshot {
+  matchday: number
+  label: string
+  as_of: string
+  complete: boolean
+  teams: Record<string, SnapshotTeam>
+}
+
+export interface History {
+  league: string
+  season: string
+  model_version: string
+  updated_at: string
+  total_matchdays: number
+  snapshots: Snapshot[]
 }
 
 export interface IndexLeague {
@@ -128,6 +219,7 @@ export interface IndexLeague {
   source?: string
   has_probabilities?: boolean
   model_as_of?: string | null
+  has_history?: boolean
 }
 
 export interface DataIndex {
