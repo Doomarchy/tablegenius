@@ -8,7 +8,7 @@ No server runs continuously. A GitHub Actions job fetches results a few times a 
 around match days), rebuilds the tables, runs the model and commits static JSON files. A
 static React site reads those files and is hosted on GitHub Pages.
 
-Live site: https://doomarchy.github.io/tablegenius/
+Live site: https://ryan-castellano.github.io/tablegenius/
 
 ## Layout
 
