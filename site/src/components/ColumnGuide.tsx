@@ -17,8 +17,8 @@ export default function ColumnGuide({ columns, hasProbs }: { columns: Column[]; 
         </div>
         {hasProbs && (
           <div>
-            <dt>Shading</dt>
-            <dd>Darker cells mean higher chances. “&lt;1” and “&gt;99” mark chances below 0.5% and above 99.5%; nothing is ever truly 0% or 100% until it is mathematically settled.</dd>
+            <dt>Bars</dt>
+            <dd>The bar under each figure is the chance drawn to scale, scarlet for European places and black for the drop. “&lt;1” and “&gt;99” mark chances below 0.5% and above 99.5%; nothing is ever truly 0% or 100% until it is mathematically settled.</dd>
           </div>
         )}
       </dl>

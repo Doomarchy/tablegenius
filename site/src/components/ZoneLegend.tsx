@@ -14,7 +14,7 @@ export default function ZoneLegend({ league }: { league: LeagueMeta }) {
         if (!z || !z.positions) return null
         return (
           <li key={key}>
-            <span className={`legend-swatch zone-swatch-${key}`} aria-hidden="true" />
+            <span className={`legend-stamp zone-${key}`} aria-hidden="true" />
             {z.label} <span className="muted">({range(z.positions)})</span>
           </li>
         )

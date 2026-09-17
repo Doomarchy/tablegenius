@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import { loadStandings } from '../api'
-import { buildColumns } from '../columns'
+import { buildColumns, buildFootnotes } from '../columns'
 import ColumnGuide from '../components/ColumnGuide'
 import LeagueTable, { type TableView } from '../components/LeagueTable'
 import ZoneLegend from '../components/ZoneLegend'
@@ -56,6 +56,7 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
 
   const hasProbs = !!standings?.model && standings.teams.some((t) => t.probs)
   const columns = useMemo(() => (standings ? buildColumns(standings.league, hasProbs) : []), [standings, hasProbs])
+  const footnotes = useMemo(() => (standings && hasProbs ? buildFootnotes(standings.league) : []), [standings, hasProbs])
 
   if (error) return <p className="notice error">{error}</p>
   if (!standings) return <p className="notice">Loading table…</p>
@@ -63,15 +64,8 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
   const { league, matchday, model } = standings
   return (
     <section>
-      <div className="league-head">
-        <div>
-          <h1>{league.name}</h1>
-          <p className="league-sub">
-            {league.country} · {league.season}
-            {matchday.current !== null && ` · Matchday ${matchday.current} of ${matchday.total}`}
-            {` · ${matchday.matches_played}/${matchday.matches_total} matches played`}
-          </p>
-        </div>
+      <div className="band">
+        <h1>{league.name}</h1>
         {hasProbs && (
           <div className="view-switch" role="group" aria-label="Columns to show">
             {VIEWS.map((v) => (
@@ -82,16 +76,29 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
           </div>
         )}
       </div>
+      <p className="meta">
+        <span>{league.country} · {league.season}</span>
+        {matchday.current !== null && <span>Matchday <b>{matchday.current}</b> of {matchday.total}</span>}
+        <span><b>{matchday.matches_played}</b>/{matchday.matches_total} played</span>
+        {hasProbs && model && <span>n = <b>{model.n_sims.toLocaleString()}</b> seasons × {model.n_rating_draws} rating sets</span>}
+        <span>Updated <b>{formatUpdated(standings.updated_at)}</b></span>
+      </p>
       <LeagueTable standings={standings} view={hasProbs ? view : 'table'} />
+      {footnotes.length > 0 && (
+        <p className="footnotes">
+          {footnotes.map((f) => (
+            <span key={f.n}><sup>{f.n}</sup> {f.text}</span>
+          ))}
+        </p>
+      )}
       <ZoneLegend league={league} />
       {standings.source_check.available && standings.source_check.totals_match === false && (
         <p className="notice error">Warning: computed totals differ from the data provider. Check the pipeline logs.</p>
       )}
       {hasProbs && model && (
         <p className="muted small model-line">
-          Chances from {model.n_sims.toLocaleString()} simulated seasons using {model.n_rating_draws} plausible rating sets, fitted on{' '}
-          {model.fitted_matches.toLocaleString()} matches. Ratings as of {new Date(model.as_of).toLocaleDateString(undefined, { dateStyle: 'medium' })}.{' '}
-          <Link to="/about">How the model works</Link>.
+          Chances from {model.n_sims.toLocaleString()} simulated seasons, ratings fitted on {model.fitted_matches.toLocaleString()} matches as of{' '}
+          {new Date(model.as_of).toLocaleDateString(undefined, { dateStyle: 'medium' })}. <Link to="/about">How the model works</Link>.
         </p>
       )}
       <ColumnGuide columns={columns} hasProbs={hasProbs} />
@@ -104,9 +111,7 @@ export default function LeaguePage({ index }: { index: DataIndex }) {
           ))}
         </ul>
       </details>
-      <p className="muted small">
-        Data: {standings.source}. Updated {formatUpdated(standings.updated_at)}.
-      </p>
+      <p className="muted small">Data: {standings.source}.</p>
     </section>
   )
 }

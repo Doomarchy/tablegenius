@@ -6,15 +6,6 @@ import Form from './Form'
 
 export type TableView = 'table' | 'chances' | 'both'
 
-const zoneShort: Record<string, string> = {
-  ucl: 'UCL',
-  ucl_qualifying: 'UCL Q',
-  uel: 'UEL',
-  uecl: 'UECL',
-  relegation_playoff: 'Play-off',
-  relegation: 'Rel.',
-}
-
 interface Sort {
   key: string
   dir: 'asc' | 'desc'
@@ -95,7 +86,7 @@ export default function LeagueTable({ standings, view }: { standings: Standings;
                 #{indicator('position')}
               </button>
             </th>
-            <th className="col-team" scope="col">Team</th>
+            <th className="col-team" scope="col">Club</th>
             {shown.map((col) => (
               <th
                 key={col.key}
@@ -105,6 +96,7 @@ export default function LeagueTable({ standings, view }: { standings: Standings;
               >
                 <button type="button" className="th-btn" onClick={() => toggleSort(col.key, !!col.ascending)} title={col.description}>
                   {col.label}
+                  {col.note && <sup>{col.note}</sup>}
                   {indicator(col.key)}
                 </button>
               </th>
@@ -130,21 +122,21 @@ export default function LeagueTable({ standings, view }: { standings: Standings;
                       <span className="name-long">{t.short_name}</span>
                       <span className="name-short">{t.tla ?? t.short_name}</span>
                     </span>
-                    {t.zone && <span className={`zone-tag zone-tag-${t.zone}`}>{zoneShort[t.zone]}</span>}
                   </span>
                 </td>
                 {shown.map((col) => {
                   const v = col.value(t)
                   if (col.kind === 'prob') {
                     const p = v ?? 0
-                    const style = { '--p': p, '--hue': `var(--zone-${col.hue})` } as CSSProperties
+                    const style = { '--w': `${Math.max(p * 100, p > 0 ? 1.5 : 0)}%` } as CSSProperties
                     return (
-                      <td key={col.key} className="col-prob" style={style} title={v === null ? undefined : `${t.short_name}: ${pct1(v)} · ${col.description}`}>
-                        {cellText(col, v)}
+                      <td key={col.key} className={`col-prob hue-${col.ink ?? 'scarlet'}`} title={v === null ? undefined : `${t.short_name}: ${pct1(v)} · ${col.description}`}>
+                        <span className="pv">{cellText(col, v)}</span>
+                        <i className="pbar" style={style} aria-hidden="true" />
                       </td>
                     )
                   }
-                  const cls = [`col-${col.group}`, col.key === 'points' ? 'col-pts' : '', col.kind === 'signed' && v !== null ? (v > 0 ? 'pos-num' : v < 0 ? 'neg-num' : '') : ''].filter(Boolean).join(' ')
+                  const cls = [`col-${col.group}`, col.key === 'points' ? 'col-pts' : '', col.kind === 'signed' && v !== null && v < 0 ? 'neg-num' : ''].filter(Boolean).join(' ')
                   return (
                     <td key={col.key} className={cls}>
                       {cellText(col, v)}
