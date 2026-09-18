@@ -1,6 +1,6 @@
 {
  "season": "2026-27",
- "updated_at": "2026-09-18T13:33:41Z",
+ "updated_at": "2026-09-18T19:27:14Z",
  "has_backtest": true,
  "leagues": [
   {
@@ -23,7 +23,7 @@
    "code": "PD",
    "name": "LaLiga",
    "country": "Spain",
-   "updated_at": "2026-09-18T13:32:36Z",
+   "updated_at": "2026-09-18T19:26:09Z",
    "matchday": {
     "current": 6,
     "total": 38,
@@ -87,7 +87,7 @@
    "code": "DED",
    "name": "Eredivisie",
    "country": "Netherlands",
-   "updated_at": "2026-09-18T13:33:28Z",
+   "updated_at": "2026-09-18T19:27:01Z",
    "matchday": {
     "current": 7,
     "total": 34,
@@ -103,7 +103,7 @@
    "code": "PPL",
    "name": "Primeira Liga",
    "country": "Portugal",
-   "updated_at": "2026-09-18T13:33:41Z",
+   "updated_at": "2026-09-18T19:27:14Z",
    "matchday": {
     "current": 2,
     "total": 34,
