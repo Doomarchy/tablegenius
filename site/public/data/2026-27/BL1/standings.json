@@ -72,7 +72,7 @@
   "tied_title_playoff": false,
   "tied_relegation_playoff": false
  },
- "updated_at": "2026-09-19T13:02:07Z",
+ "updated_at": "2026-09-19T15:26:09Z",
  "source": "football-data.org",
  "matchday": {
   "current": 4,
@@ -146,7 +146,7 @@
  },
  "history": {
   "snapshots": 5,
-  "updated_at": "2026-09-19T13:02:07Z"
+  "updated_at": "2026-09-19T15:26:09Z"
  },
  "teams": [
   {
@@ -1954,7 +1954,134 @@
  ],
  "source_check": {
   "available": true,
-  "totals_match": true,
-  "diffs": []
+  "totals_match": false,
+  "diffs": [
+   {
+    "team": "SC Freiburg",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     9,
+     9
+    ],
+    "api": [
+     4,
+     10,
+     9
+    ]
+   },
+   {
+    "team": "FC Augsburg",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     7,
+     6
+    ],
+    "api": [
+     4,
+     7,
+     5
+    ]
+   },
+   {
+    "team": "SV Werder Bremen",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     4,
+     -1
+    ],
+    "api": [
+     4,
+     7,
+     0
+    ]
+   },
+   {
+    "team": "RB Leipzig",
+    "issue": "position differs (tiebreak)",
+    "ours": 5,
+    "api": 6
+   },
+   {
+    "team": "SV 07 Elversberg",
+    "issue": "position differs (tiebreak)",
+    "ours": 6,
+    "api": 7
+   },
+   {
+    "team": "Eintracht Frankfurt",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     4,
+     -1
+    ],
+    "api": [
+     4,
+     5,
+     -1
+    ]
+   },
+   {
+    "team": "Bayer 04 Leverkusen",
+    "issue": "position differs (tiebreak)",
+    "ours": 7,
+    "api": 9
+   },
+   {
+    "team": "1. FSV Mainz 05",
+    "issue": "position differs (tiebreak)",
+    "ours": 8,
+    "api": 10
+   },
+   {
+    "team": "1. FC Köln",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     4,
+     -2
+    ],
+    "api": [
+     4,
+     4,
+     -3
+    ]
+   },
+   {
+    "team": "Hamburger SV",
+    "issue": "totals differ",
+    "ours": [
+     3,
+     0,
+     -12
+    ],
+    "api": [
+     4,
+     3,
+     -11
+    ]
+   },
+   {
+    "team": "SC Paderborn 07",
+    "issue": "position differs (tiebreak)",
+    "ours": 15,
+    "api": 16
+   },
+   {
+    "team": "1. FC Union Berlin",
+    "issue": "position differs (tiebreak)",
+    "ours": 16,
+    "api": 17
+   },
+   {
+    "team": "Borussia Mönchengladbach",
+    "issue": "position differs (tiebreak)",
+    "ours": 17,
+    "api": 18
+   }
+  ]
  }
 }

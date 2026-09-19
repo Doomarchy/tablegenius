@@ -1,8 +1,8 @@
 {
  "league": "PL",
  "season": "2026-27",
- "updated_at": "2026-09-19T13:01:31Z",
- "results_hash": "9e2a7d4ab95889fa908be0b7521684fba9541a4f",
+ "updated_at": "2026-09-19T15:25:33Z",
+ "results_hash": "f4d5a3c91673c4278dd0cda812b50572869469d7",
  "teams": [
   {
    "id": 57,
@@ -560,40 +560,27 @@
    "id": 560587,
    "utc_date": "2026-09-19T11:30:00Z",
    "matchday": 5,
-   "status": "IN_PLAY",
+   "status": "FINISHED",
    "home_id": 73,
    "away_id": 58,
-   "home_goals": 1,
-   "away_goals": 1,
-   "forecast": {
-    "home": 0.3447,
-    "draw": 0.2833,
-    "away": 0.372,
-    "xg_home": 1.34,
-    "xg_away": 1.4
-   },
-   "market": {
-    "home": 0.4753,
-    "draw": 0.2635,
-    "away": 0.2613,
-    "source": "average of bookmakers"
-   }
+   "home_goals": 2,
+   "away_goals": 3
   },
   {
    "id": 560584,
    "utc_date": "2026-09-19T14:00:00Z",
    "matchday": 5,
-   "status": "TIMED",
+   "status": "IN_PLAY",
    "home_id": 62,
    "away_id": 349,
-   "home_goals": null,
-   "away_goals": null,
+   "home_goals": 2,
+   "away_goals": 0,
    "forecast": {
-    "home": 0.6083,
-    "draw": 0.2357,
-    "away": 0.1559,
-    "xg_home": 1.97,
-    "xg_away": 0.89
+    "home": 0.5988,
+    "draw": 0.2361,
+    "away": 0.1651,
+    "xg_home": 1.94,
+    "xg_away": 0.92
    },
    "market": {
     "home": 0.5353,
@@ -606,17 +593,17 @@
    "id": 560586,
    "utc_date": "2026-09-19T14:00:00Z",
    "matchday": 5,
-   "status": "TIMED",
+   "status": "IN_PLAY",
    "home_id": 397,
    "away_id": 57,
-   "home_goals": null,
-   "away_goals": null,
+   "home_goals": 3,
+   "away_goals": 0,
    "forecast": {
-    "home": 0.2521,
-    "draw": 0.2799,
-    "away": 0.468,
-    "xg_home": 1.09,
-    "xg_away": 1.57
+    "home": 0.2578,
+    "draw": 0.2755,
+    "away": 0.4666,
+    "xg_home": 1.1,
+    "xg_away": 1.56
    },
    "market": {
     "home": 0.1974,
@@ -629,17 +616,17 @@
    "id": 560588,
    "utc_date": "2026-09-19T14:00:00Z",
    "matchday": 5,
-   "status": "TIMED",
+   "status": "IN_PLAY",
    "home_id": 67,
    "away_id": 322,
-   "home_goals": null,
-   "away_goals": null,
+   "home_goals": 2,
+   "away_goals": 0,
    "forecast": {
-    "home": 0.4623,
-    "draw": 0.2763,
-    "away": 0.2613,
-    "xg_home": 1.57,
-    "xg_away": 1.11
+    "home": 0.4599,
+    "draw": 0.275,
+    "away": 0.265,
+    "xg_home": 1.55,
+    "xg_away": 1.12
    },
    "market": {
     "home": 0.595,
@@ -658,11 +645,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6189,
-    "draw": 0.2387,
-    "away": 0.1425,
-    "xg_home": 1.92,
-    "xg_away": 0.79
+    "home": 0.6483,
+    "draw": 0.2297,
+    "away": 0.122,
+    "xg_home": 1.95,
+    "xg_away": 0.68
    },
    "market": {
     "home": 0.5959,
@@ -681,9 +668,9 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3645,
-    "draw": 0.2602,
-    "away": 0.3753,
+    "home": 0.3668,
+    "draw": 0.2569,
+    "away": 0.3763,
     "xg_home": 1.55,
     "xg_away": 1.58
    },
@@ -704,11 +691,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4825,
-    "draw": 0.2741,
-    "away": 0.2434,
-    "xg_home": 1.62,
-    "xg_away": 1.08
+    "home": 0.4916,
+    "draw": 0.2668,
+    "away": 0.2415,
+    "xg_home": 1.65,
+    "xg_away": 1.09
    },
    "market": {
     "home": 0.5415,
@@ -727,11 +714,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5979,
-    "draw": 0.2478,
-    "away": 0.1543,
-    "xg_home": 1.86,
-    "xg_away": 0.83
+    "home": 0.61,
+    "draw": 0.2401,
+    "away": 0.1499,
+    "xg_home": 1.88,
+    "xg_away": 0.82
    },
    "market": {
     "home": 0.7302,
@@ -750,11 +737,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3499,
-    "draw": 0.2791,
-    "away": 0.3711,
-    "xg_home": 1.39,
-    "xg_away": 1.44
+    "home": 0.3408,
+    "draw": 0.2733,
+    "away": 0.3859,
+    "xg_home": 1.37,
+    "xg_away": 1.47
    },
    "market": {
     "home": 0.2789,
@@ -773,11 +760,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5861,
-    "draw": 0.2584,
-    "away": 0.1555,
-    "xg_home": 1.76,
-    "xg_away": 0.8
+    "home": 0.5857,
+    "draw": 0.2494,
+    "away": 0.1649,
+    "xg_home": 1.81,
+    "xg_away": 0.84
    }
   },
   {
@@ -790,11 +777,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3335,
-    "draw": 0.2902,
-    "away": 0.3763,
-    "xg_home": 1.27,
-    "xg_away": 1.36
+    "home": 0.3191,
+    "draw": 0.2839,
+    "away": 0.3971,
+    "xg_home": 1.24,
+    "xg_away": 1.41
    }
   },
   {
@@ -807,11 +794,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.416,
-    "draw": 0.2642,
-    "away": 0.3198,
-    "xg_home": 1.65,
-    "xg_away": 1.42
+    "home": 0.4217,
+    "draw": 0.2608,
+    "away": 0.3175,
+    "xg_home": 1.64,
+    "xg_away": 1.4
    }
   },
   {
@@ -824,11 +811,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2429,
-    "draw": 0.2594,
-    "away": 0.4978,
-    "xg_home": 1.16,
-    "xg_away": 1.76
+    "home": 0.2501,
+    "draw": 0.2536,
+    "away": 0.4963,
+    "xg_home": 1.2,
+    "xg_away": 1.78
    }
   },
   {
@@ -841,11 +828,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3709,
-    "draw": 0.272,
-    "away": 0.357,
-    "xg_home": 1.48,
-    "xg_away": 1.44
+    "home": 0.3898,
+    "draw": 0.2705,
+    "away": 0.3396,
+    "xg_home": 1.49,
+    "xg_away": 1.38
    }
   },
   {
@@ -858,10 +845,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5172,
-    "draw": 0.2518,
-    "away": 0.231,
-    "xg_home": 1.86,
+    "home": 0.5438,
+    "draw": 0.2387,
+    "away": 0.2175,
+    "xg_home": 1.96,
     "xg_away": 1.18
    }
   },
@@ -875,10 +862,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3491,
-    "draw": 0.3241,
-    "away": 0.3268,
-    "xg_home": 1.11,
+    "home": 0.3591,
+    "draw": 0.3173,
+    "away": 0.3236,
+    "xg_home": 1.13,
     "xg_away": 1.06
    }
   },
@@ -892,11 +879,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3261,
-    "draw": 0.2939,
-    "away": 0.38,
-    "xg_home": 1.24,
-    "xg_away": 1.35
+    "home": 0.33,
+    "draw": 0.293,
+    "away": 0.377,
+    "xg_home": 1.21,
+    "xg_away": 1.31
    }
   },
   {
@@ -909,11 +896,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.324,
-    "draw": 0.2623,
-    "away": 0.4137,
-    "xg_home": 1.43,
-    "xg_away": 1.65
+    "home": 0.3287,
+    "draw": 0.26,
+    "away": 0.4113,
+    "xg_home": 1.42,
+    "xg_away": 1.61
    }
   },
   {
@@ -926,11 +913,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1963,
-    "draw": 0.2485,
-    "away": 0.5553,
-    "xg_home": 1.03,
-    "xg_away": 1.89
+    "home": 0.1787,
+    "draw": 0.2452,
+    "away": 0.5761,
+    "xg_home": 0.92,
+    "xg_away": 1.86
    }
   },
   {
@@ -943,10 +930,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3679,
-    "draw": 0.2913,
-    "away": 0.3408,
-    "xg_home": 1.34,
+    "home": 0.3626,
+    "draw": 0.2887,
+    "away": 0.3487,
+    "xg_home": 1.32,
     "xg_away": 1.29
    }
   },
@@ -960,11 +947,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4,
-    "draw": 0.3076,
-    "away": 0.2924,
-    "xg_home": 1.29,
-    "xg_away": 1.06
+    "home": 0.412,
+    "draw": 0.2972,
+    "away": 0.2908,
+    "xg_home": 1.33,
+    "xg_away": 1.08
    }
   },
   {
@@ -977,10 +964,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.8061,
-    "draw": 0.1311,
-    "away": 0.0627,
-    "xg_home": 3.03,
+    "home": 0.7982,
+    "draw": 0.1354,
+    "away": 0.0664,
+    "xg_home": 2.94,
     "xg_away": 0.76
    }
   },
@@ -994,11 +981,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3788,
-    "draw": 0.254,
-    "away": 0.3672,
-    "xg_home": 1.63,
-    "xg_away": 1.61
+    "home": 0.3864,
+    "draw": 0.2569,
+    "away": 0.3568,
+    "xg_home": 1.6,
+    "xg_away": 1.53
    }
   },
   {
@@ -1011,11 +998,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4338,
-    "draw": 0.2667,
-    "away": 0.2994,
-    "xg_home": 1.64,
-    "xg_away": 1.32
+    "home": 0.4087,
+    "draw": 0.265,
+    "away": 0.3263,
+    "xg_home": 1.58,
+    "xg_away": 1.39
    }
   },
   {
@@ -1028,11 +1015,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.455,
-    "draw": 0.2869,
-    "away": 0.2581,
-    "xg_home": 1.51,
-    "xg_away": 1.08
+    "home": 0.4704,
+    "draw": 0.2778,
+    "away": 0.2517,
+    "xg_home": 1.55,
+    "xg_away": 1.07
    }
   },
   {
@@ -1045,11 +1032,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3921,
-    "draw": 0.2742,
-    "away": 0.3337,
-    "xg_home": 1.5,
-    "xg_away": 1.37
+    "home": 0.3939,
+    "draw": 0.2679,
+    "away": 0.3382,
+    "xg_home": 1.52,
+    "xg_away": 1.39
    }
   },
   {
@@ -1062,11 +1049,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.537,
-    "draw": 0.2491,
-    "away": 0.2138,
-    "xg_home": 1.89,
-    "xg_away": 1.12
+    "home": 0.531,
+    "draw": 0.2487,
+    "away": 0.2203,
+    "xg_home": 1.84,
+    "xg_away": 1.11
    }
   },
   {
@@ -1079,11 +1066,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2211,
-    "draw": 0.2921,
-    "away": 0.4868,
+    "home": 0.2266,
+    "draw": 0.292,
+    "away": 0.4814,
     "xg_home": 0.92,
-    "xg_away": 1.49
+    "xg_away": 1.45
    }
   },
   {
@@ -1096,11 +1083,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5588,
-    "draw": 0.2561,
-    "away": 0.1851,
-    "xg_home": 1.8,
-    "xg_away": 0.93
+    "home": 0.5951,
+    "draw": 0.2397,
+    "away": 0.1651,
+    "xg_home": 1.88,
+    "xg_away": 0.87
    }
   },
   {
@@ -1113,11 +1100,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2126,
-    "draw": 0.2503,
-    "away": 0.5371,
-    "xg_home": 1.09,
-    "xg_away": 1.86
+    "home": 0.215,
+    "draw": 0.2486,
+    "away": 0.5364,
+    "xg_home": 1.08,
+    "xg_away": 1.84
    }
   },
   {
@@ -1130,11 +1117,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2423,
-    "draw": 0.2664,
-    "away": 0.4914,
-    "xg_home": 1.13,
-    "xg_away": 1.7
+    "home": 0.2666,
+    "draw": 0.2682,
+    "away": 0.4652,
+    "xg_home": 1.17,
+    "xg_away": 1.63
    }
   },
   {
@@ -1147,11 +1134,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5842,
-    "draw": 0.2689,
-    "away": 0.1469,
-    "xg_home": 1.66,
-    "xg_away": 0.71
+    "home": 0.6003,
+    "draw": 0.2572,
+    "away": 0.1425,
+    "xg_home": 1.71,
+    "xg_away": 0.7
    }
   },
   {
@@ -1164,11 +1151,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2306,
-    "draw": 0.2823,
-    "away": 0.487,
-    "xg_home": 0.99,
-    "xg_away": 1.55
+    "home": 0.2043,
+    "draw": 0.2737,
+    "away": 0.5221,
+    "xg_home": 0.89,
+    "xg_away": 1.6
    }
   },
   {
@@ -1181,11 +1168,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5137,
-    "draw": 0.253,
-    "away": 0.2332,
-    "xg_home": 1.84,
-    "xg_away": 1.18
+    "home": 0.5238,
+    "draw": 0.2428,
+    "away": 0.2335,
+    "xg_home": 1.91,
+    "xg_away": 1.22
    }
   },
   {
@@ -1198,10 +1185,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4683,
-    "draw": 0.2482,
-    "away": 0.2835,
-    "xg_home": 1.86,
+    "home": 0.4616,
+    "draw": 0.247,
+    "away": 0.2914,
+    "xg_home": 1.82,
     "xg_away": 1.41
    }
   },
@@ -1215,11 +1202,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3277,
-    "draw": 0.2716,
-    "away": 0.4007,
-    "xg_home": 1.38,
-    "xg_away": 1.55
+    "home": 0.346,
+    "draw": 0.2709,
+    "away": 0.3831,
+    "xg_home": 1.39,
+    "xg_away": 1.48
    }
   },
   {
@@ -1232,11 +1219,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4193,
-    "draw": 0.2623,
-    "away": 0.3185,
-    "xg_home": 1.66,
-    "xg_away": 1.42
+    "home": 0.4418,
+    "draw": 0.2586,
+    "away": 0.2996,
+    "xg_home": 1.69,
+    "xg_away": 1.36
    }
   },
   {
@@ -1249,11 +1236,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3242,
-    "draw": 0.288,
-    "away": 0.3878,
-    "xg_home": 1.24,
-    "xg_away": 1.39
+    "home": 0.3198,
+    "draw": 0.2873,
+    "away": 0.3929,
+    "xg_home": 1.19,
+    "xg_away": 1.35
    }
   },
   {
@@ -1266,11 +1253,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3581,
-    "draw": 0.3079,
-    "away": 0.334,
-    "xg_home": 1.22,
-    "xg_away": 1.17
+    "home": 0.3394,
+    "draw": 0.2965,
+    "away": 0.3641,
+    "xg_home": 1.21,
+    "xg_away": 1.27
    }
   },
   {
@@ -1283,11 +1270,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4214,
-    "draw": 0.2566,
-    "away": 0.322,
-    "xg_home": 1.72,
-    "xg_away": 1.48
+    "home": 0.4052,
+    "draw": 0.2575,
+    "away": 0.3372,
+    "xg_home": 1.65,
+    "xg_away": 1.49
    }
   },
   {
@@ -1300,10 +1287,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5572,
-    "draw": 0.2413,
-    "away": 0.2016,
-    "xg_home": 1.97,
+    "home": 0.5449,
+    "draw": 0.2425,
+    "away": 0.2126,
+    "xg_home": 1.9,
     "xg_away": 1.11
    }
   },
@@ -1317,11 +1304,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4293,
-    "draw": 0.2784,
-    "away": 0.2923,
-    "xg_home": 1.54,
-    "xg_away": 1.23
+    "home": 0.4194,
+    "draw": 0.2706,
+    "away": 0.3099,
+    "xg_home": 1.55,
+    "xg_away": 1.29
    }
   },
   {
@@ -1334,11 +1321,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2259,
-    "draw": 0.2935,
-    "away": 0.4806,
-    "xg_home": 0.92,
-    "xg_away": 1.47
+    "home": 0.2125,
+    "draw": 0.2911,
+    "away": 0.4964,
+    "xg_home": 0.85,
+    "xg_away": 1.46
    }
   },
   {
@@ -1351,11 +1338,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5676,
-    "draw": 0.2468,
-    "away": 0.1856,
-    "xg_home": 1.87,
-    "xg_away": 0.96
+    "home": 0.5658,
+    "draw": 0.2454,
+    "away": 0.1888,
+    "xg_home": 1.88,
+    "xg_away": 0.97
    }
   },
   {
@@ -1368,11 +1355,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4425,
-    "draw": 0.2745,
-    "away": 0.283,
-    "xg_home": 1.59,
-    "xg_away": 1.22
+    "home": 0.4345,
+    "draw": 0.2798,
+    "away": 0.2858,
+    "xg_home": 1.5,
+    "xg_away": 1.17
    }
   },
   {
@@ -1385,11 +1372,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4116,
-    "draw": 0.2816,
-    "away": 0.3068,
-    "xg_home": 1.48,
-    "xg_away": 1.25
+    "home": 0.4068,
+    "draw": 0.2728,
+    "away": 0.3205,
+    "xg_home": 1.5,
+    "xg_away": 1.31
    }
   },
   {
@@ -1402,11 +1389,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4316,
-    "draw": 0.2856,
-    "away": 0.2829,
-    "xg_home": 1.48,
-    "xg_away": 1.16
+    "home": 0.4571,
+    "draw": 0.2743,
+    "away": 0.2686,
+    "xg_home": 1.57,
+    "xg_away": 1.15
    }
   },
   {
@@ -1419,11 +1406,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2862,
-    "draw": 0.2805,
-    "away": 0.4333,
-    "xg_home": 1.19,
-    "xg_away": 1.52
+    "home": 0.2838,
+    "draw": 0.2747,
+    "away": 0.4415,
+    "xg_home": 1.2,
+    "xg_away": 1.55
    }
   },
   {
@@ -1436,11 +1423,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4261,
-    "draw": 0.2871,
-    "away": 0.2868,
+    "home": 0.4305,
+    "draw": 0.2832,
+    "away": 0.2863,
     "xg_home": 1.47,
-    "xg_away": 1.17
+    "xg_away": 1.15
    }
   },
   {
@@ -1453,11 +1440,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6117,
-    "draw": 0.2559,
-    "away": 0.1324,
-    "xg_home": 1.77,
-    "xg_away": 0.67
+    "home": 0.6248,
+    "draw": 0.2448,
+    "away": 0.1305,
+    "xg_home": 1.82,
+    "xg_away": 0.68
    }
   },
   {
@@ -1470,11 +1457,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2491,
-    "draw": 0.2775,
-    "away": 0.4735,
-    "xg_home": 1.1,
-    "xg_away": 1.6
+    "home": 0.2629,
+    "draw": 0.2802,
+    "away": 0.4568,
+    "xg_home": 1.09,
+    "xg_away": 1.51
    }
   },
   {
@@ -1487,11 +1474,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4776,
-    "draw": 0.2761,
-    "away": 0.2463,
-    "xg_home": 1.61,
-    "xg_away": 1.1
+    "home": 0.5072,
+    "draw": 0.2553,
+    "away": 0.2376,
+    "xg_home": 1.77,
+    "xg_away": 1.14
    }
   },
   {
@@ -1504,11 +1491,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3635,
-    "draw": 0.2775,
-    "away": 0.3591,
-    "xg_home": 1.42,
-    "xg_away": 1.41
+    "home": 0.3762,
+    "draw": 0.2742,
+    "away": 0.3496,
+    "xg_home": 1.45,
+    "xg_away": 1.39
    }
   },
   {
@@ -1521,11 +1508,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5895,
-    "draw": 0.2611,
-    "away": 0.1494,
-    "xg_home": 1.75,
-    "xg_away": 0.75
+    "home": 0.6091,
+    "draw": 0.2526,
+    "away": 0.1383,
+    "xg_home": 1.74,
+    "xg_away": 0.69
    }
   },
   {
@@ -1538,11 +1525,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.265,
+    "home": 0.2798,
     "draw": 0.2577,
-    "away": 0.4773,
-    "xg_home": 1.27,
-    "xg_away": 1.78
+    "away": 0.4625,
+    "xg_home": 1.29,
+    "xg_away": 1.71
    }
   },
   {
@@ -1555,11 +1542,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3525,
-    "draw": 0.2889,
-    "away": 0.3586,
-    "xg_home": 1.32,
-    "xg_away": 1.33
+    "home": 0.341,
+    "draw": 0.2842,
+    "away": 0.3748,
+    "xg_home": 1.29,
+    "xg_away": 1.37
    }
   },
   {
@@ -1572,11 +1559,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1951,
-    "draw": 0.2284,
-    "away": 0.5765,
-    "xg_home": 1.14,
-    "xg_away": 2.1
+    "home": 0.2079,
+    "draw": 0.2278,
+    "away": 0.5644,
+    "xg_home": 1.18,
+    "xg_away": 2.06
    }
   },
   {
@@ -1589,11 +1576,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4264,
-    "draw": 0.257,
-    "away": 0.3166,
-    "xg_home": 1.7,
-    "xg_away": 1.44
+    "home": 0.4271,
+    "draw": 0.2612,
+    "away": 0.3117,
+    "xg_home": 1.64,
+    "xg_away": 1.37
    }
   },
   {
@@ -1606,11 +1593,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4483,
-    "draw": 0.2638,
-    "away": 0.288,
-    "xg_home": 1.68,
-    "xg_away": 1.3
+    "home": 0.4461,
+    "draw": 0.2617,
+    "away": 0.2923,
+    "xg_home": 1.67,
+    "xg_away": 1.31
    }
   },
   {
@@ -1623,11 +1610,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4303,
-    "draw": 0.2723,
-    "away": 0.2975,
-    "xg_home": 1.6,
-    "xg_away": 1.29
+    "home": 0.4218,
+    "draw": 0.2671,
+    "away": 0.3111,
+    "xg_home": 1.59,
+    "xg_away": 1.34
    }
   },
   {
@@ -1640,10 +1627,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6169,
-    "draw": 0.233,
-    "away": 0.1502,
-    "xg_home": 2.01,
+    "home": 0.6126,
+    "draw": 0.2321,
+    "away": 0.1553,
+    "xg_home": 1.98,
     "xg_away": 0.89
    }
   },
@@ -1657,11 +1644,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4189,
-    "draw": 0.2981,
-    "away": 0.283,
-    "xg_home": 1.38,
-    "xg_away": 1.09
+    "home": 0.4601,
+    "draw": 0.2842,
+    "away": 0.2557,
+    "xg_home": 1.49,
+    "xg_away": 1.05
    }
   },
   {
@@ -1674,11 +1661,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4884,
-    "draw": 0.2434,
-    "away": 0.2682,
-    "xg_home": 1.93,
-    "xg_away": 1.38
+    "home": 0.4689,
+    "draw": 0.2455,
+    "away": 0.2856,
+    "xg_home": 1.85,
+    "xg_away": 1.41
    }
   },
   {
@@ -1691,11 +1678,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3187,
-    "draw": 0.2874,
-    "away": 0.3939,
-    "xg_home": 1.22,
-    "xg_away": 1.4
+    "home": 0.3162,
+    "draw": 0.2818,
+    "away": 0.402,
+    "xg_home": 1.21,
+    "xg_away": 1.41
    }
   },
   {
@@ -1708,11 +1695,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4279,
-    "draw": 0.2821,
-    "away": 0.29,
-    "xg_home": 1.52,
-    "xg_away": 1.21
+    "home": 0.4174,
+    "draw": 0.2819,
+    "away": 0.3007,
+    "xg_home": 1.46,
+    "xg_away": 1.2
    }
   },
   {
@@ -1725,11 +1712,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5739,
-    "draw": 0.2338,
-    "away": 0.1922,
-    "xg_home": 2.03,
-    "xg_away": 1.1
+    "home": 0.5762,
+    "draw": 0.2239,
+    "away": 0.1999,
+    "xg_home": 2.11,
+    "xg_away": 1.16
    }
   },
   {
@@ -1742,11 +1729,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4517,
+    "home": 0.4612,
     "draw": 0.2838,
-    "away": 0.2645,
-    "xg_home": 1.53,
-    "xg_away": 1.11
+    "away": 0.2549,
+    "xg_home": 1.51,
+    "xg_away": 1.05
    }
   },
   {
@@ -1759,11 +1746,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2623,
-    "draw": 0.2838,
-    "away": 0.4539,
-    "xg_home": 1.09,
-    "xg_away": 1.52
+    "home": 0.2265,
+    "draw": 0.2797,
+    "away": 0.4938,
+    "xg_home": 0.95,
+    "xg_away": 1.54
    }
   },
   {
@@ -1776,11 +1763,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2292,
-    "draw": 0.2709,
-    "away": 0.4999,
-    "xg_home": 1.05,
-    "xg_away": 1.66
+    "home": 0.2241,
+    "draw": 0.2656,
+    "away": 0.5103,
+    "xg_home": 1.03,
+    "xg_away": 1.68
    }
   },
   {
@@ -1793,11 +1780,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6237,
-    "draw": 0.2355,
-    "away": 0.1408,
-    "xg_home": 1.95,
-    "xg_away": 0.81
+    "home": 0.6673,
+    "draw": 0.2148,
+    "away": 0.118,
+    "xg_home": 2.08,
+    "xg_away": 0.72
    }
   },
   {
@@ -1810,11 +1797,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2199,
-    "draw": 0.2444,
-    "away": 0.5357,
-    "xg_home": 1.15,
-    "xg_away": 1.92
+    "home": 0.2136,
+    "draw": 0.2331,
+    "away": 0.5532,
+    "xg_home": 1.16,
+    "xg_away": 1.99
    }
   },
   {
@@ -1827,11 +1814,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4281,
-    "draw": 0.296,
-    "away": 0.2759,
-    "xg_home": 1.41,
-    "xg_away": 1.09
+    "home": 0.4386,
+    "draw": 0.2897,
+    "away": 0.2717,
+    "xg_home": 1.43,
+    "xg_away": 1.07
    }
   },
   {
@@ -1844,11 +1831,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4105,
-    "draw": 0.2573,
-    "away": 0.3322,
-    "xg_home": 1.68,
-    "xg_away": 1.49
+    "home": 0.4216,
+    "draw": 0.2612,
+    "away": 0.3172,
+    "xg_home": 1.64,
+    "xg_away": 1.4
    }
   },
   {
@@ -1861,11 +1848,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3161,
-    "draw": 0.2848,
-    "away": 0.3991,
+    "home": 0.3148,
+    "draw": 0.2795,
+    "away": 0.4057,
     "xg_home": 1.25,
-    "xg_away": 1.44
+    "xg_away": 1.45
    }
   },
   {
@@ -1878,11 +1865,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3461,
-    "draw": 0.2852,
-    "away": 0.3686,
-    "xg_home": 1.34,
-    "xg_away": 1.39
+    "home": 0.3561,
+    "draw": 0.2797,
+    "away": 0.3643,
+    "xg_home": 1.37,
+    "xg_away": 1.38
    }
   },
   {
@@ -1895,11 +1882,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3913,
-    "draw": 0.2791,
-    "away": 0.3296,
-    "xg_home": 1.48,
-    "xg_away": 1.34
+    "home": 0.4012,
+    "draw": 0.2773,
+    "away": 0.3215,
+    "xg_home": 1.47,
+    "xg_away": 1.29
    }
   },
   {
@@ -1912,11 +1899,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4547,
-    "draw": 0.2548,
-    "away": 0.2904,
-    "xg_home": 1.78,
-    "xg_away": 1.39
+    "home": 0.4694,
+    "draw": 0.2492,
+    "away": 0.2813,
+    "xg_home": 1.8,
+    "xg_away": 1.34
    }
   },
   {
@@ -1929,11 +1916,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4322,
-    "draw": 0.296,
-    "away": 0.2718,
-    "xg_home": 1.42,
-    "xg_away": 1.07
+    "home": 0.4289,
+    "draw": 0.2835,
+    "away": 0.2876,
+    "xg_home": 1.46,
+    "xg_away": 1.15
    }
   },
   {
@@ -1946,11 +1933,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3697,
-    "draw": 0.3022,
-    "away": 0.328,
-    "xg_home": 1.26,
-    "xg_away": 1.17
+    "home": 0.3839,
+    "draw": 0.2973,
+    "away": 0.3188,
+    "xg_home": 1.28,
+    "xg_away": 1.15
    }
   },
   {
@@ -1963,11 +1950,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3694,
-    "draw": 0.2915,
-    "away": 0.3391,
-    "xg_home": 1.35,
-    "xg_away": 1.28
+    "home": 0.3748,
+    "draw": 0.2773,
+    "away": 0.3479,
+    "xg_home": 1.42,
+    "xg_away": 1.35
    }
   },
   {
@@ -1980,10 +1967,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5193,
-    "draw": 0.2625,
-    "away": 0.2182,
-    "xg_home": 1.74,
+    "home": 0.5383,
+    "draw": 0.251,
+    "away": 0.2108,
+    "xg_home": 1.82,
     "xg_away": 1.05
    }
   },
@@ -1997,11 +1984,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3422,
-    "draw": 0.3104,
-    "away": 0.3474,
-    "xg_home": 1.17,
-    "xg_away": 1.18
+    "home": 0.3365,
+    "draw": 0.3077,
+    "away": 0.3558,
+    "xg_home": 1.14,
+    "xg_away": 1.17
    }
   },
   {
@@ -2014,11 +2001,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5181,
-    "draw": 0.253,
-    "away": 0.2289,
-    "xg_home": 1.85,
-    "xg_away": 1.17
+    "home": 0.5078,
+    "draw": 0.2539,
+    "away": 0.2383,
+    "xg_home": 1.79,
+    "xg_away": 1.16
    }
   },
   {
@@ -2031,11 +2018,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3999,
-    "draw": 0.3026,
-    "away": 0.2975,
-    "xg_home": 1.32,
-    "xg_away": 1.11
+    "home": 0.4325,
+    "draw": 0.2921,
+    "away": 0.2754,
+    "xg_home": 1.41,
+    "xg_away": 1.07
    }
   },
   {
@@ -2048,11 +2035,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.248,
-    "draw": 0.279,
-    "away": 0.473,
-    "xg_home": 1.08,
-    "xg_away": 1.58
+    "home": 0.2508,
+    "draw": 0.2797,
+    "away": 0.4695,
+    "xg_home": 1.06,
+    "xg_away": 1.54
    }
   },
   {
@@ -2065,11 +2052,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3972,
-    "draw": 0.2742,
-    "away": 0.3285,
-    "xg_home": 1.5,
-    "xg_away": 1.33
+    "home": 0.3537,
+    "draw": 0.2765,
+    "away": 0.3699,
+    "xg_home": 1.34,
+    "xg_away": 1.37
    }
   },
   {
@@ -2082,11 +2069,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5785,
-    "draw": 0.2452,
-    "away": 0.1763,
-    "xg_home": 1.91,
-    "xg_away": 0.96
+    "home": 0.5639,
+    "draw": 0.2459,
+    "away": 0.1902,
+    "xg_home": 1.87,
+    "xg_away": 0.99
    }
   },
   {
@@ -2099,11 +2086,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4105,
-    "draw": 0.2568,
-    "away": 0.3327,
-    "xg_home": 1.69,
-    "xg_away": 1.5
+    "home": 0.3863,
+    "draw": 0.2586,
+    "away": 0.3551,
+    "xg_home": 1.6,
+    "xg_away": 1.53
    }
   },
   {
@@ -2116,10 +2103,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4014,
-    "draw": 0.2663,
-    "away": 0.3323,
-    "xg_home": 1.6,
+    "home": 0.3954,
+    "draw": 0.2633,
+    "away": 0.3413,
+    "xg_home": 1.56,
     "xg_away": 1.44
    }
   },
@@ -2133,11 +2120,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1711,
-    "draw": 0.2609,
-    "away": 0.568,
-    "xg_home": 0.86,
-    "xg_away": 1.75
+    "home": 0.1715,
+    "draw": 0.2462,
+    "away": 0.5823,
+    "xg_home": 0.9,
+    "xg_away": 1.84
    }
   },
   {
@@ -2150,11 +2137,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6658,
-    "draw": 0.2074,
-    "away": 0.1268,
-    "xg_home": 2.26,
-    "xg_away": 0.87
+    "home": 0.705,
+    "draw": 0.1915,
+    "away": 0.1035,
+    "xg_home": 2.3,
+    "xg_away": 0.75
    }
   },
   {
@@ -2167,11 +2154,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.643,
-    "draw": 0.2118,
-    "away": 0.1452,
-    "xg_home": 2.21,
-    "xg_away": 0.95
+    "home": 0.6595,
+    "draw": 0.201,
+    "away": 0.1395,
+    "xg_home": 2.31,
+    "xg_away": 0.96
    }
   },
   {
@@ -2184,11 +2171,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4453,
-    "draw": 0.282,
-    "away": 0.2727,
-    "xg_home": 1.53,
-    "xg_away": 1.15
+    "home": 0.4577,
+    "draw": 0.2754,
+    "away": 0.267,
+    "xg_home": 1.56,
+    "xg_away": 1.13
    }
   },
   {
@@ -2201,11 +2188,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3632,
-    "draw": 0.2553,
-    "away": 0.3815,
+    "home": 0.3698,
+    "draw": 0.2521,
+    "away": 0.3781,
     "xg_home": 1.61,
-    "xg_away": 1.65
+    "xg_away": 1.63
    }
   },
   {
@@ -2218,11 +2205,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.281,
-    "draw": 0.2628,
-    "away": 0.4562,
-    "xg_home": 1.29,
-    "xg_away": 1.7
+    "home": 0.2903,
+    "draw": 0.2692,
+    "away": 0.4405,
+    "xg_home": 1.25,
+    "xg_away": 1.59
    }
   },
   {
@@ -2235,11 +2222,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4695,
-    "draw": 0.2823,
-    "away": 0.2482,
+    "home": 0.4737,
+    "draw": 0.2763,
+    "away": 0.25,
     "xg_home": 1.55,
-    "xg_away": 1.04
+    "xg_away": 1.05
    }
   },
   {
@@ -2252,11 +2239,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4764,
-    "draw": 0.272,
-    "away": 0.2516,
-    "xg_home": 1.63,
-    "xg_away": 1.13
+    "home": 0.4909,
+    "draw": 0.2658,
+    "away": 0.2433,
+    "xg_home": 1.67,
+    "xg_away": 1.11
    }
   },
   {
@@ -2269,11 +2256,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3706,
-    "draw": 0.2814,
-    "away": 0.348,
-    "xg_home": 1.41,
-    "xg_away": 1.37
+    "home": 0.3766,
+    "draw": 0.2801,
+    "away": 0.3433,
+    "xg_home": 1.4,
+    "xg_away": 1.32
    }
   },
   {
@@ -2286,11 +2273,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4095,
-    "draw": 0.3072,
-    "away": 0.2832,
+    "home": 0.4062,
+    "draw": 0.3008,
+    "away": 0.293,
     "xg_home": 1.31,
-    "xg_away": 1.04
+    "xg_away": 1.07
    }
   },
   {
@@ -2303,11 +2290,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3574,
-    "draw": 0.3112,
-    "away": 0.3314,
-    "xg_home": 1.2,
-    "xg_away": 1.14
+    "home": 0.3406,
+    "draw": 0.3075,
+    "away": 0.3519,
+    "xg_home": 1.16,
+    "xg_away": 1.18
    }
   },
   {
@@ -2320,11 +2307,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3147,
-    "draw": 0.2699,
-    "away": 0.4154,
-    "xg_home": 1.36,
-    "xg_away": 1.59
+    "home": 0.3117,
+    "draw": 0.2684,
+    "away": 0.4199,
+    "xg_home": 1.32,
+    "xg_away": 1.57
    }
   },
   {
@@ -2337,11 +2324,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4131,
-    "draw": 0.2982,
-    "away": 0.2887,
-    "xg_home": 1.36,
-    "xg_away": 1.09
+    "home": 0.4212,
+    "draw": 0.2844,
+    "away": 0.2944,
+    "xg_home": 1.43,
+    "xg_away": 1.15
    }
   },
   {
@@ -2354,11 +2341,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4548,
-    "draw": 0.2831,
-    "away": 0.262,
-    "xg_home": 1.53,
-    "xg_away": 1.1
+    "home": 0.4709,
+    "draw": 0.277,
+    "away": 0.252,
+    "xg_home": 1.55,
+    "xg_away": 1.07
    }
   },
   {
@@ -2371,11 +2358,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.207,
-    "draw": 0.2252,
-    "away": 0.5678,
-    "xg_home": 1.21,
-    "xg_away": 2.13
+    "home": 0.2201,
+    "draw": 0.2281,
+    "away": 0.5518,
+    "xg_home": 1.24,
+    "xg_away": 2.08
    }
   },
   {
@@ -2388,11 +2375,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.21,
-    "draw": 0.2671,
-    "away": 0.5229,
-    "xg_home": 0.98,
-    "xg_away": 1.7
+    "home": 0.1729,
+    "draw": 0.2527,
+    "away": 0.5744,
+    "xg_home": 0.86,
+    "xg_away": 1.78
    }
   },
   {
@@ -2405,10 +2392,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5805,
-    "draw": 0.2529,
-    "away": 0.1666,
-    "xg_home": 1.82,
+    "home": 0.5906,
+    "draw": 0.2447,
+    "away": 0.1647,
+    "xg_home": 1.86,
     "xg_away": 0.88
    }
   },
@@ -2422,11 +2409,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5799,
-    "draw": 0.2327,
-    "away": 0.1874,
-    "xg_home": 2.06,
-    "xg_away": 1.09
+    "home": 0.5738,
+    "draw": 0.2343,
+    "away": 0.1919,
+    "xg_home": 2.0,
+    "xg_away": 1.07
    }
   },
   {
@@ -2439,11 +2426,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4944,
-    "draw": 0.2564,
-    "away": 0.2492,
-    "xg_home": 1.79,
-    "xg_away": 1.21
+    "home": 0.485,
+    "draw": 0.2508,
+    "away": 0.2642,
+    "xg_home": 1.8,
+    "xg_away": 1.27
    }
   },
   {
@@ -2456,11 +2443,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3372,
-    "draw": 0.2801,
-    "away": 0.3827,
-    "xg_home": 1.35,
-    "xg_away": 1.45
+    "home": 0.3384,
+    "draw": 0.2796,
+    "away": 0.382,
+    "xg_home": 1.33,
+    "xg_away": 1.43
    }
   },
   {
@@ -2473,11 +2460,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4381,
-    "draw": 0.29,
-    "away": 0.2719,
-    "xg_home": 1.47,
-    "xg_away": 1.11
+    "home": 0.4581,
+    "draw": 0.2747,
+    "away": 0.2672,
+    "xg_home": 1.56,
+    "xg_away": 1.13
    }
   },
   {
@@ -2490,10 +2477,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6995,
-    "draw": 0.1798,
-    "away": 0.1207,
-    "xg_home": 2.59,
+    "home": 0.7006,
+    "draw": 0.1786,
+    "away": 0.1208,
+    "xg_home": 2.58,
     "xg_away": 0.98
    }
   },
@@ -2507,11 +2494,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4038,
-    "draw": 0.3104,
-    "away": 0.2857,
-    "xg_home": 1.29,
-    "xg_away": 1.04
+    "home": 0.4205,
+    "draw": 0.3057,
+    "away": 0.2738,
+    "xg_home": 1.3,
+    "xg_away": 1.0
    }
   },
   {
@@ -2524,11 +2511,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.451,
-    "draw": 0.2516,
-    "away": 0.2974,
-    "xg_home": 1.78,
-    "xg_away": 1.41
+    "home": 0.4591,
+    "draw": 0.2563,
+    "away": 0.2846,
+    "xg_home": 1.73,
+    "xg_away": 1.32
    }
   },
   {
@@ -2541,11 +2528,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6071,
-    "draw": 0.2434,
-    "away": 0.1495,
-    "xg_home": 1.92,
-    "xg_away": 0.81
+    "home": 0.609,
+    "draw": 0.2398,
+    "away": 0.1511,
+    "xg_home": 1.89,
+    "xg_away": 0.8
    }
   },
   {
@@ -2558,11 +2545,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4364,
-    "draw": 0.2962,
-    "away": 0.2674,
-    "xg_home": 1.42,
-    "xg_away": 1.05
+    "home": 0.4154,
+    "draw": 0.296,
+    "away": 0.2885,
+    "xg_home": 1.37,
+    "xg_away": 1.09
    }
   },
   {
@@ -2575,11 +2562,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6591,
-    "draw": 0.2143,
-    "away": 0.1265,
-    "xg_home": 2.17,
-    "xg_away": 0.83
+    "home": 0.6809,
+    "draw": 0.2054,
+    "away": 0.1137,
+    "xg_home": 2.18,
+    "xg_away": 0.74
    }
   },
   {
@@ -2592,11 +2579,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5879,
-    "draw": 0.244,
-    "away": 0.1681,
-    "xg_home": 1.91,
-    "xg_away": 0.92
+    "home": 0.5779,
+    "draw": 0.2463,
+    "away": 0.1758,
+    "xg_home": 1.86,
+    "xg_away": 0.93
    }
   },
   {
@@ -2609,11 +2596,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5803,
-    "draw": 0.2309,
-    "away": 0.1888,
-    "xg_home": 2.07,
-    "xg_away": 1.1
+    "home": 0.5897,
+    "draw": 0.221,
+    "away": 0.1893,
+    "xg_home": 2.15,
+    "xg_away": 1.15
    }
   },
   {
@@ -2626,11 +2613,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4454,
-    "draw": 0.2654,
-    "away": 0.2891,
-    "xg_home": 1.67,
-    "xg_away": 1.3
+    "home": 0.4267,
+    "draw": 0.2639,
+    "away": 0.3094,
+    "xg_home": 1.62,
+    "xg_away": 1.35
    }
   },
   {
@@ -2643,11 +2630,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3943,
-    "draw": 0.2871,
-    "away": 0.3186,
-    "xg_home": 1.42,
-    "xg_away": 1.24
+    "home": 0.4081,
+    "draw": 0.2758,
+    "away": 0.3161,
+    "xg_home": 1.48,
+    "xg_away": 1.28
    }
   },
   {
@@ -2660,10 +2647,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3956,
-    "draw": 0.3218,
-    "away": 0.2826,
-    "xg_home": 1.21,
+    "home": 0.4089,
+    "draw": 0.3131,
+    "away": 0.278,
+    "xg_home": 1.24,
     "xg_away": 0.98
    }
   },
@@ -2677,11 +2664,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3332,
-    "draw": 0.2794,
-    "away": 0.3874,
+    "home": 0.3341,
+    "draw": 0.2741,
+    "away": 0.3918,
     "xg_home": 1.34,
-    "xg_away": 1.46
+    "xg_away": 1.48
    }
   },
   {
@@ -2694,11 +2681,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3175,
-    "draw": 0.2759,
-    "away": 0.4065,
-    "xg_home": 1.32,
-    "xg_away": 1.52
+    "home": 0.3258,
+    "draw": 0.2647,
+    "away": 0.4095,
+    "xg_home": 1.38,
+    "xg_away": 1.57
    }
   },
   {
@@ -2711,11 +2698,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.188,
-    "draw": 0.2184,
-    "away": 0.5937,
-    "xg_home": 1.16,
-    "xg_away": 2.2
+    "home": 0.1934,
+    "draw": 0.2229,
+    "away": 0.5837,
+    "xg_home": 1.14,
+    "xg_away": 2.12
    }
   },
   {
@@ -2728,11 +2715,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.286,
-    "draw": 0.2795,
-    "away": 0.4345,
-    "xg_home": 1.19,
-    "xg_away": 1.53
+    "home": 0.2918,
+    "draw": 0.2713,
+    "away": 0.4369,
+    "xg_home": 1.21,
+    "xg_away": 1.55
    }
   },
   {
@@ -2745,11 +2732,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2591,
-    "draw": 0.2569,
-    "away": 0.4839,
-    "xg_home": 1.25,
-    "xg_away": 1.79
+    "home": 0.2598,
+    "draw": 0.2566,
+    "away": 0.4836,
+    "xg_home": 1.22,
+    "xg_away": 1.75
    }
   },
   {
@@ -2762,11 +2749,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1886,
-    "draw": 0.2451,
-    "away": 0.5662,
-    "xg_home": 1.01,
-    "xg_away": 1.93
+    "home": 0.1696,
+    "draw": 0.2377,
+    "away": 0.5927,
+    "xg_home": 0.91,
+    "xg_away": 1.92
    }
   },
   {
@@ -2779,11 +2766,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4319,
-    "draw": 0.2754,
-    "away": 0.2927,
-    "xg_home": 1.58,
-    "xg_away": 1.26
+    "home": 0.4396,
+    "draw": 0.2748,
+    "away": 0.2856,
+    "xg_home": 1.55,
+    "xg_away": 1.21
    }
   },
   {
@@ -2796,11 +2783,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1679,
-    "draw": 0.2603,
-    "away": 0.5717,
-    "xg_home": 0.84,
-    "xg_away": 1.75
+    "home": 0.1752,
+    "draw": 0.2598,
+    "away": 0.565,
+    "xg_home": 0.85,
+    "xg_away": 1.73
    }
   },
   {
@@ -2813,11 +2800,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.343,
-    "draw": 0.3065,
-    "away": 0.3504,
-    "xg_home": 1.19,
-    "xg_away": 1.2
+    "home": 0.3363,
+    "draw": 0.2956,
+    "away": 0.3681,
+    "xg_home": 1.2,
+    "xg_away": 1.26
    }
   },
   {
@@ -2830,11 +2817,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3047,
-    "draw": 0.269,
-    "away": 0.4263,
-    "xg_home": 1.33,
-    "xg_away": 1.61
+    "home": 0.3023,
+    "draw": 0.2591,
+    "away": 0.4387,
+    "xg_home": 1.36,
+    "xg_away": 1.68
    }
   },
   {
@@ -2847,11 +2834,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2348,
-    "draw": 0.2856,
-    "away": 0.4796,
-    "xg_home": 1.0,
-    "xg_away": 1.53
+    "home": 0.2346,
+    "draw": 0.2833,
+    "away": 0.4821,
+    "xg_home": 0.98,
+    "xg_away": 1.52
    }
   },
   {
@@ -2864,11 +2851,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1923,
-    "draw": 0.2809,
-    "away": 0.5267,
-    "xg_home": 0.86,
-    "xg_away": 1.59
+    "home": 0.1955,
+    "draw": 0.2722,
+    "away": 0.5323,
+    "xg_home": 0.89,
+    "xg_away": 1.63
    }
   },
   {
@@ -2881,11 +2868,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1793,
-    "draw": 0.2413,
-    "away": 0.5794,
-    "xg_home": 0.98,
-    "xg_away": 1.95
+    "home": 0.1581,
+    "draw": 0.2389,
+    "away": 0.603,
+    "xg_home": 0.85,
+    "xg_away": 1.91
    }
   },
   {
@@ -2898,11 +2885,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4183,
-    "draw": 0.2765,
-    "away": 0.3052,
-    "xg_home": 1.54,
-    "xg_away": 1.28
+    "home": 0.4035,
+    "draw": 0.2787,
+    "away": 0.3178,
+    "xg_home": 1.47,
+    "xg_away": 1.27
    }
   },
   {
@@ -2915,11 +2902,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4597,
-    "draw": 0.2797,
-    "away": 0.2607,
-    "xg_home": 1.57,
-    "xg_away": 1.12
+    "home": 0.4943,
+    "draw": 0.2682,
+    "away": 0.2375,
+    "xg_home": 1.65,
+    "xg_away": 1.07
    }
   },
   {
@@ -2932,11 +2919,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3123,
-    "draw": 0.2766,
-    "away": 0.4111,
+    "home": 0.3265,
+    "draw": 0.2769,
+    "away": 0.3966,
     "xg_home": 1.31,
-    "xg_away": 1.53
+    "xg_away": 1.47
    }
   },
   {
@@ -2949,11 +2936,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3308,
-    "draw": 0.2647,
-    "away": 0.4045,
-    "xg_home": 1.42,
-    "xg_away": 1.6
+    "home": 0.3582,
+    "draw": 0.2604,
+    "away": 0.3814,
+    "xg_home": 1.5,
+    "xg_away": 1.56
    }
   },
   {
@@ -2966,11 +2953,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.199,
-    "draw": 0.2215,
-    "away": 0.5794,
-    "xg_home": 1.2,
-    "xg_away": 2.17
+    "home": 0.2057,
+    "draw": 0.2229,
+    "away": 0.5715,
+    "xg_home": 1.21,
+    "xg_away": 2.14
    }
   },
   {
@@ -2983,11 +2970,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4066,
-    "draw": 0.3061,
-    "away": 0.2873,
-    "xg_home": 1.31,
-    "xg_away": 1.06
+    "home": 0.4332,
+    "draw": 0.2936,
+    "away": 0.2731,
+    "xg_home": 1.39,
+    "xg_away": 1.05
    }
   },
   {
@@ -3000,10 +2987,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4414,
-    "draw": 0.2557,
-    "away": 0.3029,
-    "xg_home": 1.75,
+    "home": 0.4295,
+    "draw": 0.2561,
+    "away": 0.3144,
+    "xg_home": 1.69,
     "xg_away": 1.42
    }
   },
@@ -3017,11 +3004,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5326,
-    "draw": 0.2488,
-    "away": 0.2187,
-    "xg_home": 1.88,
-    "xg_away": 1.13
+    "home": 0.521,
+    "draw": 0.2558,
+    "away": 0.2232,
+    "xg_home": 1.78,
+    "xg_away": 1.09
    }
   },
   {
@@ -3034,11 +3021,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.805,
-    "draw": 0.1391,
-    "away": 0.0559,
-    "xg_home": 2.8,
-    "xg_away": 0.63
+    "home": 0.8075,
+    "draw": 0.1353,
+    "away": 0.0572,
+    "xg_home": 2.84,
+    "xg_away": 0.65
    }
   },
   {
@@ -3051,11 +3038,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3976,
-    "draw": 0.3167,
-    "away": 0.2857,
-    "xg_home": 1.22,
-    "xg_away": 0.99
+    "home": 0.3921,
+    "draw": 0.3115,
+    "away": 0.2964,
+    "xg_home": 1.23,
+    "xg_away": 1.02
    }
   },
   {
@@ -3068,11 +3055,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.7209,
-    "draw": 0.1795,
-    "away": 0.0996,
-    "xg_home": 2.52,
-    "xg_away": 0.81
+    "home": 0.743,
+    "draw": 0.1693,
+    "away": 0.0877,
+    "xg_home": 2.53,
+    "xg_away": 0.73
    }
   },
   {
@@ -3085,11 +3072,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4353,
-    "draw": 0.2936,
-    "away": 0.2711,
-    "xg_home": 1.44,
-    "xg_away": 1.08
+    "home": 0.4444,
+    "draw": 0.2873,
+    "away": 0.2682,
+    "xg_home": 1.46,
+    "xg_away": 1.07
    }
   },
   {
@@ -3102,11 +3089,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4443,
-    "draw": 0.2711,
-    "away": 0.2845,
-    "xg_home": 1.62,
-    "xg_away": 1.25
+    "home": 0.423,
+    "draw": 0.2692,
+    "away": 0.3077,
+    "xg_home": 1.57,
+    "xg_away": 1.3
    }
   },
   {
@@ -3119,11 +3106,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.436,
-    "draw": 0.2544,
-    "away": 0.3096,
-    "xg_home": 1.76,
-    "xg_away": 1.45
+    "home": 0.4439,
+    "draw": 0.2532,
+    "away": 0.3028,
+    "xg_home": 1.74,
+    "xg_away": 1.41
    }
   },
   {
@@ -3136,11 +3123,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6599,
-    "draw": 0.211,
-    "away": 0.1292,
-    "xg_home": 2.21,
-    "xg_away": 0.88
+    "home": 0.6646,
+    "draw": 0.2044,
+    "away": 0.1311,
+    "xg_home": 2.25,
+    "xg_away": 0.9
    }
   },
   {
@@ -3153,11 +3140,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5738,
-    "draw": 0.2515,
-    "away": 0.1747,
-    "xg_home": 1.84,
-    "xg_away": 0.92
+    "home": 0.5722,
+    "draw": 0.2512,
+    "away": 0.1767,
+    "xg_home": 1.81,
+    "xg_away": 0.9
    }
   },
   {
@@ -3170,11 +3157,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4353,
-    "draw": 0.2631,
-    "away": 0.3016,
-    "xg_home": 1.68,
-    "xg_away": 1.37
+    "home": 0.4465,
+    "draw": 0.2582,
+    "away": 0.2953,
+    "xg_home": 1.69,
+    "xg_away": 1.33
    }
   },
   {
@@ -3187,11 +3174,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4367,
-    "draw": 0.3016,
-    "away": 0.2617,
+    "home": 0.4485,
+    "draw": 0.2969,
+    "away": 0.2546,
     "xg_home": 1.38,
-    "xg_away": 1.0
+    "xg_away": 0.97
    }
   },
   {
@@ -3204,11 +3191,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.387,
-    "draw": 0.3031,
-    "away": 0.3099,
-    "xg_home": 1.3,
-    "xg_away": 1.13
+    "home": 0.3654,
+    "draw": 0.298,
+    "away": 0.3366,
+    "xg_home": 1.26,
+    "xg_away": 1.2
    }
   },
   {
@@ -3221,11 +3208,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3015,
-    "draw": 0.281,
-    "away": 0.4175,
+    "home": 0.2937,
+    "draw": 0.2731,
+    "away": 0.4332,
     "xg_home": 1.23,
-    "xg_away": 1.49
+    "xg_away": 1.54
    }
   },
   {
@@ -3238,11 +3225,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4356,
-    "draw": 0.2861,
-    "away": 0.2784,
-    "xg_home": 1.49,
-    "xg_away": 1.15
+    "home": 0.4499,
+    "draw": 0.2716,
+    "away": 0.2785,
+    "xg_home": 1.59,
+    "xg_away": 1.2
    }
   },
   {
@@ -3255,11 +3242,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3178,
-    "draw": 0.2703,
-    "away": 0.4119,
-    "xg_home": 1.37,
-    "xg_away": 1.58
+    "home": 0.3293,
+    "draw": 0.2694,
+    "away": 0.4013,
+    "xg_home": 1.36,
+    "xg_away": 1.52
    }
   },
   {
@@ -3272,11 +3259,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4224,
-    "draw": 0.272,
-    "away": 0.3057,
-    "xg_home": 1.55,
-    "xg_away": 1.28
+    "home": 0.4671,
+    "draw": 0.2656,
+    "away": 0.2673,
+    "xg_home": 1.62,
+    "xg_away": 1.14
    }
   },
   {
@@ -3289,11 +3276,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.25,
-    "draw": 0.2736,
-    "away": 0.4764,
-    "xg_home": 1.12,
-    "xg_away": 1.63
+    "home": 0.2702,
+    "draw": 0.271,
+    "away": 0.4588,
+    "xg_home": 1.16,
+    "xg_away": 1.59
    }
   },
   {
@@ -3306,11 +3293,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4383,
-    "draw": 0.2541,
-    "away": 0.3076,
-    "xg_home": 1.76,
-    "xg_away": 1.45
+    "home": 0.4636,
+    "draw": 0.2514,
+    "away": 0.285,
+    "xg_home": 1.79,
+    "xg_away": 1.37
    }
   },
   {
@@ -3323,11 +3310,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6801,
-    "draw": 0.1914,
-    "away": 0.1285,
-    "xg_home": 2.45,
-    "xg_away": 0.98
+    "home": 0.6724,
+    "draw": 0.192,
+    "away": 0.1357,
+    "xg_home": 2.42,
+    "xg_away": 1.0
    }
   },
   {
@@ -3340,11 +3327,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5755,
-    "draw": 0.2492,
-    "away": 0.1753,
-    "xg_home": 1.87,
-    "xg_away": 0.94
+    "home": 0.5595,
+    "draw": 0.2545,
+    "away": 0.186,
+    "xg_home": 1.78,
+    "xg_away": 0.92
    }
   },
   {
@@ -3357,11 +3344,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4566,
-    "draw": 0.2803,
-    "away": 0.2631,
-    "xg_home": 1.56,
-    "xg_away": 1.13
+    "home": 0.4766,
+    "draw": 0.2715,
+    "away": 0.2519,
+    "xg_home": 1.61,
+    "xg_away": 1.1
    }
   },
   {
@@ -3374,11 +3361,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4177,
-    "draw": 0.2578,
-    "away": 0.3245,
-    "xg_home": 1.68,
-    "xg_away": 1.45
+    "home": 0.4137,
+    "draw": 0.2626,
+    "away": 0.3237,
+    "xg_home": 1.61,
+    "xg_away": 1.4
    }
   },
   {
@@ -3391,11 +3378,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3847,
-    "draw": 0.2692,
-    "away": 0.3462,
-    "xg_home": 1.52,
-    "xg_away": 1.44
+    "home": 0.392,
+    "draw": 0.2669,
+    "away": 0.3411,
+    "xg_home": 1.54,
+    "xg_away": 1.42
    }
   },
   {
@@ -3408,11 +3395,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3333,
-    "draw": 0.2884,
-    "away": 0.3782,
-    "xg_home": 1.28,
-    "xg_away": 1.38
+    "home": 0.3275,
+    "draw": 0.2708,
+    "away": 0.4017,
+    "xg_home": 1.34,
+    "xg_away": 1.51
    }
   },
   {
@@ -3425,11 +3412,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2099,
-    "draw": 0.2932,
-    "away": 0.4969,
-    "xg_home": 0.88,
-    "xg_away": 1.5
+    "home": 0.196,
+    "draw": 0.2875,
+    "away": 0.5165,
+    "xg_home": 0.8,
+    "xg_away": 1.49
    }
   },
   {
@@ -3442,10 +3429,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.585,
-    "draw": 0.2308,
-    "away": 0.1841,
-    "xg_home": 2.08,
+    "home": 0.5719,
+    "draw": 0.2325,
+    "away": 0.1955,
+    "xg_home": 2.01,
     "xg_away": 1.09
    }
   },
@@ -3459,11 +3446,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1877,
-    "draw": 0.2902,
-    "away": 0.522,
-    "xg_home": 0.79,
-    "xg_away": 1.51
+    "home": 0.187,
+    "draw": 0.2815,
+    "away": 0.5315,
+    "xg_home": 0.8,
+    "xg_away": 1.55
    }
   },
   {
@@ -3476,11 +3463,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.46,
-    "draw": 0.2691,
-    "away": 0.2709,
-    "xg_home": 1.65,
-    "xg_away": 1.21
+    "home": 0.4531,
+    "draw": 0.2669,
+    "away": 0.28,
+    "xg_home": 1.63,
+    "xg_away": 1.24
    }
   },
   {
@@ -3493,11 +3480,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2582,
-    "draw": 0.2711,
-    "away": 0.4706,
-    "xg_home": 1.12,
-    "xg_away": 1.61
+    "home": 0.2663,
+    "draw": 0.2694,
+    "away": 0.4643,
+    "xg_home": 1.15,
+    "xg_away": 1.6
    }
   },
   {
@@ -3510,11 +3497,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3526,
-    "draw": 0.2919,
-    "away": 0.3555,
-    "xg_home": 1.3,
-    "xg_away": 1.31
+    "home": 0.3428,
+    "draw": 0.2948,
+    "away": 0.3624,
+    "xg_home": 1.24,
+    "xg_away": 1.28
    }
   },
   {
@@ -3527,11 +3514,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5729,
-    "draw": 0.2644,
-    "away": 0.1628,
-    "xg_home": 1.71,
-    "xg_away": 0.79
+    "home": 0.5896,
+    "draw": 0.2595,
+    "away": 0.1509,
+    "xg_home": 1.72,
+    "xg_away": 0.73
    }
   },
   {
@@ -3544,11 +3531,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3841,
-    "draw": 0.286,
-    "away": 0.3299,
+    "home": 0.3974,
+    "draw": 0.2835,
+    "away": 0.3191,
     "xg_home": 1.41,
-    "xg_away": 1.3
+    "xg_away": 1.24
    }
   },
   {
@@ -3561,11 +3548,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6005,
-    "draw": 0.2398,
-    "away": 0.1596,
-    "xg_home": 1.94,
-    "xg_away": 0.9
+    "home": 0.6135,
+    "draw": 0.232,
+    "away": 0.1545,
+    "xg_home": 1.97,
+    "xg_away": 0.88
    }
   },
   {
@@ -3578,10 +3565,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.394,
-    "draw": 0.2753,
-    "away": 0.3307,
-    "xg_home": 1.51,
+    "home": 0.4127,
+    "draw": 0.2675,
+    "away": 0.3198,
+    "xg_home": 1.57,
     "xg_away": 1.36
    }
   },
@@ -3595,11 +3582,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3733,
-    "draw": 0.2911,
-    "away": 0.3356,
+    "home": 0.3611,
+    "draw": 0.2833,
+    "away": 0.3556,
     "xg_home": 1.35,
-    "xg_away": 1.27
+    "xg_away": 1.34
    }
   },
   {
@@ -3612,11 +3599,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3679,
-    "draw": 0.2537,
-    "away": 0.3785,
-    "xg_home": 1.62,
-    "xg_away": 1.65
+    "home": 0.3892,
+    "draw": 0.2529,
+    "away": 0.3579,
+    "xg_home": 1.65,
+    "xg_away": 1.58
    }
   },
   {
@@ -3629,11 +3616,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2852,
-    "draw": 0.2647,
-    "away": 0.4501,
+    "home": 0.299,
+    "draw": 0.2632,
+    "away": 0.4377,
     "xg_home": 1.3,
-    "xg_away": 1.69
+    "xg_away": 1.62
    }
   },
   {
@@ -3646,11 +3633,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.402,
-    "draw": 0.2829,
-    "away": 0.3151,
-    "xg_home": 1.46,
-    "xg_away": 1.27
+    "home": 0.4203,
+    "draw": 0.2719,
+    "away": 0.3078,
+    "xg_home": 1.53,
+    "xg_away": 1.28
    }
   },
   {
@@ -3663,11 +3650,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3581,
-    "draw": 0.3028,
-    "away": 0.3391,
-    "xg_home": 1.25,
-    "xg_away": 1.21
+    "home": 0.381,
+    "draw": 0.2867,
+    "away": 0.3323,
+    "xg_home": 1.35,
+    "xg_away": 1.25
    }
   },
   {
@@ -3680,11 +3667,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4367,
-    "draw": 0.2548,
-    "away": 0.3086,
-    "xg_home": 1.75,
-    "xg_away": 1.44
+    "home": 0.4209,
+    "draw": 0.2612,
+    "away": 0.3179,
+    "xg_home": 1.64,
+    "xg_away": 1.4
    }
   },
   {
@@ -3697,10 +3684,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3903,
-    "draw": 0.261,
-    "away": 0.3486,
-    "xg_home": 1.62,
+    "home": 0.3801,
+    "draw": 0.2577,
+    "away": 0.3622,
+    "xg_home": 1.57,
     "xg_away": 1.53
    }
   },
@@ -3714,11 +3701,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4175,
-    "draw": 0.2985,
-    "away": 0.284,
-    "xg_home": 1.37,
-    "xg_away": 1.08
+    "home": 0.4095,
+    "draw": 0.2957,
+    "away": 0.2948,
+    "xg_home": 1.34,
+    "xg_away": 1.09
    }
   },
   {
@@ -3731,11 +3718,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2023,
-    "draw": 0.2695,
-    "away": 0.5282,
-    "xg_home": 0.94,
-    "xg_away": 1.67
+    "home": 0.1729,
+    "draw": 0.2534,
+    "away": 0.5737,
+    "xg_home": 0.84,
+    "xg_away": 1.77
    }
   },
   {
@@ -3748,11 +3735,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4692,
-    "draw": 0.274,
-    "away": 0.2568,
-    "xg_home": 1.62,
-    "xg_away": 1.14
+    "home": 0.4678,
+    "draw": 0.269,
+    "away": 0.2632,
+    "xg_home": 1.63,
+    "xg_away": 1.16
    }
   },
   {
@@ -3765,11 +3752,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4289,
-    "draw": 0.2762,
-    "away": 0.2949,
-    "xg_home": 1.57,
-    "xg_away": 1.26
+    "home": 0.4211,
+    "draw": 0.2757,
+    "away": 0.3032,
+    "xg_home": 1.51,
+    "xg_away": 1.25
    }
   },
   {
@@ -3782,11 +3769,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4997,
-    "draw": 0.2694,
-    "away": 0.2308,
-    "xg_home": 1.68,
-    "xg_away": 1.07
+    "home": 0.5096,
+    "draw": 0.2618,
+    "away": 0.2286,
+    "xg_home": 1.71,
+    "xg_away": 1.06
    }
   },
   {
@@ -3799,10 +3786,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3641,
-    "draw": 0.301,
-    "away": 0.3349,
-    "xg_home": 1.27,
+    "home": 0.3604,
+    "draw": 0.2977,
+    "away": 0.3419,
+    "xg_home": 1.26,
     "xg_away": 1.21
    }
   },
@@ -3816,10 +3803,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6394,
-    "draw": 0.2114,
-    "away": 0.1492,
-    "xg_home": 2.24,
+    "home": 0.6601,
+    "draw": 0.1987,
+    "away": 0.1411,
+    "xg_home": 2.34,
     "xg_away": 0.99
    }
   },
@@ -3833,10 +3820,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5352,
-    "draw": 0.2591,
-    "away": 0.2057,
-    "xg_home": 1.78,
+    "home": 0.5474,
+    "draw": 0.2511,
+    "away": 0.2015,
+    "xg_home": 1.83,
     "xg_away": 1.02
    }
   },
@@ -3850,11 +3837,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4893,
-    "draw": 0.2725,
-    "away": 0.2381,
-    "xg_home": 1.63,
-    "xg_away": 1.05
+    "home": 0.5005,
+    "draw": 0.2654,
+    "away": 0.2341,
+    "xg_home": 1.65,
+    "xg_away": 1.04
    }
   },
   {
@@ -3867,11 +3854,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3707,
-    "draw": 0.302,
-    "away": 0.3273,
-    "xg_home": 1.27,
-    "xg_away": 1.18
+    "home": 0.3434,
+    "draw": 0.2954,
+    "away": 0.3613,
+    "xg_home": 1.23,
+    "xg_away": 1.27
    }
   },
   {
@@ -3884,11 +3871,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5513,
-    "draw": 0.2595,
-    "away": 0.1891,
-    "xg_home": 1.77,
-    "xg_away": 0.94
+    "home": 0.5901,
+    "draw": 0.2488,
+    "away": 0.1611,
+    "xg_home": 1.8,
+    "xg_away": 0.81
    }
   },
   {
@@ -3901,11 +3888,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2728,
-    "draw": 0.2592,
-    "away": 0.468,
-    "xg_home": 1.28,
-    "xg_away": 1.74
+    "home": 0.2869,
+    "draw": 0.2481,
+    "away": 0.465,
+    "xg_home": 1.37,
+    "xg_away": 1.8
    }
   },
   {
@@ -3918,11 +3905,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3787,
-    "draw": 0.2904,
-    "away": 0.331,
-    "xg_home": 1.36,
-    "xg_away": 1.26
+    "home": 0.3795,
+    "draw": 0.2875,
+    "away": 0.3329,
+    "xg_home": 1.35,
+    "xg_away": 1.25
    }
   },
   {
@@ -3935,11 +3922,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2176,
-    "draw": 0.2664,
-    "away": 0.516,
-    "xg_home": 1.03,
-    "xg_away": 1.71
+    "home": 0.2259,
+    "draw": 0.2654,
+    "away": 0.5087,
+    "xg_home": 1.05,
+    "xg_away": 1.69
    }
   },
   {
@@ -3952,10 +3939,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3865,
-    "draw": 0.2825,
-    "away": 0.331,
-    "xg_home": 1.44,
+    "home": 0.4094,
+    "draw": 0.271,
+    "away": 0.3196,
+    "xg_home": 1.52,
     "xg_away": 1.32
    }
   },
@@ -3969,11 +3956,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.427,
-    "draw": 0.2558,
-    "away": 0.3171,
-    "xg_home": 1.73,
-    "xg_away": 1.47
+    "home": 0.4448,
+    "draw": 0.2539,
+    "away": 0.3013,
+    "xg_home": 1.74,
+    "xg_away": 1.4
    }
   },
   {
@@ -3986,11 +3973,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3765,
-    "draw": 0.2803,
-    "away": 0.3432,
-    "xg_home": 1.43,
-    "xg_away": 1.36
+    "home": 0.3801,
+    "draw": 0.2848,
+    "away": 0.3352,
+    "xg_home": 1.38,
+    "xg_away": 1.27
    }
   },
   {
@@ -4003,11 +3990,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3742,
-    "draw": 0.3082,
-    "away": 0.3176,
-    "xg_home": 1.24,
-    "xg_away": 1.12
+    "home": 0.3612,
+    "draw": 0.3004,
+    "away": 0.3384,
+    "xg_home": 1.23,
+    "xg_away": 1.18
    }
   },
   {
@@ -4020,10 +4007,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1529,
-    "draw": 0.2189,
-    "away": 0.6282,
-    "xg_home": 0.95,
+    "home": 0.1363,
+    "draw": 0.2118,
+    "away": 0.652,
+    "xg_home": 0.86,
     "xg_away": 2.16
    }
   },
@@ -4037,10 +4024,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3658,
-    "draw": 0.3205,
-    "away": 0.3138,
-    "xg_home": 1.15,
+    "home": 0.3821,
+    "draw": 0.3122,
+    "away": 0.3057,
+    "xg_home": 1.2,
     "xg_away": 1.04
    }
   },
@@ -4054,11 +4041,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3793,
-    "draw": 0.2769,
-    "away": 0.3438,
-    "xg_home": 1.46,
-    "xg_away": 1.38
+    "home": 0.4081,
+    "draw": 0.2708,
+    "away": 0.321,
+    "xg_home": 1.53,
+    "xg_away": 1.33
    }
   },
   {
@@ -4071,11 +4058,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3039,
-    "draw": 0.2684,
-    "away": 0.4277,
-    "xg_home": 1.32,
-    "xg_away": 1.61
+    "home": 0.3102,
+    "draw": 0.2744,
+    "away": 0.4154,
+    "xg_home": 1.27,
+    "xg_away": 1.51
    }
   },
   {
@@ -4088,11 +4075,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4125,
-    "draw": 0.2565,
-    "away": 0.331,
-    "xg_home": 1.7,
-    "xg_away": 1.5
+    "home": 0.4063,
+    "draw": 0.2569,
+    "away": 0.3368,
+    "xg_home": 1.65,
+    "xg_away": 1.48
    }
   },
   {
@@ -4105,11 +4092,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3586,
-    "draw": 0.3009,
-    "away": 0.3405,
-    "xg_home": 1.27,
-    "xg_away": 1.23
+    "home": 0.3572,
+    "draw": 0.2961,
+    "away": 0.3467,
+    "xg_home": 1.26,
+    "xg_away": 1.24
    }
   },
   {
@@ -4122,11 +4109,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1933,
-    "draw": 0.2483,
-    "away": 0.5585,
-    "xg_home": 1.03,
-    "xg_away": 1.89
+    "home": 0.1991,
+    "draw": 0.2417,
+    "away": 0.5592,
+    "xg_home": 1.06,
+    "xg_away": 1.91
    }
   },
   {
@@ -4139,11 +4126,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4047,
-    "draw": 0.2592,
-    "away": 0.336,
+    "home": 0.418,
+    "draw": 0.2574,
+    "away": 0.3246,
     "xg_home": 1.66,
-    "xg_away": 1.5
+    "xg_away": 1.44
    }
   },
   {
@@ -4156,11 +4143,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.0931,
-    "draw": 0.1837,
-    "away": 0.7232,
-    "xg_home": 0.74,
-    "xg_away": 2.4
+    "home": 0.0961,
+    "draw": 0.1806,
+    "away": 0.7233,
+    "xg_home": 0.76,
+    "xg_away": 2.42
    }
   },
   {
@@ -4173,11 +4160,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5912,
-    "draw": 0.2285,
-    "away": 0.1802,
-    "xg_home": 2.09,
-    "xg_away": 1.07
+    "home": 0.5917,
+    "draw": 0.2284,
+    "away": 0.1799,
+    "xg_home": 2.05,
+    "xg_away": 1.04
    }
   },
   {
@@ -4190,10 +4177,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5156,
-    "draw": 0.2586,
-    "away": 0.2258,
-    "xg_home": 1.79,
+    "home": 0.5022,
+    "draw": 0.2613,
+    "away": 0.2364,
+    "xg_home": 1.73,
     "xg_away": 1.12
    }
   },
@@ -4207,11 +4194,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6753,
-    "draw": 0.2043,
-    "away": 0.1205,
-    "xg_home": 2.28,
-    "xg_away": 0.84
+    "home": 0.6963,
+    "draw": 0.1984,
+    "away": 0.1053,
+    "xg_home": 2.24,
+    "xg_away": 0.72
    }
   },
   {
@@ -4224,11 +4211,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6838,
-    "draw": 0.1857,
-    "away": 0.1305,
-    "xg_home": 2.53,
-    "xg_away": 1.02
+    "home": 0.6805,
+    "draw": 0.1866,
+    "away": 0.1329,
+    "xg_home": 2.51,
+    "xg_away": 1.03
    }
   },
   {
@@ -4241,11 +4228,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5338,
-    "draw": 0.2583,
-    "away": 0.2079,
-    "xg_home": 1.79,
-    "xg_away": 1.02
+    "home": 0.539,
+    "draw": 0.2496,
+    "away": 0.2114,
+    "xg_home": 1.82,
+    "xg_away": 1.03
    }
   },
   {
@@ -4258,11 +4245,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6222,
-    "draw": 0.2451,
-    "away": 0.1327,
-    "xg_home": 1.85,
-    "xg_away": 0.74
+    "home": 0.6307,
+    "draw": 0.2349,
+    "away": 0.1344,
+    "xg_home": 1.91,
+    "xg_away": 0.76
    }
   },
   {
@@ -4275,11 +4262,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.389,
-    "draw": 0.2791,
-    "away": 0.332,
-    "xg_home": 1.48,
-    "xg_away": 1.35
+    "home": 0.3816,
+    "draw": 0.28,
+    "away": 0.3384,
+    "xg_home": 1.42,
+    "xg_away": 1.32
    }
   },
   {
@@ -4292,11 +4279,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5318,
-    "draw": 0.2496,
-    "away": 0.2187,
-    "xg_home": 1.88,
-    "xg_away": 1.14
+    "home": 0.5486,
+    "draw": 0.2379,
+    "away": 0.2136,
+    "xg_home": 1.97,
+    "xg_away": 1.15
    }
   },
   {
@@ -4309,11 +4296,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3655,
-    "draw": 0.3248,
-    "away": 0.3097,
+    "home": 0.3632,
+    "draw": 0.3181,
+    "away": 0.3188,
     "xg_home": 1.15,
-    "xg_away": 1.03
+    "xg_away": 1.06
    }
   },
   {
@@ -4326,11 +4313,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.413,
-    "draw": 0.2855,
-    "away": 0.3015,
-    "xg_home": 1.45,
-    "xg_away": 1.21
+    "home": 0.4148,
+    "draw": 0.2747,
+    "away": 0.3105,
+    "xg_home": 1.5,
+    "xg_away": 1.26
    }
   },
   {
@@ -4343,11 +4330,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3528,
-    "draw": 0.3043,
-    "away": 0.3429,
-    "xg_home": 1.23,
-    "xg_away": 1.21
+    "home": 0.3795,
+    "draw": 0.2984,
+    "away": 0.3221,
+    "xg_home": 1.28,
+    "xg_away": 1.16
    }
   },
   {
@@ -4360,11 +4347,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2402,
-    "draw": 0.2729,
-    "away": 0.4869,
-    "xg_home": 1.08,
-    "xg_away": 1.63
+    "home": 0.2513,
+    "draw": 0.2755,
+    "away": 0.4732,
+    "xg_home": 1.1,
+    "xg_away": 1.59
    }
   },
   {
@@ -4377,11 +4364,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1848,
-    "draw": 0.2176,
-    "away": 0.5976,
+    "home": 0.1882,
+    "draw": 0.2167,
+    "away": 0.5951,
     "xg_home": 1.15,
-    "xg_away": 2.22
+    "xg_away": 2.2
    }
   },
   {
@@ -4394,10 +4381,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1866,
-    "draw": 0.2509,
-    "away": 0.5625,
-    "xg_home": 0.97,
+    "home": 0.1693,
+    "draw": 0.2447,
+    "away": 0.586,
+    "xg_home": 0.87,
     "xg_away": 1.85
    }
   },
@@ -4411,11 +4398,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3722,
-    "draw": 0.3127,
-    "away": 0.3151,
-    "xg_home": 1.22,
-    "xg_away": 1.1
+    "home": 0.3603,
+    "draw": 0.3115,
+    "away": 0.3283,
+    "xg_home": 1.17,
+    "xg_away": 1.11
    }
   },
   {
@@ -4428,11 +4415,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3598,
-    "draw": 0.297,
-    "away": 0.3432,
-    "xg_home": 1.29,
-    "xg_away": 1.26
+    "home": 0.3576,
+    "draw": 0.2847,
+    "away": 0.3577,
+    "xg_home": 1.33,
+    "xg_away": 1.33
    }
   },
   {
@@ -4445,11 +4432,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3863,
-    "draw": 0.2703,
-    "away": 0.3434,
-    "xg_home": 1.53,
-    "xg_away": 1.43
+    "home": 0.4114,
+    "draw": 0.2656,
+    "away": 0.323,
+    "xg_home": 1.59,
+    "xg_away": 1.38
    }
   },
   {
@@ -4462,11 +4449,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2711,
-    "draw": 0.2564,
-    "away": 0.4725,
-    "xg_home": 1.29,
-    "xg_away": 1.77
+    "home": 0.2757,
+    "draw": 0.2475,
+    "away": 0.4768,
+    "xg_home": 1.35,
+    "xg_away": 1.83
    }
   },
   {
@@ -4479,11 +4466,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3968,
-    "draw": 0.2567,
-    "away": 0.3465,
-    "xg_home": 1.64,
-    "xg_away": 1.52
+    "home": 0.3841,
+    "draw": 0.2633,
+    "away": 0.3526,
+    "xg_home": 1.55,
+    "xg_away": 1.48
    }
   },
   {
@@ -4496,11 +4483,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2122,
-    "draw": 0.2753,
-    "away": 0.5124,
-    "xg_home": 0.95,
-    "xg_away": 1.64
+    "home": 0.2162,
+    "draw": 0.2725,
+    "away": 0.5113,
+    "xg_home": 0.94,
+    "xg_away": 1.61
    }
   },
   {
@@ -4513,11 +4500,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4021,
-    "draw": 0.2775,
-    "away": 0.3204,
+    "home": 0.4175,
+    "draw": 0.2769,
+    "away": 0.3056,
     "xg_home": 1.5,
-    "xg_away": 1.32
+    "xg_away": 1.25
    }
   },
   {
@@ -4530,11 +4517,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5112,
-    "draw": 0.2591,
-    "away": 0.2297,
-    "xg_home": 1.78,
-    "xg_away": 1.13
+    "home": 0.5182,
+    "draw": 0.2483,
+    "away": 0.2334,
+    "xg_home": 1.85,
+    "xg_away": 1.17
    }
   },
   {
@@ -4547,11 +4534,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5783,
-    "draw": 0.2563,
-    "away": 0.1654,
-    "xg_home": 1.79,
-    "xg_away": 0.85
+    "home": 0.5825,
+    "draw": 0.2531,
+    "away": 0.1644,
+    "xg_home": 1.78,
+    "xg_away": 0.83
    }
   },
   {
@@ -4564,11 +4551,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6671,
-    "draw": 0.2205,
-    "away": 0.1124,
-    "xg_home": 2.04,
-    "xg_away": 0.72
+    "home": 0.6622,
+    "draw": 0.2202,
+    "away": 0.1177,
+    "xg_home": 2.03,
+    "xg_away": 0.73
    }
   },
   {
@@ -4581,10 +4568,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4397,
-    "draw": 0.2979,
-    "away": 0.2624,
-    "xg_home": 1.4,
+    "home": 0.4633,
+    "draw": 0.2837,
+    "away": 0.253,
+    "xg_home": 1.49,
     "xg_away": 1.02
    }
   },
@@ -4598,11 +4585,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3496,
-    "draw": 0.2889,
-    "away": 0.3616,
-    "xg_home": 1.31,
-    "xg_away": 1.34
+    "home": 0.3243,
+    "draw": 0.2841,
+    "away": 0.3916,
+    "xg_home": 1.26,
+    "xg_away": 1.4
    }
   },
   {
@@ -4615,11 +4602,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5107,
-    "draw": 0.2494,
-    "away": 0.2399,
-    "xg_home": 1.87,
-    "xg_away": 1.22
+    "home": 0.4903,
+    "draw": 0.2483,
+    "away": 0.2614,
+    "xg_home": 1.83,
+    "xg_away": 1.28
    }
   },
   {
@@ -4632,10 +4619,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4894,
-    "draw": 0.2653,
-    "away": 0.2453,
-    "xg_home": 1.71,
+    "home": 0.4967,
+    "draw": 0.2588,
+    "away": 0.2445,
+    "xg_home": 1.73,
     "xg_away": 1.15
    }
   },
@@ -4649,11 +4636,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.696,
-    "draw": 0.1813,
-    "away": 0.1227,
-    "xg_home": 2.57,
-    "xg_away": 0.99
+    "home": 0.69,
+    "draw": 0.1852,
+    "away": 0.1249,
+    "xg_home": 2.49,
+    "xg_away": 0.97
    }
   },
   {
@@ -4666,11 +4653,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6641,
-    "draw": 0.209,
-    "away": 0.1268,
+    "home": 0.6881,
+    "draw": 0.1985,
+    "away": 0.1134,
     "xg_home": 2.25,
-    "xg_away": 0.87
+    "xg_away": 0.77
    }
   },
   {
@@ -4683,10 +4670,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3723,
-    "draw": 0.2782,
-    "away": 0.3495,
-    "xg_home": 1.44,
+    "home": 0.388,
+    "draw": 0.268,
+    "away": 0.344,
+    "xg_home": 1.5,
     "xg_away": 1.4
    }
   },
@@ -4700,11 +4687,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3315,
-    "draw": 0.2921,
-    "away": 0.3764,
-    "xg_home": 1.26,
-    "xg_away": 1.35
+    "home": 0.3291,
+    "draw": 0.2818,
+    "away": 0.389,
+    "xg_home": 1.27,
+    "xg_away": 1.4
    }
   },
   {
@@ -4717,11 +4704,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3626,
-    "draw": 0.2937,
-    "away": 0.3438,
-    "xg_home": 1.32,
-    "xg_away": 1.28
+    "home": 0.3749,
+    "draw": 0.2875,
+    "away": 0.3376,
+    "xg_home": 1.35,
+    "xg_away": 1.27
    }
   },
   {
@@ -4734,11 +4721,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.7452,
-    "draw": 0.1572,
-    "away": 0.0976,
-    "xg_home": 2.84,
-    "xg_away": 0.95
+    "home": 0.74,
+    "draw": 0.1578,
+    "away": 0.1022,
+    "xg_home": 2.83,
+    "xg_away": 0.97
    }
   },
   {
@@ -4751,11 +4738,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1035,
-    "draw": 0.1982,
-    "away": 0.6982,
-    "xg_home": 0.75,
-    "xg_away": 2.3
+    "home": 0.0949,
+    "draw": 0.1931,
+    "away": 0.712,
+    "xg_home": 0.67,
+    "xg_away": 2.25
    }
   },
   {
@@ -4768,11 +4755,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4351,
-    "draw": 0.2608,
-    "away": 0.3041,
-    "xg_home": 1.69,
-    "xg_away": 1.38
+    "home": 0.4394,
+    "draw": 0.2597,
+    "away": 0.3008,
+    "xg_home": 1.68,
+    "xg_away": 1.36
    }
   },
   {
@@ -4785,11 +4772,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2359,
-    "draw": 0.2752,
-    "away": 0.489,
-    "xg_home": 1.06,
-    "xg_away": 1.63
+    "home": 0.2372,
+    "draw": 0.2698,
+    "away": 0.4931,
+    "xg_home": 1.07,
+    "xg_away": 1.64
    }
   },
   {
@@ -4802,11 +4789,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4348,
-    "draw": 0.2943,
-    "away": 0.2709,
-    "xg_home": 1.42,
-    "xg_away": 1.06
+    "home": 0.463,
+    "draw": 0.2828,
+    "away": 0.2543,
+    "xg_home": 1.5,
+    "xg_away": 1.03
    }
   },
   {
@@ -4819,11 +4806,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4399,
-    "draw": 0.2847,
-    "away": 0.2754,
-    "xg_home": 1.51,
-    "xg_away": 1.14
+    "home": 0.4658,
+    "draw": 0.2778,
+    "away": 0.2564,
+    "xg_home": 1.55,
+    "xg_away": 1.09
    }
   },
   {
@@ -4836,11 +4823,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3377,
-    "draw": 0.2899,
-    "away": 0.3724,
-    "xg_home": 1.28,
-    "xg_away": 1.35
+    "home": 0.3228,
+    "draw": 0.29,
+    "away": 0.3872,
+    "xg_home": 1.22,
+    "xg_away": 1.36
    }
   },
   {
@@ -4853,11 +4840,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4314,
-    "draw": 0.2621,
-    "away": 0.3065,
-    "xg_home": 1.67,
-    "xg_away": 1.38
+    "home": 0.4368,
+    "draw": 0.2648,
+    "away": 0.2983,
+    "xg_home": 1.63,
+    "xg_away": 1.31
    }
   },
   {
@@ -4870,11 +4857,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6787,
-    "draw": 0.2032,
-    "away": 0.1181,
-    "xg_home": 2.29,
-    "xg_away": 0.83
+    "home": 0.7065,
+    "draw": 0.1912,
+    "away": 0.1022,
+    "xg_home": 2.3,
+    "xg_away": 0.74
    }
   },
   {
@@ -4887,10 +4874,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5785,
-    "draw": 0.2332,
-    "away": 0.1884,
-    "xg_home": 2.05,
+    "home": 0.5542,
+    "draw": 0.2407,
+    "away": 0.2052,
+    "xg_home": 1.94,
     "xg_away": 1.1
    }
   },
@@ -4904,11 +4891,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2766,
-    "draw": 0.261,
-    "away": 0.4624,
-    "xg_home": 1.28,
-    "xg_away": 1.72
+    "home": 0.2777,
+    "draw": 0.2581,
+    "away": 0.4642,
+    "xg_home": 1.27,
+    "xg_away": 1.71
    }
   },
   {
@@ -4921,11 +4908,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6026,
-    "draw": 0.2595,
-    "away": 0.1378,
-    "xg_home": 1.72,
-    "xg_away": 0.7
+    "home": 0.6271,
+    "draw": 0.2437,
+    "away": 0.1292,
+    "xg_home": 1.82,
+    "xg_away": 0.69
    }
   },
   {
@@ -4938,10 +4925,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2993,
-    "draw": 0.2706,
-    "away": 0.4301,
-    "xg_home": 1.3,
+    "home": 0.3076,
+    "draw": 0.2651,
+    "away": 0.4273,
+    "xg_home": 1.34,
     "xg_away": 1.61
    }
   },
@@ -4956,10 +4943,10 @@
    "away_goals": null,
    "forecast": {
     "home": 0.3364,
-    "draw": 0.2888,
-    "away": 0.3748,
-    "xg_home": 1.28,
-    "xg_away": 1.36
+    "draw": 0.2844,
+    "away": 0.3793,
+    "xg_home": 1.27,
+    "xg_away": 1.37
    }
   },
   {
@@ -4972,11 +4959,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4107,
-    "draw": 0.2898,
-    "away": 0.2995,
-    "xg_home": 1.43,
-    "xg_away": 1.19
+    "home": 0.4025,
+    "draw": 0.2856,
+    "away": 0.3119,
+    "xg_home": 1.4,
+    "xg_away": 1.2
    }
   },
   {
@@ -4989,11 +4976,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.448,
-    "draw": 0.2947,
-    "away": 0.2573,
-    "xg_home": 1.44,
-    "xg_away": 1.03
+    "home": 0.4507,
+    "draw": 0.2837,
+    "away": 0.2656,
+    "xg_home": 1.49,
+    "xg_away": 1.08
    }
   },
   {
@@ -5006,11 +4993,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.421,
-    "draw": 0.2713,
-    "away": 0.3077,
-    "xg_home": 1.58,
-    "xg_away": 1.31
+    "home": 0.4038,
+    "draw": 0.2679,
+    "away": 0.3282,
+    "xg_home": 1.54,
+    "xg_away": 1.37
    }
   },
   {
@@ -5023,11 +5010,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.592,
-    "draw": 0.2412,
-    "away": 0.1668,
-    "xg_home": 1.94,
-    "xg_away": 0.92
+    "home": 0.5754,
+    "draw": 0.2419,
+    "away": 0.1827,
+    "xg_home": 1.9,
+    "xg_away": 0.98
    }
   },
   {
@@ -5040,10 +5027,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3979,
-    "draw": 0.2963,
-    "away": 0.3057,
-    "xg_home": 1.37,
+    "home": 0.4088,
+    "draw": 0.2871,
+    "away": 0.3041,
+    "xg_home": 1.4,
     "xg_away": 1.17
    }
   },
@@ -5057,11 +5044,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4747,
-    "draw": 0.2757,
-    "away": 0.2497,
-    "xg_home": 1.61,
-    "xg_away": 1.09
+    "home": 0.4957,
+    "draw": 0.2676,
+    "away": 0.2367,
+    "xg_home": 1.65,
+    "xg_away": 1.06
    }
   },
   {
@@ -5074,11 +5061,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4706,
-    "draw": 0.2683,
-    "away": 0.2611,
-    "xg_home": 1.67,
-    "xg_away": 1.2
+    "home": 0.4727,
+    "draw": 0.2631,
+    "away": 0.2642,
+    "xg_home": 1.68,
+    "xg_away": 1.21
    }
   },
   {
@@ -5091,11 +5078,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.503,
-    "draw": 0.2396,
-    "away": 0.2575,
-    "xg_home": 1.97,
-    "xg_away": 1.35
+    "home": 0.5095,
+    "draw": 0.2374,
+    "away": 0.2532,
+    "xg_home": 1.96,
+    "xg_away": 1.33
    }
   },
   {
@@ -5108,11 +5095,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.0928,
-    "draw": 0.2087,
-    "away": 0.6985,
-    "xg_home": 0.63,
-    "xg_away": 2.13
+    "home": 0.0816,
+    "draw": 0.1957,
+    "away": 0.7227,
+    "xg_home": 0.56,
+    "xg_away": 2.18
    }
   },
   {
@@ -5125,11 +5112,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2696,
-    "draw": 0.2671,
-    "away": 0.4634,
-    "xg_home": 1.24,
-    "xg_away": 1.68
+    "home": 0.2742,
+    "draw": 0.2662,
+    "away": 0.4596,
+    "xg_home": 1.22,
+    "xg_away": 1.64
    }
   },
   {
@@ -5142,11 +5129,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3367,
-    "draw": 0.306,
-    "away": 0.3572,
-    "xg_home": 1.19,
-    "xg_away": 1.23
+    "home": 0.3553,
+    "draw": 0.303,
+    "away": 0.3417,
+    "xg_home": 1.21,
+    "xg_away": 1.18
    }
   },
   {
@@ -5159,11 +5146,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3092,
-    "draw": 0.2683,
-    "away": 0.4225,
+    "home": 0.3068,
+    "draw": 0.2645,
+    "away": 0.4287,
     "xg_home": 1.34,
-    "xg_away": 1.6
+    "xg_away": 1.62
    }
   },
   {
@@ -5176,11 +5163,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3664,
-    "draw": 0.2717,
-    "away": 0.3619,
-    "xg_home": 1.46,
-    "xg_away": 1.46
+    "home": 0.3864,
+    "draw": 0.2669,
+    "away": 0.3467,
+    "xg_home": 1.51,
+    "xg_away": 1.42
    }
   },
   {
@@ -5193,11 +5180,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4432,
-    "draw": 0.2559,
-    "away": 0.301,
-    "xg_home": 1.76,
-    "xg_away": 1.42
+    "home": 0.4497,
+    "draw": 0.2535,
+    "away": 0.2968,
+    "xg_home": 1.75,
+    "xg_away": 1.38
    }
   },
   {
@@ -5210,11 +5197,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.385,
-    "draw": 0.3096,
-    "away": 0.3055,
-    "xg_home": 1.26,
-    "xg_away": 1.09
+    "home": 0.408,
+    "draw": 0.2974,
+    "away": 0.2945,
+    "xg_home": 1.33,
+    "xg_away": 1.1
    }
   },
   {
@@ -5227,11 +5214,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.444,
-    "draw": 0.271,
-    "away": 0.285,
-    "xg_home": 1.61,
-    "xg_away": 1.25
+    "home": 0.4365,
+    "draw": 0.2695,
+    "away": 0.294,
+    "xg_home": 1.59,
+    "xg_away": 1.26
    }
   },
   {
@@ -5244,11 +5231,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3372,
-    "draw": 0.2748,
-    "away": 0.3881,
-    "xg_home": 1.38,
-    "xg_away": 1.5
+    "home": 0.3496,
+    "draw": 0.274,
+    "away": 0.3764,
+    "xg_home": 1.39,
+    "xg_away": 1.45
    }
   },
   {
@@ -5261,11 +5248,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5519,
-    "draw": 0.2731,
-    "away": 0.1751,
-    "xg_home": 1.63,
-    "xg_away": 0.8
+    "home": 0.58,
+    "draw": 0.2639,
+    "away": 0.156,
+    "xg_home": 1.68,
+    "xg_away": 0.72
    }
   },
   {
@@ -5278,11 +5265,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6023,
-    "draw": 0.2488,
-    "away": 0.1489,
+    "home": 0.5929,
+    "draw": 0.2458,
+    "away": 0.1613,
     "xg_home": 1.84,
-    "xg_away": 0.8
+    "xg_away": 0.85
    }
   },
   {
@@ -5295,11 +5282,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1966,
-    "draw": 0.2206,
-    "away": 0.5828,
-    "xg_home": 1.19,
-    "xg_away": 2.18
+    "home": 0.1917,
+    "draw": 0.2172,
+    "away": 0.5912,
+    "xg_home": 1.17,
+    "xg_away": 2.19
    }
   },
   {
@@ -5312,10 +5299,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6636,
-    "draw": 0.2103,
-    "away": 0.1261,
-    "xg_home": 2.21,
+    "home": 0.6451,
+    "draw": 0.2181,
+    "away": 0.1369,
+    "xg_home": 2.09,
     "xg_away": 0.86
    }
   },
@@ -5329,11 +5316,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5024,
-    "draw": 0.2558,
-    "away": 0.2417,
-    "xg_home": 1.81,
-    "xg_away": 1.2
+    "home": 0.5039,
+    "draw": 0.2471,
+    "away": 0.249,
+    "xg_home": 1.86,
+    "xg_away": 1.25
    }
   },
   {
@@ -5346,10 +5333,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3614,
-    "draw": 0.2981,
-    "away": 0.3404,
-    "xg_home": 1.29,
+    "home": 0.3599,
+    "draw": 0.2947,
+    "away": 0.3453,
+    "xg_home": 1.27,
     "xg_away": 1.24
    }
   },
@@ -5363,11 +5350,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2683,
-    "draw": 0.2595,
-    "away": 0.4723,
-    "xg_home": 1.28,
-    "xg_away": 1.76
+    "home": 0.2753,
+    "draw": 0.2599,
+    "away": 0.4648,
+    "xg_home": 1.26,
+    "xg_away": 1.7
    }
   },
   {
@@ -5380,11 +5367,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2375,
-    "draw": 0.2822,
-    "away": 0.4803,
+    "home": 0.2362,
+    "draw": 0.2761,
+    "away": 0.4877,
     "xg_home": 1.03,
-    "xg_away": 1.56
+    "xg_away": 1.58
    }
   },
   {
@@ -5397,11 +5384,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3749,
-    "draw": 0.3008,
-    "away": 0.3242,
-    "xg_home": 1.28,
-    "xg_away": 1.17
+    "home": 0.3863,
+    "draw": 0.2865,
+    "away": 0.3272,
+    "xg_home": 1.35,
+    "xg_away": 1.22
    }
   },
   {
@@ -5414,11 +5401,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5218,
-    "draw": 0.2519,
-    "away": 0.2264,
-    "xg_home": 1.86,
-    "xg_away": 1.16
+    "home": 0.5269,
+    "draw": 0.2497,
+    "away": 0.2234,
+    "xg_home": 1.84,
+    "xg_away": 1.12
    }
   },
   {
@@ -5431,11 +5418,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3495,
-    "draw": 0.292,
-    "away": 0.3585,
-    "xg_home": 1.29,
-    "xg_away": 1.31
+    "home": 0.3397,
+    "draw": 0.2893,
+    "away": 0.371,
+    "xg_home": 1.25,
+    "xg_away": 1.32
    }
   },
   {
@@ -5448,11 +5435,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4218,
-    "draw": 0.3057,
-    "away": 0.2725,
-    "xg_home": 1.34,
-    "xg_away": 1.03
+    "home": 0.4465,
+    "draw": 0.297,
+    "away": 0.2565,
+    "xg_home": 1.39,
+    "xg_away": 0.98
    }
   },
   {
@@ -5465,11 +5452,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.673,
-    "draw": 0.1901,
-    "away": 0.1368,
-    "xg_home": 2.49,
-    "xg_away": 1.04
+    "home": 0.6616,
+    "draw": 0.1942,
+    "away": 0.1442,
+    "xg_home": 2.43,
+    "xg_away": 1.06
    }
   },
   {
@@ -5482,11 +5469,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6193,
-    "draw": 0.2343,
-    "away": 0.1464,
-    "xg_home": 1.98,
-    "xg_away": 0.84
+    "home": 0.67,
+    "draw": 0.2136,
+    "away": 0.1164,
+    "xg_home": 2.09,
+    "xg_away": 0.73
    }
   },
   {
@@ -5499,11 +5486,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4849,
-    "draw": 0.2668,
-    "away": 0.2483,
-    "xg_home": 1.7,
-    "xg_away": 1.15
+    "home": 0.4861,
+    "draw": 0.2656,
+    "away": 0.2482,
+    "xg_home": 1.68,
+    "xg_away": 1.13
    }
   },
   {
@@ -5516,10 +5503,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3397,
-    "draw": 0.2698,
-    "away": 0.3905,
-    "xg_home": 1.41,
+    "home": 0.3606,
+    "draw": 0.2617,
+    "away": 0.3777,
+    "xg_home": 1.49,
     "xg_away": 1.53
    }
   },
@@ -5533,11 +5520,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.363,
-    "draw": 0.2886,
-    "away": 0.3484,
-    "xg_home": 1.34,
-    "xg_away": 1.31
+    "home": 0.358,
+    "draw": 0.2847,
+    "away": 0.3572,
+    "xg_home": 1.33,
+    "xg_away": 1.32
    }
   },
   {
@@ -5550,11 +5537,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4479,
-    "draw": 0.2744,
-    "away": 0.2777,
-    "xg_home": 1.6,
-    "xg_away": 1.21
+    "home": 0.4437,
+    "draw": 0.2738,
+    "away": 0.2825,
+    "xg_home": 1.55,
+    "xg_away": 1.19
    }
   },
   {
@@ -5567,11 +5554,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1881,
-    "draw": 0.2435,
-    "away": 0.5684,
-    "xg_home": 1.01,
-    "xg_away": 1.93
+    "home": 0.1571,
+    "draw": 0.2328,
+    "away": 0.6101,
+    "xg_home": 0.88,
+    "xg_away": 1.97
    }
   },
   {
@@ -5584,10 +5571,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3306,
-    "draw": 0.2947,
-    "away": 0.3747,
-    "xg_home": 1.22,
+    "home": 0.3353,
+    "draw": 0.2889,
+    "away": 0.3757,
+    "xg_home": 1.23,
     "xg_away": 1.32
    }
   },
@@ -5601,11 +5588,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.563,
-    "draw": 0.2387,
-    "away": 0.1983,
-    "xg_home": 1.99,
-    "xg_away": 1.1
+    "home": 0.5481,
+    "draw": 0.2466,
+    "away": 0.2052,
+    "xg_home": 1.87,
+    "xg_away": 1.07
    }
   },
   {
@@ -5618,10 +5605,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3682,
-    "draw": 0.3118,
-    "away": 0.3199,
-    "xg_home": 1.22,
+    "home": 0.3823,
+    "draw": 0.3037,
+    "away": 0.3141,
+    "xg_home": 1.26,
     "xg_away": 1.12
    }
   },
@@ -5635,10 +5622,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4917,
-    "draw": 0.244,
-    "away": 0.2643,
-    "xg_home": 1.93,
+    "home": 0.4904,
+    "draw": 0.2411,
+    "away": 0.2685,
+    "xg_home": 1.92,
     "xg_away": 1.37
    }
   },
@@ -5652,11 +5639,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6638,
-    "draw": 0.2217,
-    "away": 0.1145,
-    "xg_home": 2.04,
-    "xg_away": 0.73
+    "home": 0.6812,
+    "draw": 0.2056,
+    "away": 0.1132,
+    "xg_home": 2.17,
+    "xg_away": 0.76
    }
   },
   {
@@ -5669,11 +5656,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3397,
-    "draw": 0.2843,
-    "away": 0.3759,
-    "xg_home": 1.32,
-    "xg_away": 1.4
+    "home": 0.3328,
+    "draw": 0.2795,
+    "away": 0.3877,
+    "xg_home": 1.3,
+    "xg_away": 1.42
    }
   },
   {
@@ -5686,11 +5673,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2138,
-    "draw": 0.2453,
-    "away": 0.5409,
-    "xg_home": 1.11,
-    "xg_away": 1.9
+    "home": 0.2104,
+    "draw": 0.2361,
+    "away": 0.5535,
+    "xg_home": 1.13,
+    "xg_away": 1.97
    }
   },
   {
@@ -5703,11 +5690,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5214,
-    "draw": 0.245,
-    "away": 0.2336,
-    "xg_home": 1.93,
-    "xg_away": 1.22
+    "home": 0.5208,
+    "draw": 0.2436,
+    "away": 0.2356,
+    "xg_home": 1.89,
+    "xg_away": 1.21
    }
   },
   {
@@ -5720,11 +5707,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2207,
-    "draw": 0.2895,
-    "away": 0.4897,
-    "xg_home": 0.93,
-    "xg_away": 1.51
+    "home": 0.2343,
+    "draw": 0.2797,
+    "away": 0.486,
+    "xg_home": 0.99,
+    "xg_away": 1.54
    }
   },
   {
@@ -5737,11 +5724,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6011,
-    "draw": 0.2302,
-    "away": 0.1687,
-    "xg_home": 2.06,
-    "xg_away": 1.0
+    "home": 0.6038,
+    "draw": 0.2253,
+    "away": 0.171,
+    "xg_home": 2.09,
+    "xg_away": 1.02
    }
   },
   {
@@ -5754,11 +5741,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4793,
-    "draw": 0.2799,
-    "away": 0.2408,
-    "xg_home": 1.59,
-    "xg_away": 1.06
+    "home": 0.4765,
+    "draw": 0.2798,
+    "away": 0.2437,
+    "xg_home": 1.54,
+    "xg_away": 1.03
    }
   },
   {
@@ -5771,11 +5758,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4593,
-    "draw": 0.2643,
-    "away": 0.2764,
-    "xg_home": 1.69,
-    "xg_away": 1.26
+    "home": 0.442,
+    "draw": 0.2656,
+    "away": 0.2923,
+    "xg_home": 1.62,
+    "xg_away": 1.27
    }
   },
   {
@@ -5788,11 +5775,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6537,
-    "draw": 0.2133,
-    "away": 0.133,
-    "xg_home": 2.2,
-    "xg_away": 0.88
+    "home": 0.6729,
+    "draw": 0.2069,
+    "away": 0.1202,
+    "xg_home": 2.18,
+    "xg_away": 0.79
    }
   },
   {
@@ -5805,11 +5792,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4742,
-    "draw": 0.2779,
-    "away": 0.2478,
-    "xg_home": 1.59,
-    "xg_away": 1.08
+    "home": 0.4988,
+    "draw": 0.2669,
+    "away": 0.2343,
+    "xg_home": 1.65,
+    "xg_away": 1.05
    }
   },
   {
@@ -5822,11 +5809,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3234,
-    "draw": 0.269,
-    "away": 0.4077,
-    "xg_home": 1.38,
-    "xg_away": 1.58
+    "home": 0.3272,
+    "draw": 0.2594,
+    "away": 0.4133,
+    "xg_home": 1.43,
+    "xg_away": 1.63
    }
   },
   {
@@ -5839,11 +5826,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.412,
-    "draw": 0.3174,
-    "away": 0.2706,
+    "home": 0.4116,
+    "draw": 0.312,
+    "away": 0.2764,
     "xg_home": 1.24,
-    "xg_away": 0.95
+    "xg_away": 0.96
    }
   },
   {
@@ -5856,11 +5843,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4213,
-    "draw": 0.262,
-    "away": 0.3166,
-    "xg_home": 1.67,
-    "xg_away": 1.42
+    "home": 0.4017,
+    "draw": 0.2623,
+    "away": 0.3359,
+    "xg_home": 1.59,
+    "xg_away": 1.44
    }
   },
   {
@@ -5873,11 +5860,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3771,
-    "draw": 0.3099,
-    "away": 0.313,
-    "xg_home": 1.24,
-    "xg_away": 1.1
+    "home": 0.3789,
+    "draw": 0.3001,
+    "away": 0.321,
+    "xg_home": 1.26,
+    "xg_away": 1.14
    }
   },
   {
@@ -5890,11 +5877,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4337,
-    "draw": 0.2703,
-    "away": 0.296,
-    "xg_home": 1.61,
-    "xg_away": 1.29
+    "home": 0.4412,
+    "draw": 0.2639,
+    "away": 0.2949,
+    "xg_home": 1.63,
+    "xg_away": 1.3
    }
   },
   {
@@ -5907,11 +5894,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2985,
-    "draw": 0.27,
-    "away": 0.4315,
-    "xg_home": 1.31,
-    "xg_away": 1.61
+    "home": 0.3067,
+    "draw": 0.2684,
+    "away": 0.4249,
+    "xg_home": 1.3,
+    "xg_away": 1.57
    }
   },
   {
@@ -5924,11 +5911,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3975,
-    "draw": 0.2695,
-    "away": 0.333,
-    "xg_home": 1.55,
-    "xg_away": 1.4
+    "home": 0.4294,
+    "draw": 0.2631,
+    "away": 0.3075,
+    "xg_home": 1.63,
+    "xg_away": 1.34
    }
   },
   {
@@ -5941,11 +5928,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4373,
-    "draw": 0.2861,
-    "away": 0.2766,
-    "xg_home": 1.5,
-    "xg_away": 1.15
+    "home": 0.4483,
+    "draw": 0.2809,
+    "away": 0.2708,
+    "xg_home": 1.51,
+    "xg_away": 1.12
    }
   },
   {
@@ -5958,11 +5945,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.257,
-    "draw": 0.2817,
-    "away": 0.4613,
-    "xg_home": 1.09,
-    "xg_away": 1.54
+    "home": 0.2336,
+    "draw": 0.2706,
+    "away": 0.4958,
+    "xg_home": 1.02,
+    "xg_away": 1.6
    }
   },
   {
@@ -5975,11 +5962,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3451,
-    "draw": 0.2965,
-    "away": 0.3584,
+    "home": 0.3397,
+    "draw": 0.2903,
+    "away": 0.37,
     "xg_home": 1.26,
-    "xg_away": 1.29
+    "xg_away": 1.32
    }
   },
   {
@@ -5992,11 +5979,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4745,
-    "draw": 0.246,
-    "away": 0.2794,
-    "xg_home": 1.88,
-    "xg_away": 1.4
+    "home": 0.4655,
+    "draw": 0.2497,
+    "away": 0.2848,
+    "xg_home": 1.8,
+    "xg_away": 1.36
    }
   },
   {
@@ -6009,11 +5996,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.1042,
-    "draw": 0.1743,
-    "away": 0.7215,
-    "xg_home": 0.89,
-    "xg_away": 2.59
+    "home": 0.1127,
+    "draw": 0.1797,
+    "away": 0.7076,
+    "xg_home": 0.9,
+    "xg_away": 2.51
    }
   },
   {
@@ -6026,10 +6013,10 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5825,
-    "draw": 0.2615,
-    "away": 0.1559,
-    "xg_home": 1.74,
+    "home": 0.5802,
+    "draw": 0.2603,
+    "away": 0.1595,
+    "xg_home": 1.71,
     "xg_away": 0.78
    }
   },
@@ -6043,11 +6030,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4833,
-    "draw": 0.2743,
-    "away": 0.2424,
-    "xg_home": 1.62,
-    "xg_away": 1.06
+    "home": 0.4909,
+    "draw": 0.2718,
+    "away": 0.2373,
+    "xg_home": 1.59,
+    "xg_away": 1.02
    }
   },
   {
@@ -6060,11 +6047,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5065,
-    "draw": 0.2561,
-    "away": 0.2374,
-    "xg_home": 1.81,
-    "xg_away": 1.18
+    "home": 0.4886,
+    "draw": 0.2587,
+    "away": 0.2526,
+    "xg_home": 1.73,
+    "xg_away": 1.19
    }
   },
   {
@@ -6077,11 +6064,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3207,
-    "draw": 0.2685,
-    "away": 0.4108,
+    "home": 0.3084,
+    "draw": 0.2588,
+    "away": 0.4328,
     "xg_home": 1.38,
-    "xg_away": 1.59
+    "xg_away": 1.67
    }
   },
   {
@@ -6094,11 +6081,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4249,
-    "draw": 0.3025,
-    "away": 0.2726,
-    "xg_home": 1.36,
-    "xg_away": 1.04
+    "home": 0.4615,
+    "draw": 0.2847,
+    "away": 0.2538,
+    "xg_home": 1.49,
+    "xg_away": 1.03
    }
   },
   {
@@ -6111,11 +6098,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3838,
-    "draw": 0.2551,
-    "away": 0.3611,
-    "xg_home": 1.64,
-    "xg_away": 1.59
+    "home": 0.3945,
+    "draw": 0.2528,
+    "away": 0.3527,
+    "xg_home": 1.65,
+    "xg_away": 1.55
    }
   },
   {
@@ -6128,11 +6115,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.6393,
-    "draw": 0.2163,
-    "away": 0.1444,
-    "xg_home": 2.17,
-    "xg_away": 0.93
+    "home": 0.6414,
+    "draw": 0.2143,
+    "away": 0.1443,
+    "xg_home": 2.16,
+    "xg_away": 0.92
    }
   },
   {
@@ -6145,11 +6132,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4232,
-    "draw": 0.2632,
-    "away": 0.3137,
-    "xg_home": 1.67,
-    "xg_away": 1.41
+    "home": 0.422,
+    "draw": 0.2609,
+    "away": 0.3171,
+    "xg_home": 1.65,
+    "xg_away": 1.4
    }
   },
   {
@@ -6162,11 +6149,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5827,
-    "draw": 0.2533,
-    "away": 0.164,
-    "xg_home": 1.81,
-    "xg_away": 0.85
+    "home": 0.6175,
+    "draw": 0.2399,
+    "away": 0.1427,
+    "xg_home": 1.88,
+    "xg_away": 0.76
    }
   },
   {
@@ -6179,11 +6166,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2081,
-    "draw": 0.3006,
-    "away": 0.4913,
+    "home": 0.2034,
+    "draw": 0.2922,
+    "away": 0.5043,
     "xg_home": 0.83,
-    "xg_away": 1.42
+    "xg_away": 1.45
    }
   },
   {
@@ -6196,11 +6183,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5951,
-    "draw": 0.2363,
-    "away": 0.1686,
-    "xg_home": 1.99,
-    "xg_away": 0.97
+    "home": 0.5712,
+    "draw": 0.2417,
+    "away": 0.187,
+    "xg_home": 1.91,
+    "xg_away": 1.0
    }
   },
   {
@@ -6213,11 +6200,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2236,
-    "draw": 0.2678,
-    "away": 0.5086,
-    "xg_home": 1.04,
-    "xg_away": 1.69
+    "home": 0.2391,
+    "draw": 0.2661,
+    "away": 0.4948,
+    "xg_home": 1.08,
+    "xg_away": 1.65
    }
   },
   {
@@ -6230,11 +6217,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.5683,
-    "draw": 0.2534,
-    "away": 0.1783,
+    "home": 0.5695,
+    "draw": 0.2484,
+    "away": 0.1821,
     "xg_home": 1.83,
-    "xg_away": 0.93
+    "xg_away": 0.94
    }
   },
   {
@@ -6247,11 +6234,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4829,
-    "draw": 0.2502,
-    "away": 0.2669,
+    "home": 0.4867,
+    "draw": 0.2458,
+    "away": 0.2675,
     "xg_home": 1.85,
-    "xg_away": 1.33
+    "xg_away": 1.32
    }
   },
   {
@@ -6264,11 +6251,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2036,
-    "draw": 0.272,
-    "away": 0.5243,
-    "xg_home": 0.93,
-    "xg_away": 1.64
+    "home": 0.1767,
+    "draw": 0.2673,
+    "away": 0.556,
+    "xg_home": 0.8,
+    "xg_away": 1.66
    }
   },
   {
@@ -6281,11 +6268,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4723,
-    "draw": 0.2723,
-    "away": 0.2555,
-    "xg_home": 1.63,
-    "xg_away": 1.14
+    "home": 0.5063,
+    "draw": 0.2539,
+    "away": 0.2398,
+    "xg_home": 1.78,
+    "xg_away": 1.16
    }
   },
   {
@@ -6298,11 +6285,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3461,
-    "draw": 0.2865,
-    "away": 0.3674,
-    "xg_home": 1.3,
-    "xg_away": 1.35
+    "home": 0.3536,
+    "draw": 0.2847,
+    "away": 0.3617,
+    "xg_home": 1.31,
+    "xg_away": 1.32
    }
   },
   {
@@ -6315,11 +6302,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.4738,
-    "draw": 0.2679,
-    "away": 0.2583,
-    "xg_home": 1.69,
-    "xg_away": 1.19
+    "home": 0.4916,
+    "draw": 0.2591,
+    "away": 0.2493,
+    "xg_home": 1.73,
+    "xg_away": 1.17
    }
   },
   {
@@ -6332,11 +6319,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.2211,
-    "draw": 0.2794,
-    "away": 0.4995,
-    "xg_home": 0.98,
-    "xg_away": 1.59
+    "home": 0.2169,
+    "draw": 0.274,
+    "away": 0.5091,
+    "xg_home": 0.96,
+    "xg_away": 1.6
    }
   },
   {
@@ -6349,11 +6336,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.407,
-    "draw": 0.2588,
-    "away": 0.3341,
-    "xg_home": 1.67,
-    "xg_away": 1.49
+    "home": 0.4031,
+    "draw": 0.2619,
+    "away": 0.335,
+    "xg_home": 1.6,
+    "xg_away": 1.44
    }
   },
   {
@@ -6366,11 +6353,11 @@
    "home_goals": null,
    "away_goals": null,
    "forecast": {
-    "home": 0.3287,
-    "draw": 0.2876,
-    "away": 0.3837,
+    "home": 0.3293,
+    "draw": 0.2815,
+    "away": 0.3892,
     "xg_home": 1.27,
-    "xg_away": 1.38
+    "xg_away": 1.41
    }
   }
  ]
